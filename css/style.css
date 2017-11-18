@@ -1,0 +1,357 @@
+@import url('https://fonts.googleapis.com/css?family=Droid+Sans:400,700');
+
+body {
+  background-color: white;
+  font-family: "Droid Sans", sans-serif;
+  font-size: 18px;
+  margin: 0;
+  margin-top: 0px;
+  color: #444;
+}
+
+p {
+  font-family: "Droid Sans", sans-serif;
+  font-size: 18px;
+  padding: 20px;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: "Droid Sans", sans-serif;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  margin-left: 20px;
+  padding-left: 5px;
+  margin-right: 20px;
+  padding-right: 5px;
+  padding-bottom: 0px;
+}
+
+h1 {
+  font-size: 42px;
+  font-weight: 700;
+  padding-top: 20px;
+}
+
+h2 {
+  font-size: 32px;
+  padding-top: 10px;
+}
+
+h3 {
+  font-size: 24px;
+  padding-top: 5px;
+}
+
+h4 {
+  font-size: 18px;
+  padding-top: 5px;
+}
+
+h5 {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+h6 {
+  font-size: 16px;
+}
+
+button {
+  padding: 15px;
+  border-style: solid;
+  border-width: 0px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin: 20px;
+  width: auto;
+}
+
+button:hover {
+  background-color: grey;
+}
+
+button.trons-purple-button {
+  background-color: #40276B;
+  color: white;
+}
+
+button.trons-green-button {
+  background-color: #88cc32;
+  color: white;
+}
+
+button.small-button {
+  font-size: 14px;
+}
+
+button.medium-button {
+  font-size: 18px;
+}
+
+button.large-button {
+  font-size: 22px;
+}
+
+/* for center-aligned titles */
+.fancy-underline {
+  padding-bottom: 20px;
+  border-bottom-style: double;
+  border-bottom-width: 2px;
+  border-bottom-color: black;
+}
+
+/* for center aligned titles */
+.double-title-separator {
+  margin-bottom: 20px;
+  padding: 0;
+  height: 5px;
+  width: 200px;
+  border-top-color: black;
+  border-top-style: solid;
+  border-top-width: 2px;
+}
+
+.double-title-separator:after {
+  content: "________________";
+  position: relative;
+}
+
+/* images */
+
+img {
+  border-bottom: 0 none;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.46);
+}
+
+.circle-img {
+  background-image: url("tumblr_static_intimitrons_logo.png");
+  width: 300px;
+  height: 300px;
+  border-radius: 300px;
+  background-size: cover;
+  border-bottom: 0 none;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.46);
+  margin: 50px;
+  padding: -10px;
+}
+
+
+/* header */
+
+.header {
+  height: 100px;
+  background-color:  #40276B;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-content: center;
+  position: fixed;
+  width: 100%;
+  z-index: 99;
+}
+
+.header .logo {
+  width: 300px;
+  margin: 20px;
+  background-image: url("trons.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.header .top-menu {
+  height: inherit;
+}
+
+.header .top-menu > ul {
+  list-style: none;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: flex-end;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-right: 20px;
+  height: inherit;
+  margin-top: 0px;
+
+}
+
+.header .top-menu > ul > li {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-right: 25px;
+  padding-left: 25px;
+  height: inherit;
+  line-height: 100px; /* vertial align text in center */
+}
+
+.header .top-menu > ul > li > a {
+  text-decoration: none; 
+  color: white;
+}
+
+.header .top-menu > ul > li:hover {
+  border-bottom-style: solid;
+  border-bottom-width: 5px;
+  border-bottom-color: white;
+}
+
+.header .top-menu > ul > li:hover > a {
+  text-decoration: none; 
+}
+
+/* TODO mobile menu */
+
+
+.social-list {
+  list-style: none;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: flex-end;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-right: 20px;
+  height: inherit;
+  margin-top: 0px;
+}
+
+.social-list > li {
+  text-align: left;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-right: 25px;
+  padding-left: 0px;
+  font-size: 36px;
+  height: 100px;
+  line-height: 100px; /* vertial align text in center */
+  min-width: 48px;
+}
+
+.social-list > li > a {
+  text-decoration: none; 
+  color: white;
+}
+
+.social-list > li:hover {
+  font-size: 48px;
+}
+
+.social-list > li:hover > a {
+  text-decoration: none; 
+}
+
+/* footer */
+
+.footer {
+  background-color: #40276B;
+  color: white;
+  min-height: 300px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.footer .widget {
+  padding: 20px;
+}
+
+/* page sections */
+
+.section {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+}
+
+.section.footer {
+  margin-bottom: 0px;
+}
+
+.section-title {
+  height: 75px;
+  line-height: 75px;
+  padding: 10px;
+  padding-left: 40px;
+  margin-left: -20px;
+  margin-bottom: 30px;
+  color: white;
+  background-color: #40276B;
+  font-size: 36px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+/* parallax */
+
+.parallax {
+  min-height: 600px;
+  background-attachment: fixed;
+  background-image: url("https://farm5.staticflickr.com/4250/34509587660_ba6efcc417_h.jpg");
+  background-size: cover;
+  background-position: center;
+  
+}
+
+/* hero */
+
+.hero {
+  min-height: 600px;
+  background-image: url("https://farm5.staticflickr.com/4250/34509587660_ba6efcc417_h.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: flex-end;
+  color: white;
+  z-index: -2;
+}
+
+.hero:before {
+    height: 600px;
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(to  right,rgba(0,0,0,0.1),rgba(0,0,0,0.7));
+    opacity: .6; 
+    z-index: 0;
+  }
+
+.hero > .hero-callout {
+  padding: 50px;
+  padding-right: 100px;
+  align-self: flex-end;
+  z-index: 1;
+}
+
+/* background colors */
+
+.light-grey-bkgnd {
+  background-color: #d3d3d3;
+}
+
+.trons-purple-bkgnd {
+  color: white;
+  background-color: #40276B;
+}
+
+.trons-green-bkgnd {
+  color: white;
+  background-color: #88cc32;
+}
+
+/* text-box */
+
+.text-box {
+  margin: 20px;
+  padding: 20px;
+  border-radius: 5px;
+  min-width: inherit;
+  max-width: inherit;
+  box-sizing: border-box;
+}

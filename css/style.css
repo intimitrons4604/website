@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Droid+Sans:400,700');
+@import url('https://fonts.googleapis.com/css?family=Orbitron');
 
 body {
   background-color: white;
@@ -11,40 +12,38 @@ body {
 
 p {
   font-family: "Droid Sans", sans-serif;
-  font-size: 18px;
-  padding: 20px;
+  font-size: 14px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 h1,h2,h3,h4,h5,h6 {
   font-family: "Droid Sans", sans-serif;
   letter-spacing: 5px;
   text-transform: uppercase;
-  margin-left: 20px;
-  padding-left: 5px;
-  margin-right: 20px;
-  padding-right: 5px;
-  padding-bottom: 0px;
 }
 
 h1 {
-  font-size: 42px;
+  font-family:  'Orbitron', sans-serif;
+  font-size: 32px;
   font-weight: 700;
-  padding-top: 20px;
+  padding-bottom: 40px;
 }
 
 h2 {
-  font-size: 32px;
-  padding-top: 10px;
+  font-size: 24px;
+  padding-bottom: 10px;
 }
 
 h3 {
-  font-size: 24px;
-  padding-top: 5px;
+  font-size: 18px;
+  padding-bottom: 5px;
+  font-weight: 700;
 }
 
 h4 {
   font-size: 18px;
-  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 h5 {
@@ -53,7 +52,8 @@ h5 {
 }
 
 h6 {
-  font-size: 16px;
+  font-size: 14px;
+  font-weight: 700;
 }
 
 button {
@@ -93,28 +93,54 @@ button.large-button {
   font-size: 22px;
 }
 
-/* for center-aligned titles */
-.fancy-underline {
-  padding-bottom: 20px;
-  border-bottom-style: double;
-  border-bottom-width: 2px;
-  border-bottom-color: black;
+.navbar-title {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 24px;
+  text-transform: uppercase;
+	  letter-spacing: 5px;
+
 }
+
+/* for center-aligned titles */
+.heading-separator:after {
+  position: relative;
+  bottom: -10px;
+  content: "";
+  height: 10px;
+  display: block;
+  border-bottom: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: black;
+  width: 60%;
+  margin: auto;
+}
+
 
 /* for center aligned titles */
-.double-title-separator {
+.heading-separator-double {
+  content: "";
+  margin-top: 10px;
   margin-bottom: 20px;
-  padding: 0;
-  height: 5px;
-  width: 200px;
-  border-top-color: black;
-  border-top-style: solid;
-  border-top-width: 2px;
+  position: relative;
+}
+.heading-separator-double:before {
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  left: 20%;
+  background-color: black;
+  height: 1px;
+  width: 60%;
 }
 
-.double-title-separator:after {
-  content: "________________";
-  position: relative;
+.heading-separator-double:after {
+  content: "";
+  position: absolute;
+  bottom: -22px;
+  left: 30%;
+  background-color: black;
+  height: 1px;
+  width: 40%;
 }
 
 /* images */
@@ -132,77 +158,11 @@ img {
   background-size: cover;
   border-bottom: 0 none;
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.46);
-  margin: 50px;
-  padding: -10px;
+  margin: auto;
+  margin-top: 2em;
+  margin-bottom: 2em;
 }
 
-
-/* header */
-
-.header {
-  height: 100px;
-  background-color:  #40276B;
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
-  align-content: center;
-  position: fixed;
-  width: 100%;
-  z-index: 99;
-}
-
-.header .logo {
-  width: 300px;
-  margin: 20px;
-  background-image: url("trons.jpg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.header .top-menu {
-  height: inherit;
-}
-
-.header .top-menu > ul {
-  list-style: none;
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-around;
-  align-items: flex-end;
-  padding-left: 20px;
-  padding-right: 20px;
-  margin-right: 20px;
-  height: inherit;
-  margin-top: 0px;
-
-}
-
-.header .top-menu > ul > li {
-  padding-top: 0px;
-  padding-bottom: 0px;
-  padding-right: 25px;
-  padding-left: 25px;
-  height: inherit;
-  line-height: 100px; /* vertial align text in center */
-}
-
-.header .top-menu > ul > li > a {
-  text-decoration: none; 
-  color: white;
-}
-
-.header .top-menu > ul > li:hover {
-  border-bottom-style: solid;
-  border-bottom-width: 5px;
-  border-bottom-color: white;
-}
-
-.header .top-menu > ul > li:hover > a {
-  text-decoration: none; 
-}
-
-/* TODO mobile menu */
 
 
 .social-list {
@@ -271,18 +231,20 @@ img {
 }
 
 .section-title {
-  height: 75px;
+  height: 90px;
   line-height: 75px;
   padding: 10px;
   padding-left: 40px;
-  margin-left: -20px;
-  margin-bottom: 30px;
+  margin-top: 60px;
+  margin-bottom: 60px;
   color: white;
   background-color: #40276B;
   font-size: 36px;
   letter-spacing: 5px;
   text-transform: uppercase;
   width: 100%;
+  font-family:  'Orbitron', sans-serif;
+  text-align: center;
 }
 
 /* parallax */
@@ -299,7 +261,7 @@ img {
 /* hero */
 
 .hero {
-  min-height: 600px;
+  min-height: 550px;
   background-image: url("https://farm5.staticflickr.com/4250/34509587660_ba6efcc417_h.jpg");
   background-size: cover;
   background-position: center;
@@ -310,23 +272,37 @@ img {
 }
 
 .hero:before {
-    height: 600px;
+    height: 550px;
     content: '';
     position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-image: linear-gradient(to  right,rgba(0,0,0,0.1),rgba(0,0,0,0.7));
+    width: 100%;
+    background-image: linear-gradient(to  right,rgba(0,0,0,0.1),rgba(0,0,0,0.9));
     opacity: .6; 
     z-index: 0;
   }
 
 .hero > .hero-callout {
-  padding: 50px;
-  padding-right: 100px;
-  align-self: flex-end;
-  z-index: 1;
+	background-color: #88cc32;
+	height: 200px;
+	width: 200px;
+	border-radius: 200px;
+	align-self: flex-end;
+	z-index: 1;
+	color: white;
+	margin: 150px;
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.hero-callout-item {
+	text-align: center;
+	vertical-align: center;
+}
+
+.hero-callout-item > h1 {
+	padding-bottom: 10px;
 }
 
 /* background colors */
@@ -348,10 +324,22 @@ img {
 /* text-box */
 
 .text-box {
-  margin: 20px;
   padding: 20px;
+  padding-top: 30px;
   border-radius: 5px;
-  min-width: inherit;
-  max-width: inherit;
   box-sizing: border-box;
 }
+
+
+.remove-padding {
+	padding-left: 0 !important;
+	padding-right: 0 !important;
+
+}
+
+.nav-item {
+  font-family: "Droid Sans", sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+

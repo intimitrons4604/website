@@ -4,64 +4,138 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Intimitrons Demo</title>
-    <link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/bootstrap-grid.css">
+	<link rel="stylesheet" href="css/bootstrap-reboot.css">
+	<link rel="stylesheet" href="css/style.css">
     <script src="https://use.fontawesome.com/acdf66c231.js"></script>
   </head>
   
   
   <body>
-    
-    <div class="header">
-      <div class="logo"></div>
-      <div class="top-menu">
-        <ul>
-          <li><a href="page1.html">Page1</a></li>
-          <li><a href="page2.html">Page2</a></li>
-          <li><a href="page3.html">Page3</a></li>
-        </ul>
-      </div>
+	  
+	<nav class="navbar navbar-expand-lg navbar-dark trons-purple-bkgnd sticky-top">
+	  <a class="navbar-brand" href="#">
+   	 	<img src="images/trons.jpg" height="50" alt="">
+ 	  </a>
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	  </button>
+
+	  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+		<ul class="navbar-nav ml-auto">
+		  <li class="nav-item active">
+			<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link" href="#">Link</a>
+		  </li>
+		  <li class="nav-item dropdown">
+			<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			  Dropdown
+			</a>
+			<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+			  <a class="dropdown-item" href="#">Action</a>
+			  <a class="dropdown-item" href="#">Another action</a>
+			  <div class="dropdown-divider"></div>
+			  <a class="dropdown-item" href="#">Something else here</a>
+			</div>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link disabled" href="#">Disabled</a>
+		  </li>
+		</ul>
+	  </div>
+	</nav>
+
+	<div class="jumbotron-fluid">
+		
+		<div class="container-fluid remove-padding ">
+   
+			<div class="hero" style="background-image:url('https://farm5.staticflickr.com/4185/33682601574_0574678c36_h.jpg')">
+
+			  <div class="hero-callout">				 
+				  <div class="hero-callout-item">
+					 <h1 class="p-1">4604</h1>
+					 <h2> <i class="fa fa-heart"></i></h2> 
+					 <h2>robots</h2>
+				  </div>
+			  </div>
+			</div>
+		</div>
     </div>
     
-    <div class="hero" style="background-image:url('https://farm5.staticflickr.com/4185/33682601574_0574678c36_h.jpg')">
-    
-      <div class="hero-callout">
-        <h2>Intimitrons</h2>
-        <h3>FRC TEAM 4604</h3>
-        <p>We love robots!</p>
-        <button class="medium-button trons-green-bkgnd">JOIN TODAY</button>
-      </div>
-    
-    </div>
-    
-    <h1>Intimitrons Style Template</h1>
-    
-    <p>Welcome! This is a template for the new Intimitrons website. Use this page as a source to copy and paste different elements shown below into your own pages. We will do the everything in the (div class="header") above and (div class="footer) below in a central file that is reused, no need to worry about menus for now.</p>
+	<div class="container-fluid trons-green-bkgnd">
+		<div class="row align-items-center p-4">
+			<div class="col-xl-9 col-lg-9 col-md-6 col-sm-6 col-xs-12">
+				<h2>The Intimitrons from AREA 51</h2>
+				<h5>Western Canada's First All-Girls FRC Robotics Team</h5>
+			</div>
+			<div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-xs-12">
+				<button class="medium-button trons-purple-bkgnd">BECOME A TRON</button>
+			</div>
+		</div>
+	  </div>
+	 
+	<div class="container-fluid">  
+		<div class="row pt-5 pl-5 pr-5">
+		  <div class="col">
+		    <h1>Intimitrons Style Template</h1>
+		  </div>
+		</div>
+
+		<div class="row pl-5 pr-5">
+			<div class="col">
+				<p>Welcome! This is a template for the new Intimitrons website. Use this page as a source to copy and paste different elements shown below into your own pages. We will do the everything in the (div class="header") above and (div class="footer) below in a central file that is reused, no need to worry about menus for now.</p>
+			</div>
+		</div>
+	</div>
     
     <!-- Typography -->
-    <div class="section-title">typography</div>
-    
-    <div class="section">
+	<div class="section-title">typography</div>
 
-      <h1>heading 1</h1>
-      <h2>heading 2</h2>
-      <h3>heading 3</h3>
-      <h4>heading 4</h4>
-      <h5>heading 5</h5>
-      <h6>heading 6</h6>    
+	<div class="container">
 
-      <p>
-        This is a paragraph.
-      </p>
-      
-      <div class="section">
+		  <div class="row">
+			  <div class="col-xl-4 col-lg-4 col-sm-12 col-xs-12">
+		  		<h1>heading 1</h1>
+			  </div>
+			  <div class="col-xl-4 col-lg-4 col-sm-12 col-xs-12">
+			    <h2>heading 2</h2>
+			  </div>
+			  <div class="col-xl-4 col-lg-4 col-sm-12 col-xs-12">
+  			    <h3>heading 3</h3>
+			  </div>
+			  <div class="col-xl-4 col-lg-4 col-sm-12 col-xs-12">
+			    <h4>heading 4</h4>
+			  </div>
+			  <div class="col-xl-4 col-lg-4 col-sm-12 col-xs-12">
+				<h5>heading 5</h5>
+			  </div>
+			  <div class="col-xl-4 col-lg-4 col-sm-12 col-xs-12">
+				<h6>heading 6</h6>    
+			  </div>
+		</div>
+		
+		<div class="row">
+			<div class="col">
 
-        <ul>
-          <li>List Item 1</li>
-          <li>List Item 2</li>
-          <li>List Item 3</li>
-        </ul>
-      </div>
-      
+			  <p>
+				This is a paragraph.
+			  </p>
+			</div>
+		</div>
+		
+		<div class="row">
+
+			<div class="col">
+				<ul>
+				  <li>List Item 1</li>
+				  <li>List Item 2</li>
+				  <li>List Item 3</li>
+				</ul>
+			</div>
+		</div>
       
     </div>
     
@@ -115,105 +189,116 @@
     <!-- Images -->
     <div class="section-title">Images</div>
 
-    <div class="section">
+    <div class="container">
       
-      <img src="trons.jpg">
-      <div class="circle-img"></div> 
-      <div class="circle-img" style="background-image:url('http://intimitrons.ca/website/wp-content/uploads/2014/02/Unknown.jpeg')"></div>
+	  	<div class="row">	
+			<div class="col-xl-12 col-lg-12 col-sm-12 col-xs-12">
+			  <img src="images/trons.jpg">
+			</div>
+		</div>
+		<div class="row">
+		    <div class="col-xl-6 col-lg-6 col-sm-12 col-xs-12">
+			  <div class="circle-img"></div> 
+			</div>
+		    <div class="col-xl-6 col-lg-6 col-sm-12 col-xs-12">
+			  <div class="circle-img" style="background-image:url('http://intimitrons.ca/website/wp-content/uploads/2014/02/Unknown.jpeg')"></div>
+		    </div>
+		</div>
     </div>
 
     
     <!-- Respnsoive Gallery & Sections -->
     <div class="section-title">responsive gallery (3-col)</div>
     
-    <div class="section">      
+    <div class="section">  
+		
+		<div class="container">
       
-      <h4>Amazing Women in STEM History</h4>
+		  <h4>Amazing Women in STEM History</h4>
 
-      <div class="row">
+		  <div class="row">
 
-        <div class="col align-center">
-          <div class="circle-img" style="background-image:url('vera_rubin.png')"></div>
-          <h3 class="fancy-underline">Vera Rubin</h3>
-          Discovered Dark Matter.
-        </div>
+			<div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12 center-block text-center">
+			  <div class="circle-img" style="background-image:url('images/vera_rubin.png')"></div>
+			  <h4 class="heading-separator">Vera Rubin</h4>
+				<p>Discovered Dark Matter.</p>
+			</div>
 
-        <div class="col align-center">
-          <div class="circle-img" style="background-image:url('jocelyn_bell_burnell.png')"></div>
-          <h3 class="fancy-underline">Jocelyn Bell Burnell</h3>
-          Discovered pulsars.
-        </div>
+			<div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12 center-block text-center">
+			  <div class="circle-img" style="background-image:url('images/jocelyn_bell_burnell.png')"></div>
+			  <h4 class="heading-separator">Jocelyn Bell Burnell</h4>
+				<p>Discovered pulsars.</p>
+			</div>
 
-        <div class="col align-center">
-          <div class="circle-img" style="background-image:url('chen_shiung.gif')"></div>
-          <h3 class="fancy-underline">Chien Shiung-Wu</h3>
-          Disproved the law of conservation of parity. 
-        </div>
+			<div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12 center-block text-center">
+			  <div class="circle-img" style="background-image:url('images/chen_shiung.gif')"></div>
+			  <h4 class="heading-separator">Chien Shiung-Wu</h4>
+				<p>Disproved the law of conservation of parity. </p>
+			</div>
 
-        <div class="col align-center">
-          <div class="circle-img" style="background-image:url('katehrine_johnson.png')"></div>
-          <h3 class="fancy-underline">Katherine Johnson</h3>
-          Sent humans to the moon.
-        </div>
+			<div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12 center-block text-center">
+			  <div class="circle-img" style="background-image:url('images/katehrine_johnson.png')"></div>
+			  <h4 class="heading-separator">Katherine Johnson</h4>
+				<p>Sent humans to the moon.</p>
+			</div>
 
-        <div class="col align-center">
-          <div class="circle-img" style="background-image:url('grace.png')"></div>
-          <h3 class="fancy-underline">Grace Hopper</h3>
-          Invented computer language compiler.
-        </div>
+			<div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12 center-block text-center">
+			  <div class="circle-img" style="background-image:url('images/grace.png')"></div>
+			  <h4 class="heading-separator">Grace Hopper</h4>
+				<p>Invented computer language compiler.</p>
+			</div>
 
-        <div class="col align-center">
-          <div class="circle-img" style="background-image:url('ada.png')"></div>
-          <h3 class="fancy-underline">Ada Lovelace</h3>
-          Invented programming.
-        </div>
-
-      </div>
-    </div>
-    
-    <div class="section light-grey-bkgnd">
-    
-      <h4>Kick Ass CSA Female Astronauts</h4>
-
-      <div class="row">
-        
-        <div class="col colx1 align-center">
-          <div class="circle-img" style="background-image:url('roberta-bondar-280x350.jpg')"></div>
-          <h3>Roberta Lynn Bondar</h3>
-          <div class="double-title-separator"></div>
-          <h4>Doctor of Medicine</h4>
-          <p>Vestibulum sed vehicula elit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Quisque porttitor egestas velit, in dapibus dolor auctor sit amet. Maecenas in ante enim. </p>
-        </div>
-
-        <div class="col colx1 align-center">
-          <div class="circle-img" style="background-image:url('julie-payette-280x350.jpg')"></div>
-          <h3>Julie Payette</h3>
-          <div class="double-title-separator"></div>
-          <h4>Computer &amp; Electrical Engineering</h4>
-          <p>Vestibulum sed vehicula elit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Quisque porttitor egestas velit, in dapibus dolor auctor sit amet. Maecenas in ante enim. </p>
-        </div>
-
-        <div class="col colx1 align-center">
-          <div class="circle-img" style="background-image:url('jennifer-sidey-280x350.jpg')"></div>
-          <h3>Jennifer Sidey</h3>
-          <div class="double-title-separator"></div>
-          <h4>Mechanical Engineer &amp; Combustion Scientist</h4>
-          <p>Vestibulum sed vehicula elit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Quisque porttitor egestas velit, in dapibus dolor auctor sit amet. Maecenas in ante enim. </p>
-        </div>
+			<div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12 center-block text-center">
+			  <div class="circle-img" style="background-image:url('images/ada.png')"></div>
+			  <h4 class="heading-separator">Ada Lovelace</h4>
+				<p>Invented programming.</p>
+			</div>
+			
+		</div>
 
       </div>
     </div>
+
+      <div class="container-fluid remove-padding light-grey-bkgnd">
+		  
+		  
+		  <div class="row p-5">
+
+			<div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12 center-block text-center">
+			  <div class="circle-img" style="background-image:url('images/roberta-bondar-280x350.jpg')"></div>
+			  <h4>Roberta Lynn Bondar</h4>
+			  <h6 class="heading-separator-double">Doctor of Medicine</h6>
+			  <p>Vestibulum sed vehicula elit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Quisque porttitor egestas velit, in dapibus dolor auctor sit amet. Maecenas in ante enim. </p>
+			</div>
+
+			<div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12 center-block text-center">
+			  <div class="circle-img" style="background-image:url('images/julie-payette-280x350.jpg')"></div>
+			  <h4>Julie Payette</h4>
+			  <h6 class="heading-separator-double">Computer &amp; Electrical Engineering</h6>
+			  <p>Vestibulum sed vehicula elit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Quisque porttitor egestas velit, in dapibus dolor auctor sit amet. Maecenas in ante enim. </p>
+			</div>
+
+			<div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12 center-block text-center">
+			  <div class="circle-img" style="background-image:url('images/jennifer-sidey-280x350.jpg')"></div>
+			  <h4>Jennifer Sidey</h4>
+			  <h6 class="heading-separator-double">Mechanical Engineer &amp; Combustion Scientist</h6>
+			  <p>Vestibulum sed vehicula elit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Quisque porttitor egestas velit, in dapibus dolor auctor sit amet. Maecenas in ante enim. </p>
+			</div>
+		  </div>
+
+      </div>
 
     <!-- Repsonsive boxes -->
-    <div class="section-title">responseive Text Boxes (3-col)</div>
+    <div class="section-title">responseive Text Boxes</div>
 
-    <div class="section">       
+    <div class="container">       
     
       <div class="row">
       
-        <div class="col colx2 align-left">
+        <div class="col-xl-9 col-lg-9 col-md-9 col-sm-12 col-xs-12 align-left">
           
           <div class="text-box  trons-purple-bkgnd">
+			  
             <h3>About the Intimitrons</h3>
 
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis ultrices augue. Aenean consequat neque id sagittis lobortis. Curabitur ex nisl, accumsan non nunc tincidunt, viverra maximus turpis. Curabitur sed odio nulla. Nullam id dolor vel ante interdum elementum. Vestibulum sed vehicula elit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Quisque porttitor egestas velit, in dapibus dolor auctor sit amet. Maecenas in ante enim. Nullam tempor ligula id convallis sodales. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc velit arcu, semper sit amet volutpat vel, faucibus at urna. Phasellus rhoncus laoreet lectus a iaculis. Nunc feugiat lectus lacus, nec blandit est tincidunt quis.</p>
@@ -224,7 +309,7 @@
         </div>
       
         
-        <div class="col colx1" >
+        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-xs-12" >
           
           <div class="text-box">
 
@@ -243,11 +328,11 @@
     
     <div class="parallax"></div>
     
-    <div class="section">
+    <div class="container">
       
-      <div class="row">
+      <div class="row pt-5">
       
-        <div class="col colx3 align-center">
+        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 align-center">
           
           <h2>full-width centered column</h2>
         
@@ -266,7 +351,7 @@
       
       <div class="row">
       
-        <div class="col colx1">
+        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
 
           <div class="text-box">
             <h3>Two columns in a Row</h3>
@@ -275,7 +360,7 @@
           
         </div>
         
-        <div class="col colx1">
+        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
 
 
           <div class="text-box">
@@ -293,7 +378,7 @@
     <div class="footer">
     
       <div class="widget">
-        <img src="tumblr_static_intimitrons_logo.png" width="200px">
+        <img src="tumblr_static_intimitrons_logo.png" width="200">
       </div>
   
       <div class="widget">

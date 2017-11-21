@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Intimitrons Demo</title>
+<title>Robotics | Girls in STEM | Calgary | Intimitrons 4604</title>
 
 <?php $page = "index.php" ; include_once('header.php');?>
 
-	<div class="jumbotron-fluid">
+	<div class="jumbotron-fluid pr-3 pl-3 pl-xl-0 pl-lg-0 pl-md-0">
 		
 		<div class="container-fluid remove-padding">
    
@@ -84,15 +84,15 @@
 				<h5>Sign up for our newsletter here, if you’d like updates on what we’ve been up to!</h5>
 				<form action="https://intimitrons.us3.list-manage.com/subscribe/post?u=d479728f08b6043f1d957d5b1&amp;id=cc9ef4518a" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
 				  <div class="form-row align-items-center">
-					<div class="col-sm-2">
+					<div class="col-sm-3">
 					  <label class="sr-only" for="mce-FNAME">First Name</label>
-					  <input type="text" value="" name="FNAME" id="mce-FNAME" class="form-control mb-2 mb-sm-0" placeholder="Jane">
+					  <input type="text" value="" name="FNAME" id="mce-FNAME" class="form-control mb-2 mb-sm-0" placeholder="First name">
 					</div>
-					<div class="col-sm-2">
+					<div class="col-sm-3">
 					  <label class="sr-only" for="mce-LNAME">Last Name</label>
-					  <input type="text" value="" name="LNAME" id="mce-LNAME" class="form-control mb-2 mb-sm-0" placeholder="Doe">					
+					  <input type="text" value="" name="LNAME" id="mce-LNAME" class="form-control mb-2 mb-sm-0" placeholder="Last name">					
 					</div>
-					<div class="col-sm-4">
+					<div class="col-sm-3">
 					  <label class="sr-only" for="mce-EMAIL">Email</label>
 					  <div class="input-group mb-2 mb-sm-0">
 						<div class="input-group-addon"><i class="fa fa-envelope"></i></div>

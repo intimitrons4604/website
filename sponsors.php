@@ -1,13 +1,76 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Robotics | Girls in STEM | Calgary | Intimitrons 4604</title>
+<title>Sponsor Girls in STEM | Calgary | Intimitrons 4604</title>
 
 <?php $page = "sponsors.php" ; include_once('header.php');?><!doctype html>
 
+<script src="js/sponsors.js"></script>
+	
 	
 <div class="container-fluid mt-5 px-5">
 	
+	<div class="row">
+		
+		<div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-xs-12 pl-xl-5 pl-lg-5 pb-5">
+			<i class="fa fa-hand-spock-o animated rotateInUpRight" style="font-size:10em"></i>
+		</div>
+
+	
+		<div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 px-3">
+			<h1>A Colossal Thank You</h1>
+			<p>From our new home on Planet Earth to the depths of outer space, the Intimitrons from Area 51 would like to thank our sponsors for their generous contributions to our team and our cause. Without their support, we wouldn't be able to participate in competition, have access to advanced tools and equipment, or purchase materials to build study and learn. More importantly, we wouldn't have been able to reach dozens of young women in Calgary and provide them with the opportunity to explore STEM and build confidence in their abilities.</p>
+		</div>
+
+
+		<div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-xs-12 pl-xl-5 pl-lg-5 pb-5">
+			<div id="trons-vert-team-menu" class="btn-group-vertical btn-group-lg" role="group" aria-label="Meet the Team">
+			  <button type="button" onclick="window.location.href='#sponsor'" class="btn btn-secondary trons-green-button">Sponsor Us</button>
+			  <button type="button" onclick="window.location.href='#platinum'" class="btn btn-secondary trons-green-button">Platinum</button>
+			  <button type="button" onclick="window.location.href='#gold'" class="btn btn-secondary trons-green-button">Gold</button>
+			  <button type="button" onclick="window.location.href='#inkind'" class="btn btn-secondary trons-green-button">In-Kind</button>
+			  <button type="button" onclick="window.location.href='#silver'" class="btn btn-secondary trons-green-button">Silver</button>
+			</div>
+		</div>
+	
+	</div>
+</div>
+	
+		
+<div class="container-fluid trons-purple-bkgnd mt-5">
+
+	<div class="row p-5">
+
+		<div class="col-12">
+
+			<h5>Talk to us about sponsoring the Intimitrons and supporting Girls in STEM</h5>
+			<form action="" method="post" id="contact-form" name="contact-form" class="validate" target="_blank" novalidate>
+			  <div class="form-row align-items-center">
+				<div class="col-sm-3">
+				  <label class="sr-only" for="fname">First Name</label>
+				  <input type="text" value="" name="fname" id="fname" class="form-control mb-2 mb-sm-0" placeholder="First name">
+				</div>
+				<div class="col-sm-3">
+				  <label class="sr-only" for="lname">Last Name</label>
+				  <input type="text" value="" name="lname" id="lname" class="form-control mb-2 mb-sm-0" placeholder="Last name">					
+				</div>
+				<div class="col-sm-3">
+				  <label class="sr-only" for="email">Email</label>
+				  <div class="input-group mb-2 mb-sm-0">
+					<div class="input-group-addon"><i class="fa fa-envelope"></i></div>
+					<input type="email" value="" name="email" id="email" class="required form-control" placeholder="Email">
+				  </div>
+				</div>
+				<div class="col-auto">
+				  <button type="submit" value="Subscribe" name="subscribe" id="submit-sponsor-contact-form" class="btn trons-green-button">Submit</button>
+				</div>
+			  </div>
+			</form>
+		</div>
+	</div>
+</div>
+	
+<div class="container-fluid mt-5 px-5" id="sponsor">
 	
   <div class="row">
 	
@@ -34,7 +97,7 @@
 			
 </div>	
 	
-<div class="container-fluid mt-5">
+<div class="container-fluid mt-5 mb-5">
 	<div class="row px-3 mx-auto">
 		<div class="col-12 mx-auto">
 			<div class="card-group">
@@ -91,41 +154,10 @@
 	</div>
 </div>
 	
-<div class="container-fluid trons-purple-bkgnd mt-5">
+<div class="parallax" style="background-image: url('https://farm5.staticflickr.com/4490/26251669169_532a2e461b_h.jpg');"></div>
 
-	<div class="row p-5">
-
-		<div class="col-12">
-
-			<h5>Find out more about sponsoring the Intimitrons and supporting Girls in STEM</h5>
-			<form action="" method="post" id="sponsor-contact-form" name="sponsor-contact-form" class="validate" target="_blank" novalidate>
-			  <div class="form-row align-items-center">
-				<div class="col-sm-3">
-				  <label class="sr-only" for="sponsor-fname">First Name</label>
-				  <input type="text" value="" name="sponsor-fname" id="sponsor-fname" class="form-control mb-2 mb-sm-0" placeholder="First name">
-				</div>
-				<div class="col-sm-3">
-				  <label class="sr-only" for="sponsor-lname">Last Name</label>
-				  <input type="text" value="" name="sponsor-lname" id="sponsor-lname" class="form-control mb-2 mb-sm-0" placeholder="Last name">					
-				</div>
-				<div class="col-sm-3">
-				  <label class="sr-only" for="sponsor-email">Email</label>
-				  <div class="input-group mb-2 mb-sm-0">
-					<div class="input-group-addon"><i class="fa fa-envelope"></i></div>
-					<input type="email" value="" name="sponsor-email" id="sponsor-email" class="required form-control" placeholder="Email">
-				  </div>
-				</div>
-				<div class="col-auto">
-				  <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_d479728f08b6043f1d957d5b1_cc9ef4518a" tabindex="-1" value=""></div>
-				  <button type="submit" value="Subscribe" name="subscribe" id="submit-sponsor-contact-form" class="btn trons-green-button">Submit</button>
-				</div>
-			  </div>
-			</form>
-		</div>
-	</div>
-</div>
 	
-<div class="container-fluid mt-5 px-5">
+<div class="container-fluid mt-5 mb-5 px-5" id="platinum">
 
 	
 	<div class="row">
@@ -134,68 +166,57 @@
 		</div>
 	</div>
 	
-	<div class="row mt-5">
-
-		<div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 px-5">
-			<img src="images/awsn.png" width="50%">
-			<h2 class="pt-2">Alberta Women's Science Network (AWSN)</h2>
-			<p>With the amazing donations from the AWSN, we have been able to purchase two team laptops as well as a quality camera for photos and video of events. This wonderful organization is all about promoting minorities in STEM related careers, just like our team!
-			</p>
-			<h4>Sponsorship Years: 2015,2016,2017</h4>
-			<a href="https://awsn.org"><button class="btn trons-green-button medium-button">Visit AWSN.org</button></a>
-		</div>
-		<div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
-			<img src="https://farm3.staticflickr.com/2937/33178496114_8c377483fa_k.jpg" width="90%">
-		</div>
+	<div id="platinum-list">
+		<script>
+			displayPlatinumSponsors("platinum-list");
+		</script>
 	</div>
 	
+</div>
+	
+<div class="parallax" style="background-image: url('https://farm5.staticflickr.com/4396/37252186395_e2a8f6c242_h.jpg');"></div>
+
+<div class="container-fluid mt-5 mb-5 px-5" id="gold">
+
 	<div class="row mt-5">
 		<div class="col-12">
 			<h1>Gold Sponsors</h1> 			 
 		</div>
 	</div>
 	
-	<div class="row mt-5">
-		<div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-xs-12 px-5">
-			<img src="images/lockheed-martin-logo.png" width="80%">
-			<h4 class="pt-4">Lockheed Martin</h4>
-			<p>It is this company’s second year in sponsoring the Intimitrons, and their support has been very beneficial to our team. This year, their financial support has payed for our team’s admission into the 2015 Western Canada competition. They are based in Calgary and integrate social, economic and environmental considerations into all of their operating practices.
-			</p>
-			<h6>Sponsorship Years: 2016, 2017</h6>
-			<a href="https://lockheedmartin.com"><button class="btn trons-green-button small-button">Visit LockheedMartin.com</button></a>
-		</div>
-		<div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-xs-12 px-5">
-			<img src="images/twitter-profile-egg.png" width="80%">
-			<h4 class="pt-4">Anonymous</h4>
-			<p>
-			</p>
-			<h6>Sponsorship Years: 2017</h6>
-			<a href="https://lockheedmartin.com"><button class="btn trons-green-button small-button">Visit LockheedMartin.com</button></a>
-		</div>
-		<div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-xs-12 px-5">
-			<img src="images/lockheed-martin-logo.png" width="80%">
-			<h4 class="pt-4">Lockheed Martin</h4>
-			<p>
-			</p>
-			<h6>Sponsorship Years: 2017</h6>
-			<a href="https://lockheedmartin.com"><button class="btn trons-green-button small-button">Visit LockheedMartin.com</button></a>
-		</div>
-		<div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-xs-12 px-5">
-			<img src="images/lockheed-martin-logo.png" width="80%">
-			<h4 class="pt-4">Lockheed Martin</h4>
-			<p>
-			</p>
-			<h6>Sponsorship Years: 2017</h6>
-			<a href="https://lockheedmartin.com"><button class="btn trons-green-button small-button">Visit LockheedMartin.com</button></a>
-		</div>
+	<div class="row mt-5" id="gold-grid">
+		<script>
+			displaySponsorGrid("gold","gold-grid");
+		</script>
+
 	</div>
 	
+</div>
+	
+<div class="parallax" style="background-image: url('https://farm3.staticflickr.com/2864/33329082910_ae4f890331_h.jpg');"></div>
+
+<div class="container-fluid mt-5 mb-5 px-5" id="inkind">
+
 	<div class="row mt-5">
 		<div class="col-12">
 			<h1>In-Kind Sponsors</h1> 
 				 
 		</div>
 	</div>
+	
+	<div class="row mt-5" id="inkind-grid">
+		<script>
+			displaySponsorGrid("inkind","inkind-grid");
+		</script>
+
+	</div>
+	
+</div>
+	
+<div class="parallax" style="background-image: url('https://farm3.staticflickr.com/2866/33003736466_55b163fefe_h.jpg');"></div>
+	
+<div class="container-fluid mt-5 mb-5 px-5" id="silver">
+
 
 	<div class="row mt-5">
 		<div class="col-12">
@@ -203,35 +224,10 @@
 		</div>
 	</div>
 	
-	<div class="row mt-5 mb-5">
-		<div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-xs-6 px-5">
-			<ul>
-				<li>Fred Flinstone</li>
-				<li>Barney Miller</li>
-				<li>Malcom Reynolds</li>
-			</ul>
-		</div>
-		<div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-xs-6 px-5">
-			<ul>
-				<li>Fred Flinstone</li>
-				<li>Barney Miller</li>
-				<li>Malcom Reynolds</li>
-			</ul>
-		</div>
-        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-xs-6 px-5">
-			<ul>
-				<li>Fred Flinstone</li>
-				<li>Barney Miller</li>
-				<li>Malcom Reynolds</li>
-			</ul>
-		</div>
-		<div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-xs-6 px-5">
-			<ul>
-				<li>Fred Flinstone</li>
-				<li>Barney Miller</li>
-				<li>Malcom Reynolds</li>
-			</ul>
-		</div>
+	<div class="row mt-5 mb-5" id="silver-list">
+		<script>
+			displaySilverList("silver-list");
+		</script>
 	</div>
 </div>
 	

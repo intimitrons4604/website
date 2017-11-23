@@ -13,6 +13,7 @@
 					<ul class="social-list">
 						<li><a href="mailto:info@intimitrons.ca"><i class="fa fa-envelope"></i></a></li>
 						<li><a href="https://facebook.com/Intimitrons"><i class="fa fa-facebook"></i></a></li>
+						<li><a href="https://www.flickr.com/photos/151319075@N05"><i class="fa fa-flickr"></i></a></li>
 						<li><a href="https://www.youtube.com/channel/UCKdElgQUY6DtATzAgJVVE5w"><i class="fa fa-youtube"></i></a></li>
 					  	<li><a href="https://www.instagram.com/intimitrons4604"><i class="fa fa-instagram"></i></a></li>
 						<li><a href="https://intimitrons.eventbrite.ca"><i class="fa fa-ticket"></i></a></li>

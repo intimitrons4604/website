@@ -8,14 +8,7 @@
 	<link rel="stylesheet" href="css/animate.css">
 
     <script src="https://use.fontawesome.com/acdf66c231.js"></script>
-	  
-	<script>(function(d, s, id) {
-	  var js, fjs = d.getElementsByTagName(s)[0];
-	  if (d.getElementById(id)) return;
-	  js = d.createElement(s); js.id = id;
-	  js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.11&appId=1933454553572459';
-	  fjs.parentNode.insertBefore(js, fjs);
-	}(document, 'script', 'facebook-jssdk'));</script>
+    <script src="js/script.js"></script>
 	  
   </head>
   
@@ -46,6 +39,9 @@
 		  </li>
 		  <li <?php echo ($page == 'sponsors.php') ? "class='nav-item active'" : "class='nav-item'"; ?>>
 			<a class="nav-link" href="sponsors.php">Sponsors</a>
+		  </li>
+		  <li <?php echo ($page == 'press.php') ? "class='nav-item active'" : "class='nav-item'"; ?>>
+			<a class="nav-link" href="press.php">Press</a>
 		  </li>
 		  <li <?php echo ($page == 'contact.php') ? "class='nav-item active'" : "class='nav-item'"; ?>>
 			<a class="nav-link" href="contact.php">Contact</a>

@@ -29,13 +29,13 @@
     </div>
     
 	<div class="container-fluid trons-green-bkgnd hero-banner">
-		<div class="row align-items-center pl-4 pt-4 pb-3">
+		<div class="row align-items-center pl-4 pt-5 pb-3">
 			<div class="col-xl-9 col-lg-9 col-md-6 col-sm-6 col-xs-12">
 				<h2>The Intimitrons from AREA 51</h2>
 				<h5>Western Canada's First All-Girls FRC Robotics Team</h5>
 			</div>
 			<div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-xs-12 text-center">
-				<button class="medium-button trons-purple-bkgnd">BECOME A TRON</button>
+				<a href="/contact.php" class="btn trons-medium-button trons-purple-button">BECOME A TRON</a>
 			</div>
 		</div>
 	  </div>
@@ -111,7 +111,7 @@
     
     
     
-    <div class="parallax"></div>
+    <div class="parallax" style="background-image: url('https://farm5.staticflickr.com/4510/38027486161_4ff58b2725_k.jpg');"></div>
     
     <?php include_once('footer.php');?>
  

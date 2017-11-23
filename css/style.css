@@ -56,7 +56,7 @@ h6 {
   font-weight: 700;
 }
 
-button {
+.trons-button {
   padding: 15px;
   border-style: solid;
   border-width: 0px;
@@ -64,49 +64,59 @@ button {
   text-transform: uppercase;
   letter-spacing: 2px;
   margin: 0;
-  margin-top: 20px;
-  margin-bottom: 20px;
   width: auto;
 }
 
-button:hover {
+.trons-button:hover {
   background-color: grey;
 }
 
-button.trons-purple-button {
+.trons-purple-button {
   background-color: #40276B;
   color: white;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
-button.trons-green-button {
-  background-color: #88cc32;
+.trons-purple-button:hover {
+  background-color: grey;
   color: white;
 }
 
-button.small-button {
+.trons-green-button {
+  background-color: #88cc32;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.trons-green-button:hover {
+  background-color: grey;
+  color: white;
+}
+
+.trons-small-button {
   font-size: 14px;
   padding: 15px;
 }
 
-button.medium-button {
+.trons-medium-button {
   font-size: 18px;
   padding: 15px;
 }
 
-button.large-button {
+.trons-large-button {
   font-size: 22px;
   padding: 15px;
 }
 
-.navbar-title {
-  font-family: 'Orbitron', sans-serif;
-  font-size: 24px;
-  text-transform: uppercase;
-	  letter-spacing: 5px;
 
-}
 
 /* for center-aligned titles */
+
+.heading-separator {
+	padding-bottom: 15px;
+}
+
 .heading-separator:after {
   position: relative;
   bottom: -10px;
@@ -157,9 +167,10 @@ button.large-button {
 
 .circle-img {
   background-image: url("tumblr_static_intimitrons_logo.png");
-  width: 300px;
-  height: 300px;
-  border-radius: 300px;
+  background-color: #40276B;
+  width: 200px;
+  height: 200px;
+  border-radius: 200px;
   background-size: cover;
   border-bottom: 0 none;
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.46);
@@ -168,6 +179,12 @@ button.large-button {
   margin-bottom: 2em;
 }
 
+.navbar-title {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 24px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
 
 .navbar-nav * {
   -webkit-box-sizing: border-box;
@@ -215,6 +232,12 @@ button.large-button {
 .navbar-nav a.nav-link:hover:after,
 .navbar-nav .active a:after {
   width: 100%;
+}
+
+.nav-item {
+  font-family: "Droid Sans", sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 2px;
 }
 
 /* social icons */
@@ -271,44 +294,22 @@ button.large-button {
   padding: 20px;
 }
 
-/* page sections */
-
-.section {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  margin-bottom: 30px;
-}
-
-.section.footer {
-  margin-bottom: 0px;
-}
-
-.section-title {
-  height: 90px;
-  line-height: 75px;
-  padding: 10px;
-  padding-left: 40px;
-  margin-top: 60px;
-  margin-bottom: 60px;
-  color: white;
-  background-color: #40276B;
-  font-size: 36px;
-  letter-spacing: 5px;
-  text-transform: uppercase;
-  width: 100%;
-  font-family:  'Orbitron', sans-serif;
-  text-align: center;
-}
 
 /* parallax */
 
 .parallax {
   min-height: 600px;
   background-attachment: fixed;
-  background-image: url("https://farm5.staticflickr.com/4510/38027486161_4ff58b2725_k.jpg");
   background-size: cover;
   background-position: center;
   
+}
+
+.parallax {
+  min-height: 300px;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center; 
 }
 
 /* hero */
@@ -391,6 +392,7 @@ button.large-button {
   padding-top: 30px;
   border-radius: 5px;
   box-sizing: border-box;
+	height: 100%;
 }
 
 
@@ -398,12 +400,6 @@ button.large-button {
 	padding-left: 0 !important;
 	padding-right: 0 !important;
 
-}
-
-.nav-item {
-  font-family: "Droid Sans", sans-serif;
-	text-transform: uppercase;
-	letter-spacing: 2px;
 }
 
 
@@ -434,3 +430,27 @@ button.large-button {
 	margin-top: -17px;
 }
 
+.trons-team-hero {
+	background-image: url("../images/intimitrons-4604-team.jpg");
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	height: 500px;
+}
+
+.text-white {
+	color: #ffffff;
+}
+
+.text-box-separator {
+	content: "";
+	border-bottom: solid 2px;
+	border-color: #ffffff;
+	width: 100%;
+	height: 2px;
+	margin-bottom: 10px;
+}
+
+div#trons-vert-team-menu.btn-group-vertical.btn-group-lg {
+	width: 100% !important;
+}

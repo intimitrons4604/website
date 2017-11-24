@@ -454,3 +454,8 @@ h6 {
 div#trons-vert-team-menu.btn-group-vertical.btn-group-lg {
 	width: 100% !important;
 }
+
+.trons-bold-purple {
+   color: #40276B;
+   font-weight: 700;	
+} 

@@ -46,6 +46,7 @@
 			<div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
 				<h2>5 Years of Learning STEM</h2>
 				<p>The Intimitrons From Area 51 is one of the few all girls FIRST Robotics teams in Canada. We are the first all-female team in Western Canada! Our objective is to encourage female participation in technical vocations- fields that are currently male dominated.  By creating robots to compete in FIRST competitions, we are able to accomplish this. The Intimitrons team was established in 2012, and this 2017 season was our fifth!</p>
+				<p>Talk about the iTrons here.</p>
 		   </div>
 			<div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
 				<div class="container">
@@ -72,6 +73,49 @@
 					</div>
 				</div>
 			</div>
+		</div>
+		<div class="row m-5">
+			<div class="col-12">
+				<nav class="nav nav-tabs" id="myTab" role="tablist">
+				  <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Experience</a>
+				  <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Teamwork</a>
+				  <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Opportunities</a>
+				</nav>
+				<div class="tab-content p-5" id="nav-tabContent">
+				  <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+					  <div class="row">
+						  <div class="col-6">
+							Intimitrons learn fabrication skills such as welding, soldering and machining. We also learn how to program our robot and our website in a variety of coding languages. To bring our robot to life, we wire electronices such as a motor controllers, power distribution board and microcontroller. In the off-season we practice our electronics skills with Aurduino and Raspberry Pi prototyping. Our robot designs are created in Fusion 360, an 3-D Autodesk CAD tool. 
+						  </div>
+					      <div class="col-6">
+							  An image goes here.
+						  </div>
+					  </div>
+				  </div>
+				  <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+					  <div class="row">
+						  <div class="col-6">
+					  		In order to meet our 6-week build schedule, we create detailed project management plans in Basecamp and stick to our schedules and assignments. Intimitrons attend meetings and build sessions 3 times a week during the season. Working together as a team is a great way to build confidence and make <span class="trons-bold-purple">new friends</span>.
+						  </div>
+						  <div class="col-6">
+							  IMAGE
+						  </div>
+
+					  </div>
+				  </div>
+				  <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+						<div class="row">
+							<div class="col-6">
+
+								FIRST participants have opportunities to practice public speaking, as well as learn about <span class="trons-bold-purple">marketing and business skills</span>. We also have access to <span class="trons-bold-purple">scholarships</span> and make <span class="trons-bold-purple">connections</span> with professionals in STEM industries. We enjoy the chance to introduce other girls to <span class="trons-bold-purple">STEM</span> and show them that they can do it too. 
+							</div>
+							<div class="col-6">
+							  IMAGE
+						    </div>
+						</div>
+				  </div>
+			</div>
+			<!--The Trons is a great place to make new friends, gain experience, a great after school activity that can lead to scholarships, learn new skills, build confidence, learn how to build robots, programming, welding, CAD on Fusion 360, public speaking, marketing and business skills, teamwork, project management, an opportunity to get girls involved with STEM,learn how to work with tools, animations, -->
 		</div>
 	</div>
 	

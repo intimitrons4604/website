@@ -4,8 +4,8 @@
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="css/bootstrap-grid.css">
 	<link rel="stylesheet" href="css/bootstrap-reboot.css">
-	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/style.css">
 
     <script src="https://use.fontawesome.com/acdf66c231.js"></script>
     <script src="js/script.js"></script>
@@ -28,8 +28,8 @@
 		  <li <?php echo ($page == 'index.php') ? "class='nav-item active'" : "class='nav-item'"; ?>>
 			<a class="nav-link" href="index.php">Home</a>
 		  </li>
-		  <li <?php echo ($page == 'first-robotics.php') ? "class='nav-item active'" : "class='nav-item'"; ?>>
-			<a class="nav-link" href="first-robotics.php">FIRST</a>
+		  <li <?php echo ($page == 'first-robotics-calgary.php') ? "class='nav-item active'" : "class='nav-item'"; ?>>
+			<a class="nav-link" href="first-robotics-calgary.php">FIRST</a>
 		  </li>
 		  <li <?php echo ($page == 'team.php') ? "class='nav-item active'" : "class='nav-item'"; ?>>
 			<a class="nav-link" href="team.php">Team</a>
@@ -40,8 +40,8 @@
 		  <li <?php echo ($page == 'sponsors.php') ? "class='nav-item active'" : "class='nav-item'"; ?>>
 			<a class="nav-link" href="sponsors.php">Sponsors</a>
 		  </li>
-		  <li <?php echo ($page == 'press.php') ? "class='nav-item active'" : "class='nav-item'"; ?>>
-			<a class="nav-link" href="press.php">Press</a>
+		  <li <?php echo ($page == 'girls-in-stem-calgary.php') ? "class='nav-item active'" : "class='nav-item'"; ?>>
+			<a class="nav-link" href="girls-in-stem-calgary.php">Press</a>
 		  </li>
 		  <li <?php echo ($page == 'contact.php') ? "class='nav-item active'" : "class='nav-item'"; ?>>
 			<a class="nav-link" href="contact.php">Contact</a>

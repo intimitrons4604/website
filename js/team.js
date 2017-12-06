@@ -1,7 +1,7 @@
 // JSON Document
 
 function getTeamData(groupName) {
-	
+
 	var data = {
 	"trons": [
 		{"Name":"Brylee","Year":2017,"Tagline":"Awesome robot girl.","Photo":"images/Logo-Alien-Only.svg"},
@@ -15,7 +15,7 @@ function getTeamData(groupName) {
 		{"Name":"Naomi","Year":2017,"Tagline":"Naomi likes robots and is in grade 9. She likes to build and create new parts for Ophelia. This is her first year on the team.","Photo":"images/naomi.jpg"},
 		{"Name":"Nikka","Year":2017,"Tagline":"Awesome robot girl.","Photo":"images/Logo-Alien-Only.svg"},
 		{"Name":"Sarah","Year":2015,"Tagline":"Sarah is currently in grade 11 and loves robotics. She is on the drive and mec/fab teams, and was driver one during Ophelia’s season.","Photo":"images/sarah.jpg"},
-		{"Name":"Saskia","Year":2017,"Tagline":"Awesome robot girl.","Photo":"images/Logo-Alien-Only.svg"},
+		{"Name":"Saskia","Year":2017,"Tagline":"Saskia is currently in grade 9. This is her first year with the team. She enjoys working with robots and loves robotics.","Photo":"images/Logo-Alien-Only.svg"},
 		{"Name":"Shuyang","Year":2017,"Tagline":"Awesome robot girl.","Photo":"images/Logo-Alien-Only.svg"},
 		{"Name":"Sraddha","Year":2017,"Tagline":"Awesome robot girl.","Photo":"images/Logo-Alien-Only.svg"},
 		{"Name":"Tayla","Year":2017,"Tagline":"Awesome robot girl.","Photo":"images/Logo-Alien-Only.svg"},
@@ -48,7 +48,7 @@ function displayTeamGrid(groupName,divId) {
 
 	var team = getTeamData(groupName);
 	team.sort(sortBy("Name"));
-	
+
 	var html = "";
 	for(var i=0; i < team.length; i++) {
 		html += "<div class=\"col-xl-3 col-lg-3 col-md-6 col-sm-12 col-xs-12 center-block text-center\">";
@@ -62,5 +62,5 @@ function displayTeamGrid(groupName,divId) {
 		html += "<p>" + team[i].Tagline + "</p>";
 		html += "</div>";
 	}
-	document.getElementById(divId).innerHTML = html;	
+	document.getElementById(divId).innerHTML = html;
 }

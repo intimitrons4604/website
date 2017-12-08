@@ -25,11 +25,11 @@
 
 		<div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-xs-12 pl-xl-5 pl-lg-5 pb-5">
 			<div id="trons-vert-team-menu" class="btn-group-vertical btn-group-lg" role="group" aria-label="Meet the Team">
-			  <button type="button" onclick="window.location.href='#sponsor'" class="btn btn-secondary trons-green-button">Sponsor Us</button>
-			  <button type="button" onclick="window.location.href='#platinum'" class="btn btn-secondary trons-green-button">Platinum</button>
-			  <button type="button" onclick="window.location.href='#gold'" class="btn btn-secondary trons-green-button">Gold</button>
 			  <button type="button" onclick="window.location.href='#inkind'" class="btn btn-secondary trons-green-button">In-Kind</button>
-			  <button type="button" onclick="window.location.href='#silver'" class="btn btn-secondary trons-green-button">Silver</button>
+			  <button type="button" onclick="window.location.href='#Kilobyte'" class="btn btn-secondary trons-green-button">Kilobyte</button>
+			  <button type="button" onclick="window.location.href='#Megabyte'" class="btn btn-secondary trons-green-button">Megabyte</button>
+			  <button type="button" onclick="window.location.href='#Gigabyte'" class="btn btn-secondary trons-green-button">Gigabyte</button>
+				<button type="button" onclick="window.location.href='#Terabyte'" class="btn btn-secondary trons-green-button">Terabyte</button>
 			</div>
 		</div>
 
@@ -117,7 +117,7 @@
 					<div class="card-body">
 					  <h3 class="card-title">Kilobyte</h3>
 					  <h1 class="mb-0 pb-0">$50+</h1>
-					  <p class="card-text">Silver level is a great choice for our community sponsors and super fans.</p>
+					  <p class="card-text">Kilobyte level is a great choice for our community sponsors and super fans.</p>
 					</div>
 					<ul class="list-group list-group-flush">
 						<li class="list-group-item trons-green-bkgnd">Intimitrons T-Shirt</li>
@@ -141,7 +141,7 @@
 					<div class="card-body">
 					  <h3 class="card-title">Gigabyte</h3>
 					  <h1 class="mb-0 pb-0">$2500+</h1>
-					  <p class="card-text">Our corporate sponsors are instrumental in facilitating our participation in competitions. Platinum level includes all Gold level perks.</p>
+					  <p class="card-text">Our corporate sponsors are instrumental in facilitating our participation in competitions. Gigabyte level includes all Megabyte level perks.</p>
 					</div>
 					<ul class="list-group list-group-flush">
 						<li class="list-group-item trons-green-bkgnd">Logo on Banner &amp; Robot</li>
@@ -160,7 +160,7 @@
 				 </div>
 				 <ul class="list-group list-group-flush">
 					 <li class="list-group-item trons-green-bkgnd">Prominent logo display</li>
-					 <li class="list-group-item trons-green-bkgnd">2 VIP tours of the competition pit</li>
+					 <li class="list-group-item trons-green-bkgnd">2 VIP tours of competition pit</li>
 					 <li class="list-group-item trons-green-bkgnd">2 Award banquet invitations</li>
 				 </ul>
 			 </div>
@@ -172,12 +172,12 @@
 <div class="parallax" style="background-image: url('https://farm5.staticflickr.com/4490/26251669169_532a2e461b_h.jpg');"></div>
 
 
-<div class="container-fluid mt-5 mb-5 px-5" id="platinum">
+<div class="container-fluid mt-5 mb-5 px-5" id="Gigabyte">
 
 
 	<div class="row">
 		<div class="col-12">
-			<h1>Platinum Sponsors</h1>
+			<h1>Gigabyte Sponsors</h1>
 		</div>
 	</div>
 
@@ -191,11 +191,11 @@
 
 <div class="parallax" style="background-image: url('https://farm5.staticflickr.com/4396/37252186395_e2a8f6c242_h.jpg');"></div>
 
-<div class="container-fluid mt-5 mb-5 px-5" id="gold">
+<div class="container-fluid mt-5 mb-5 px-5" id="Megabyte">
 
 	<div class="row mt-5">
 		<div class="col-12">
-			<h1>Gold Sponsors</h1>
+			<h1>Megabyte Sponsors</h1>
 		</div>
 	</div>
 
@@ -230,12 +230,12 @@
 
 <div class="parallax" style="background-image: url('https://farm3.staticflickr.com/2866/33003736466_55b163fefe_h.jpg');"></div>
 
-<div class="container-fluid mt-5 mb-5 px-5" id="silver">
+<div class="container-fluid mt-5 mb-5 px-5" id="Kilobyte">
 
 
 	<div class="row mt-5">
 		<div class="col-12">
-			<h1>Silver Sponsors</h1>
+			<h1>Kilobyte Sponsors</h1>
 		</div>
 	</div>
 

@@ -6,11 +6,11 @@
 <?php $page = "index.php" ; include_once('header.php');?>
 
 	<div class="jumbotron-fluid pr-3 pl-3 pl-xl-0 pl-lg-0 pl-md-0">
-		
+
 		<div class="container-fluid remove-padding">
-   
+
 			<div class="row">
-				
+
 				<div class="col-xl-9 col-lg-9 col-md-9 col-sm-12 col-sm-12 remove-padding">
 					<div class="hero" style="background-image:url('https://farm5.staticflickr.com/4185/33682601574_0574678c36_h.jpg')">
 
@@ -20,14 +20,14 @@
 					<img class="animated zoomIn" width="200" height="200" src="images/Logo-Alien-Only.svg">
 					<div class="hero-sidebar-text">
 						 <h1 class="pt-5 pb-2">4604</h1>
-						 <h2 class="pt-0"> <i class="fa fa-heart animated pulse"></i></h2> 
+						 <h2 class="pt-0"> <i class="fa fa-heart animated pulse"></i></h2>
 						 <h2>robots</h2>
 					</div>
 				</div>
 			</div>
 		</div>
     </div>
-    
+
 	<div class="container-fluid trons-green-bkgnd hero-banner">
 		<div class="row align-items-center pl-4 pt-5 pb-3">
 			<div class="col-xl-9 col-lg-9 col-md-6 col-sm-6 col-xs-12">
@@ -39,8 +39,8 @@
 			</div>
 		</div>
 	  </div>
-	 
-	<div class="container-fluid">  
+
+	<div class="container-fluid">
 
 		<div class="row pl-5 pr-5 pt-5 pb-5">
 			<div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
@@ -84,32 +84,32 @@
 				<div class="tab-content p-5" id="nav-tabContent">
 				  <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
 					  <div class="row">
-						  <div class="col-6">
-							Intimitrons learn fabrication skills such as welding, soldering and machining. We also learn how to program our robot and our website in a variety of coding languages. To bring our robot to life, we wire electronices such as a motor controllers, power distribution board and microcontroller. In the off-season we practice our electronics skills with Aurduino and Raspberry Pi prototyping. Our robot designs are created in Fusion 360, an 3-D Autodesk CAD tool. 
+						  <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+							Intimitrons learn fabrication skills such as welding, soldering and machining. We also learn how to program our robot and our website in a variety of coding languages. To bring our robot to life, we wire electronices such as a motor controllers, power distribution board and microcontroller. In the off-season we practice our electronics skills with Aurduino and Raspberry Pi prototyping. Our robot designs are created in Fusion 360, an 3-D Autodesk CAD tool.
 						  </div>
-					      <div class="col-6">
+					      <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
 							  An image goes here.
 						  </div>
 					  </div>
 				  </div>
 				  <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
 					  <div class="row">
-						  <div class="col-6">
+						  <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
 					  		In order to meet our 6-week build schedule, we create detailed project management plans in Basecamp and stick to our schedules and assignments. Intimitrons attend meetings and build sessions 3 times a week during the season. Working together as a team is a great way to build confidence and make <span class="trons-bold-purple">new friends</span>.
 						  </div>
-						  <div class="col-6">
-							  IMAGE
+						  <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+							  <img src="https://farm5.staticflickr.com/4578/38610809881_b793ec939b_b.jpg" width="80%">
 						  </div>
 
 					  </div>
 				  </div>
 				  <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
 						<div class="row">
-							<div class="col-6">
+							<div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
 
-								FIRST participants have opportunities to practice public speaking, as well as learn about <span class="trons-bold-purple">marketing and business skills</span>. We also have access to <span class="trons-bold-purple">scholarships</span> and make <span class="trons-bold-purple">connections</span> with professionals in STEM industries. We enjoy the chance to introduce other girls to <span class="trons-bold-purple">STEM</span> and show them that they can do it too. 
+								FIRST participants have opportunities to practice public speaking, as well as learn about <span class="trons-bold-purple">marketing and business skills</span>. We also have access to <span class="trons-bold-purple">scholarships</span> and make <span class="trons-bold-purple">connections</span> with professionals in STEM industries. We enjoy the chance to introduce other girls to <span class="trons-bold-purple">STEM</span> and show them that they can do it too.
 							</div>
-							<div class="col-6">
+							<div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
 							  IMAGE
 						    </div>
 						</div>
@@ -118,11 +118,11 @@
 			<!--The Trons is a great place to make new friends, gain experience, a great after school activity that can lead to scholarships, learn new skills, build confidence, learn how to build robots, programming, welding, CAD on Fusion 360, public speaking, marketing and business skills, teamwork, project management, an opportunity to get girls involved with STEM,learn how to work with tools, animations, -->
 		</div>
 	</div>
-	
+
 	<div class="container-fluid trons-purple-bkgnd">
-		
+
 		<div class="row p-5">
-			
+
 			<div class="col-12">
 
 				<h5>Sign up for our newsletter here, if you’d like updates on what we’ve been up to!</h5>
@@ -134,7 +134,7 @@
 					</div>
 					<div class="col-sm-3">
 					  <label class="sr-only" for="mce-LNAME">Last Name</label>
-					  <input type="text" value="" name="LNAME" id="mce-LNAME" class="form-control mb-2 mb-sm-0" placeholder="Last name">					
+					  <input type="text" value="" name="LNAME" id="mce-LNAME" class="form-control mb-2 mb-sm-0" placeholder="Last name">
 					</div>
 					<div class="col-sm-3">
 					  <label class="sr-only" for="mce-EMAIL">Email</label>
@@ -152,10 +152,9 @@
 			</div>
 		</div>
 	</div>
-    
-    
-    
+
+
+
     <div class="parallax" style="background-image: url('https://farm5.staticflickr.com/4510/38027486161_4ff58b2725_k.jpg');"></div>
-    
+
     <?php include_once('footer.php');?>
- 

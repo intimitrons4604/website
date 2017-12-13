@@ -6,20 +6,20 @@ function getTeamData(groupName) {
 	"trons": [
 		{"Name":"Brylee","Year":2017,"Tagline":"Awesome robot girl.","Photo":"images/Logo-Alien-Only.svg"},
 		{"Name":"Liz","Year":2017,"Tagline":"Liz is a grade 12 student who is passionate about robotics and wants to apply her knowledge to the aerospace industry.","Photo":"images/Logo-Alien-Only.svg"},
-		{"Name":"Emma C","Year":2016,"Tagline":"Emma C. is a second-year Intimitron, and a grade 10 student. She loves robotics, especially strategy in building the robot! She’s also the main team programmer this year.","Photo":"images/emmac.jpg"},
+		{"Name":"Emma C","Year":2016,"Tagline":"Emma C. is a second-year Intimitron and is also a grade 10 student. She loves robotics, especially using strategies to help in building a robot! She’s also the main team programmer this year.","Photo":"images/emmac.jpg"},
 		{"Name":"Emma Z","Year":2016,"Tagline":"Emma Z. is the smart-but-silent type. She enjoys building mechanisms and was a huge part of constructing Ophelia! She’s in grade 8 and this is her second year. This is her in her natural habitat.","Photo":"images/emmaz.jpg"},
 		{"Name":"Judy","Year":2016,"Tagline":"Judy is in grade 9 and is an expert at writing sponsorship emails and encouraging everyone! She’s also amazing at making funny faces on camera. (like these) She’s new to the team this year.","Photo":"images/judy.jpg"},
-		{"Name":"Julia","Year":2017,"Tagline":"","Photo":"images/Logo-Alien-Only.svg"},
+		{"Name":"Julia","Year":2017,"Tagline":"Awesome robot girl.","Photo":"images/Logo-Alien-Only.svg"},
 		{"Name":"Julianna","Year":2017,"Tagline":"Like most of us, it is also her first year on the team. She is 15 and loves to learn new things about robotics and engineering. She continues to help us with future goals.","Photo":"images/julianna.jpg"},
-		{"Name":"Mackenzie","Year":2017,"Tagline":"Mackenzie is in her first year in the Intimitrons. She is in Grade 10, and enjoys coding, and driving the robot. ","Photo":"images/Logo-Alien-Only.svg"},
-		{"Name":"Naomi","Year":2017,"Tagline":"Naomi likes robots and is in grade 9. She likes to build and likes to code robots. This is her second year on the team.","Photo":"images/naomi.jpg"},
+		{"Name":"Mackenzie","Year":2017,"Tagline":"Mackenzie is in her first year in the Intimitrons. She is in Grade 10 and enjoys coding and driving robots. ","Photo":"images/Logo-Alien-Only.svg"},
+		{"Name":"Naomi","Year":2017,"Tagline":"Naomi likes robots and is in grade 9. She likes to build and code robots. This is her second year on the team.","Photo":"images/naomi.jpg"},
 		{"Name":"Nikka","Year":2017,"Tagline":"Awesome robot girl.","Photo":"images/Logo-Alien-Only.svg"},
-		{"Name":"Sarah","Year":2015,"Tagline":"Sarah is currently in grade 11 and loves robotics. She is on the drive and mec/fab teams, and was driver one during Ophelia’s season.","Photo":"images/sarah.jpg"},
+		{"Name":"Sarah","Year":2015,"Tagline":"Sarah is currently in grade 11 and loves robotics. She is on the drive and mec/fab teams and was driver one during Ophelia’s season.","Photo":"images/sarah.jpg"},
 		{"Name":"Saskia","Year":2017,"Tagline":"Saskia is currently in grade 9. This is her first year with the team. She enjoys working with robots and loves robotics.","Photo":"images/Logo-Alien-Only.svg"},
-		{"Name":"Shuyang","Year":2017,"Tagline":"shuyang is currently in grade 9. this is her first year in the team, she is still exploring the world of robotics and find it very intreating.","Photo":"images/Logo-Alien-Only.svg"},
+		{"Name":"Shuyang","Year":2017,"Tagline":"Shuyang is currently in grade 9. This is her first year in the team, she is still exploring the world of robotics and finds it very interesting.","Photo":"images/Logo-Alien-Only.svg"},
 		{"Name":"Sraddha","Year":2017,"Tagline":"Awesome robot girl.","Photo":"images/Logo-Alien-Only.svg"},
-		{"Name":"Tayla","Year":2017,"Tagline":"This is her first year with the team. She enjoys learning code, design and more about robots","Photo":"images/Logo-Alien-Only.svg"},
-		{"Name":"Tomoe","Year":2016,"Tagline":"Tomoe is in Grade 9, this is her second year on the team and shes super enthusiastic and has a fantastic sense of humor. Not only is she very passionate for robotics, but she loves to play sports and play the violin.","Photo":"images/tomoe.jpg"}
+		{"Name":"Tayla","Year":2017,"Tagline":"Tayla is a first year intimitron who is currently in Grade 11. She enjoys learning code, exploring the world of design and is very interested in robotics. It is her goal to apply what she has learned for the near future.","Photo":"images/Logo-Alien-Only.svg"},
+		{"Name":"Tomoe","Year":2016,"Tagline":"Tomoe is in Grade 9, this is her second year on the team. She's super enthusiastic and has a fantastic sense of humor. Not only is she very passionate for robotics, but she loves to play sports and play the violin.","Photo":"images/tomoe.jpg"}
 	],
 	"mentors": [
 		{"Name":"Alan","Year":2012,"Tagline":"Alan is one of the awesome mentors from Area 51. Alan is very dedicated and comes very often to meetings to help with whatever is needed. This is his third year mentoring the team. He has helped us start a safety program, and also has guided us in project management, design and assembly.","Photo":"images/alan.jpg"},

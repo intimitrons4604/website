@@ -116,14 +116,14 @@ function displayHalfRowSponsors(sponserType,divId) {
 	document.getElementById(divId).innerHTML = html;
 }
 
-function displaySponsorGrid(groupName,divId) {
+function displaySponsorGrid(groupName,divId,slices) {
 
 	var sponsor = getSponsorData(groupName);
 	sponsor.sort(sortBy("Name"));
 
 	var html = "";
 	for(var i=0; i < sponsor.length; i++) {
-		html += "<div class=\"col-xl-3 col-lg-3 col-md-6 col-sm-12 col-xs-12 px-5\">";
+		html += "<div class=\"col-xl-" + slices + " col-lg-" + slices +" col-md-6 col-sm-12 col-xs-12 px-5\">";
 		html += "<img src=\"" + sponsor[i].Logo + "\" height=\"150px\">";
 		html += "<h4 class=\"pt-4\">" + sponsor[i].Name + "</h4>";
 		html += "<p>" + sponsor[i].Description + "</p>";

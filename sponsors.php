@@ -129,7 +129,7 @@
 					<div class="card-body">
 					  <h3 class="card-title">Megabyte</h3>
 					  <h1 class="mb-0 pb-0">$500+</h1>
-					  <p class="card-text">For our business supporters, we reciprocate with a shout-out on our website and on social media. It's important to us that people know how awesome our sponsors are.</p>
+					  <p class="card-text">For our Megabyte, we reciprocate with a shout-out on our website and on social media. It's important to us that people know how awesome our sponsors are.</p>
 					</div>
 					<ul class="list-group list-group-flush">
 						<li class="list-group-item trons-green-bkgnd">Logo/Link on Trons Website</li>
@@ -141,7 +141,7 @@
 					<div class="card-body">
 					  <h3 class="card-title">Gigabyte</h3>
 					  <h1 class="mb-0 pb-0">$2500+</h1>
-					  <p class="card-text">Our corporate sponsors are instrumental in facilitating our participation in competitions. Gigabyte level includes all Megabyte level perks.</p>
+					  <p class="card-text">Our Gigabyte sponsors are instrumental in facilitating our participation in competitions. Gigabyte level includes all Megabyte level perks.</p>
 					</div>
 					<ul class="list-group list-group-flush">
 						<li class="list-group-item trons-green-bkgnd">Logo on Banner &amp; Robot</li>
@@ -153,10 +153,7 @@
 				 <div class="card-body">
 					 <h3 class="card-title">Terabyte</h3>
 					 <h1 class="mb-0 pb-0">$10,000+</h1>
-					 <p class="card-text">Gigabyte rewards plus:
-	Prominent logo display
-	2 VIP tours of the competition pit
-	2 Award banquet invitations</p>
+					 <p class="card-text">Terabyte sponsors get the premium experience. </p>
 				 </div>
 				 <ul class="list-group list-group-flush">
 					 <li class="list-group-item trons-green-bkgnd">Prominent logo display</li>

@@ -17,7 +17,7 @@ function getTeamData(groupName) {
 		{"Name":"Sarah","Year":2015,"Tagline":"Sarah is currently in grade 11 and loves robotics. She is on the drive and mec/fab teams and was driver one during Ophelia’s season.","Photo":"images/sarah.jpg"},
 		{"Name":"Saskia","Year":2017,"Tagline":"Saskia is currently in grade 9. This is her first year with the team. She enjoys working with robots and loves robotics.","Photo":"images/Logo-Alien-Only.svg"},
 		{"Name":"Shuyang","Year":2017,"Tagline":"Shuyang is currently in grade 9. This is her first year in the team, she is still exploring the world of robotics and finds it very interesting.","Photo":"images/Logo-Alien-Only.svg"},
-		{"Name":"Sraddha","Year":2017,"Tagline":"Awesome robot girl.","Photo":"images/Logo-Alien-Only.svg"},
+		{"Name":"Sraddha","Year":2017,"Tagline":"Sraddha is currently in grade 8. This is her first year on the team, she enjoys programming and driving robots.","Photo":"images/Logo-Alien-Only.svg"},
 		{"Name":"Tayla","Year":2017,"Tagline":"Tayla is a first year intimitron who is currently in Grade 11. She enjoys learning code, exploring the world of design and is very interested in robotics. It is her goal to apply what she has learned for the near future.","Photo":"images/Logo-Alien-Only.svg"},
 		{"Name":"Tomoe","Year":2016,"Tagline":"Tomoe is in Grade 9, this is her second year on the team. She's super enthusiastic and has a fantastic sense of humor. Not only is she very passionate for robotics, but she loves to play sports and play the violin.","Photo":"images/tomoe.jpg"}
 	],

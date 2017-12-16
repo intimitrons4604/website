@@ -9,6 +9,11 @@
 
 
 <div class="container-fluid mt-5 px-5">
+	<div class="row">
+		<div class="col-12">
+			<h1 class="text-center">A Colossal Thank You</h1>
+		</div>
+	</div>
 
 	<div class="row">
 
@@ -18,8 +23,7 @@
 
 
 		<div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 px-3">
-			<h1>A Colossal Thank You</h1>
-			<p>From our new home on Planet Earth to the depths of outer space, the Intimitrons from Area 51 would like to thank our sponsors for their generous contributions to our team and our cause. Without their support, we wouldn't be able to participate in competition, have access to advanced tools and equipment, or purchase materials to build study and learn. More importantly, we wouldn't have been able to reach dozens of young women in Calgary and provide them with the opportunity to explore STEM and build confidence in their abilities.</p>
+			<p class='trons-intro'>From our new home on Planet Earth to the depths of outer space, the Intimitrons from Area 51 would like to thank our sponsors for their generous contributions to our team and our cause. Without their support, we wouldn't be able to participate in competition, have access to advanced tools and equipment, or purchase materials to build study and learn. More importantly, we wouldn't have been able to reach dozens of young women in Calgary and provide them with the opportunity to explore STEM and build confidence in their abilities.</p>
 		</div>
 
 
@@ -81,7 +85,7 @@
 	  <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 px-3">
 		  <h1>Become a Sponsor</h1>
 
-		  <p>FIRST Robotics Competition is a competition where high school aged students design and build a robot in a time frame of six weeks. Not only do we learn technical skills, but also important business and life skills along the way.</p>
+		  <p class="trons-intro">FIRST Robotics Competition is a competition where high school aged students design and build a robot in a time frame of six weeks. Not only do we learn technical skills, but also important business and life skills along the way.</p>
 
 		  <h5>Sponsoring the Intimitrons helps with:</h5>
 
@@ -102,7 +106,7 @@
 		<div class="col-12 mx-auto">
 			<div class="card-group">
 				<!--<img class="card-img-top" src="images/stage-1531427_1920.jpg" alt="Card image cap">-->
-				<div class="card">
+				<!--<div class="card">
 				  <div class="card-body">
 				 	 <h3 class="card-title">In-Kind</h3>
 				 	 <p class="card-text">Our in-kind sponsors donate their time, knowledge, facilities, equipment and materials to helping our team achieve its goals and learn from industry pros.</p>
@@ -112,7 +116,7 @@
 				 	 <li class="list-group-item trons-green-bkgnd">Mention on Social Media</li>
 				 	 <li class="list-group-item trons-green-bkgnd">Thank-You in Newsletter</li>
 				  </ul>
-			  </div>
+			  </div>-->
 				<div class="card">
 					<div class="card-body">
 					  <h3 class="card-title">Kilobyte</h3>
@@ -166,6 +170,42 @@
 	</div>
 </div>
 
+<div class="container-fluid  mb-5">
+	<div class="row px-3 pb-3 mx-auto">
+		<div class="col-12 mx-auto">
+			<h1 class="text-center">Other Ways to Support the Trons</h1>
+		</div>
+	</div>
+	<div class="row px-3">
+		<div class="col-4 mx-auto">
+			<h3 class="text-center">In-Kind Sponsorship</h3>
+		</div>
+		<div class="col-4 mx-auto">
+			<h3 class="text-center">Crowdfunding</h3>
+		</div>
+	</div>
+</div>
+
+<div class="parallax" style="background-image: url('https://farm5.staticflickr.com/4490/26251669169_532a2e461b_h.jpg');"></div>
+
+
+<div class="container-fluid mt-5 mb-5 px-5" id="Terabyte">
+
+
+	<div class="row">
+		<div class="col-12">
+			<h1 class="text-center">Terabyte Sponsors</h1>
+		</div>
+	</div>
+
+	<div id="terabyte-list">
+		<script>
+			displaySponsorRow("Terabyte","terabyte-list");
+		</script>
+	</div>
+
+</div>
+
 <div class="parallax" style="background-image: url('https://farm5.staticflickr.com/4490/26251669169_532a2e461b_h.jpg');"></div>
 
 
@@ -174,13 +214,13 @@
 
 	<div class="row">
 		<div class="col-12">
-			<h1>Gigabyte Sponsors</h1>
+			<h1 class="text-center">Gigabyte Sponsors</h1>
 		</div>
 	</div>
 
-	<div id="platinum-list">
+	<div id="gigabyte-list">
 		<script>
-			displayPlatinumSponsors("platinum-list");
+			displaySponsorRow("Gigabyte","gigabyte-list");
 		</script>
 	</div>
 
@@ -192,13 +232,13 @@
 
 	<div class="row mt-5">
 		<div class="col-12">
-			<h1>Megabyte Sponsors</h1>
+			<h1 class="text-center">Megabyte Sponsors</h1>
 		</div>
 	</div>
 
-	<div class="row mt-5" id="gold-grid">
+	<div class="row mt-5" id="megabyte-grid">
 		<script>
-			displaySponsorGrid("gold","gold-grid");
+			displaySponsorGrid("Megabyte","megabyte-grid",6);
 		</script>
 
 	</div>
@@ -211,14 +251,34 @@
 
 	<div class="row mt-5">
 		<div class="col-12">
-			<h1>In-Kind Sponsors</h1>
+			<h1 class="text-center">In-Kind Sponsors</h1>
 
 		</div>
 	</div>
 
 	<div class="row mt-5" id="inkind-grid">
 		<script>
-			displaySponsorGrid("inkind","inkind-grid");
+			displaySponsorGrid("inkind","inkind-grid",6);
+		</script>
+
+	</div>
+
+</div>
+
+<div class="parallax" style="background-image: url('https://farm3.staticflickr.com/2864/33329082910_ae4f890331_h.jpg');"></div>
+
+<div class="container-fluid mt-5 mb-5 px-5" id="Kilobyte">
+
+	<div class="row mt-5">
+		<div class="col-12">
+			<h1 class="text-center">Kilobyte Sponsors</h1>
+
+		</div>
+	</div>
+
+	<div class="row mt-5" id="kilobyte-grid">
+		<script>
+			displaySponsorGrid("Kilobyte","kilobyte-grid",3);
 		</script>
 
 	</div>
@@ -227,18 +287,18 @@
 
 <div class="parallax" style="background-image: url('https://farm3.staticflickr.com/2866/33003736466_55b163fefe_h.jpg');"></div>
 
-<div class="container-fluid mt-5 mb-5 px-5" id="Kilobyte">
+<div class="container-fluid mt-5 mb-5 px-5" id="Byte">
 
 
 	<div class="row mt-5">
 		<div class="col-12">
-			<h1>Kilobyte Sponsors</h1>
+			<h1 class="text-center">Byte Sponsors</h1>
 		</div>
 	</div>
 
-	<div class="row mt-5 mb-5" id="silver-list">
+	<div class="row mt-5 mb-5" id="byte-list">
 		<script>
-			displaySilverList("silver-list");
+			displaySponsorList("byte-list");
 		</script>
 	</div>
 </div>

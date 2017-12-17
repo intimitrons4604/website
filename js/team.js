@@ -50,9 +50,12 @@ function displayTeamGrid(groupName,divId) {
 	team.sort(sortBy("Name"));
 
 	var html = "";
+	var dmult = 0;
 	for(var i=0; i < team.length; i++) {
+		if(i % 4 == 0) { dmult = 0; }
+		else { dmult += 1; }
 		html += "<div class=\"col-xl-3 col-lg-3 col-md-6 col-sm-12 col-xs-12 center-block text-center\">";
-		html += "<div class=\"circle-img\" style=\"background-image:url('" + team[i].Photo + "')\"></div>";
+		html += "<div class=\"circle-img animated fadeInUp wow\" data-wow-delay=\"" + 0.1 * dmult + "s\" style=\"background-image:url('" + team[i].Photo + "')\"></div>";
 		html += "<h4>" + team[i].Name + "</h4>";
 		if(isInt(team[i].Year)) {
 			html += "<h5 class=\"heading-separator\">Since " + team[i].Year + "</h5>";

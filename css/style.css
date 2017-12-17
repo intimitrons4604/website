@@ -17,7 +17,7 @@ p {
   padding-bottom: 20px;
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1,h2,h3,h4,h5,h6,.campaign {
   font-family: "Droid Sans", sans-serif;
   letter-spacing: 5px;
   text-transform: uppercase;
@@ -434,12 +434,20 @@ h6 {
 	margin-top: -17px;
 }
 
-.trons-team-hero {
-	background-image: url("../images/intimitrons-4604-team.jpg");
+.trons-hero {
 	background-size: cover;
 	background-position: center center;
 	background-repeat: no-repeat;
 	height: 500px;
+  content: '';
+}
+
+.trons-img-card {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height:100%;
+  content: '';
 }
 
 .text-white {
@@ -474,6 +482,11 @@ div#trons-vert-team-menu.btn-group-vertical.btn-group-lg {
   margin-bottom: 1em;
 }
 
+.nav-pills {
+  padding-left: 20%;
+  padding-right:20%;
+}
+
 .nav-pills > .nav-item {
   background-color: white;
   color: #40276B;
@@ -502,4 +515,34 @@ div#trons-vert-team-menu.btn-group-vertical.btn-group-lg {
     height:100%;
     width:100%;
     position:absolute;
+}
+
+li.nav-item.trons-bullet {
+   list-style: none;
+}
+li.nav-item.trons-bullet:before {
+   content: '';
+   display: inline-block;
+   height: 1.5em;
+   width: 1.5em;
+   background-size: contain;
+   background-repeat: no-repeat;
+   background-image: url("../images/Logo-Alien-Only.svg");
+   background-color: #40276B;
+   border-radius: 2em;
+}
+li.nav-item.trons-bullet > a.nav-link {
+   margin-left: 1em;
+   margin-top: -2.5em;
+   color: white;
+}
+
+.display_archive {
+
+}
+
+.campaign {
+  padding: 1em;
+  font-size: 14px;
+  font-weight: 400;
 }

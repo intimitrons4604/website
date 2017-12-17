@@ -11,7 +11,7 @@
 	<div class="container-fluid remove-padding">
 		<div class="row">
 			<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-sm-12 remove-padding">
-				<div class="trons-team-hero">
+				<div class="trons-hero" style="background-image: url('../images/intimitrons-4604-team.jpg');">
 				</div>
 			</div>
 		</div>
@@ -100,7 +100,6 @@
 		</div>
 	</div>
 </div>
-
 
 <div class="parallax" style="background-image: url('https://farm5.staticflickr.com/4191/34364767932_ea2fa26df3_h.jpg');"></div>
 

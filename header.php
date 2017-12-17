@@ -9,12 +9,11 @@
 
     <script src="https://use.fontawesome.com/acdf66c231.js"></script>
     <script src="js/script.js"></script>
-	  
   </head>
-  
-  
+
+
   <body>
-	  
+
 	<nav class="navbar navbar-expand-lg navbar-dark trons-purple-bkgnd sticky-top">
 	  <a class="navbar-brand" href="#">
    	 	<img  src="images/Logo-header-white.svg" height="65">
@@ -34,14 +33,16 @@
 		  <li <?php echo ($page == 'team.php') ? "class='nav-item active'" : "class='nav-item'"; ?>>
 			<a class="nav-link" href="team.php">Team</a>
 		  </li>
+			<!--
 		  <li <?php echo ($page == 'robots.php') ? "class='nav-item active'" : "class='nav-item'"; ?>>
 			<a class="nav-link" href="robots.php">Robots</a>
 		  </li>
+		-->
 		  <li <?php echo ($page == 'sponsors.php') ? "class='nav-item active'" : "class='nav-item'"; ?>>
 			<a class="nav-link" href="sponsors.php">Sponsors</a>
 		  </li>
 		  <li <?php echo ($page == 'girls-in-stem-calgary.php') ? "class='nav-item active'" : "class='nav-item'"; ?>>
-			<a class="nav-link" href="girls-in-stem-calgary.php">Press</a>
+			<a class="nav-link" href="girls-in-stem-calgary.php">News</a>
 		  </li>
 		  <li <?php echo ($page == 'contact.php') ? "class='nav-item active'" : "class='nav-item'"; ?>>
 			<a class="nav-link" href="contact.php">Contact</a>

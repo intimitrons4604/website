@@ -3,17 +3,6 @@
 function getSponsorData(sponsorLevel) {
 
 	var data = {
-  /*
-		"inkind": [
-			{"Name":"Alberta Women's Science Network (AWSN)",
-			 "Nickname":"AWSN",
-			 "Years":[2013,2014,2015,2016,2017],
-			 "URL":"https://awsn.org",
-			 "Logo":"../images/awsn.png",
-			 "Description":"With the amazing donations from the AWSN, we have been able to purchase two team laptops as well as a quality camera for photos and video of events. This wonderful organization is all about promoting minorities in STEM related careers, just like our team!",
-			 "Photo":"https://farm3.staticflickr.com/2937/33178496114_8c377483fa_k.jpg"}
-		],
-		*/
 
 		"Terabyte": [
 		],
@@ -25,7 +14,7 @@ function getSponsorData(sponsorLevel) {
 			 "URL":"https://lockheedmartin.com",
 			 "Logo":"../images/lockheed-martin-logo.png",
 			 "Description":"It is this company’s second year in sponsoring the Intimitrons, and their support has been very beneficial to our team. This year, their financial support has payed for our team’s admission into the 2015 Western Canada competition. They are based in Calgary and integrate social, economic and environmental considerations into all of their operating practices.",
-			 "Photo":""}
+			 "Photo":"https://farm3.staticflickr.com/2831/33178518034_49815cd58e_h.jpg"}
 		],
 
 		"Megabyte": [
@@ -54,31 +43,19 @@ function getSponsorData(sponsorLevel) {
 			 "Years":[2016,2017,2018],
 			 "URL":"http://www.halliburton.com/en-US/default.page",
 			 "Logo":"../images/halliburton.jpg",
-			 "Description":"It is this company’s second year in sponsoring the Intimitrons, and their support has been very beneficial to our team. This year, their financial support has payed for our team’s admission into the 2015 Western Canada competition. They are based in Calgary and integrate social, economic and environmental considerations into all of their operating practices.",
+			 "Description":"It is this company’s third year in sponsoring the Intimitrons, and their support has been very beneficial to our team. This year, their financial support has payed for our team’s admission into the 2015 Western Canada competition. They are based in Calgary and integrate social, economic and environmental considerations into all of their operating practices.",
 			 "Photo":""},
 			{"Name":"Trilogy Software",
 				"Nickname":"Trilogy",
 				"Years":[2018],
 				"URL":"https://www.taxcycle.com/",
 				"Logo":"../images/taxcycle.png",
-				"Description":"It is this company’s second year in sponsoring the Intimitrons, and their support has been very beneficial to our team. This year, their financial support has payed for our team’s admission into the 2015 Western Canada competition. They are based in Calgary and integrate social, economic and environmental considerations into all of their operating practices.",
+				"Description":"This is Trilogy Software's first year sponsoring the Intimitrons. We can't wait for the season to start so we can share how this sponsorship has helped our team. Trilogy's flagship product, Tax Cycle, makes tax preparation for Canadian accountants and bookkeepers more efficient and puts client records at their fingertips year after year.",
 				"Photo":""}
 		],
 
 		"Byte": [
-			{"Name":"Fred Flinstone"},
-			{"Name":"Fred Flinstone"},
-			{"Name":"Fred Flinstone"},
-			{"Name":"Fred Flinstone"},
-			{"Name":"Fred Flinstone"},
-			{"Name":"Fred Flinstone"},
-			{"Name":"Fred Flinstone"},
-			{"Name":"Fred Flinstone"},
-			{"Name":"Fred Flinstone"},
-			{"Name":"Fred Flinstone"},
-			{"Name":"Fred Flinstone"},
-			{"Name":"Fred Flinstone"},
-			{"Name":"Fred Flinstone"}
+			{"Name":"Anonymous","Amount":"$50"}
 		]
 
 	};
@@ -95,26 +72,31 @@ function getSponsorData(sponsorLevel) {
 
 
 /* usually for Terabyte and/or Gigabyte Level */
-function displaySponsorRow(sponserType,divId) {
+function displaySponsorRow(sponsorType,divId) {
 
-	var sponsor = getSponsorData(sponserType);
+	var sponsor = getSponsorData(sponsorType);
 	sponsor.sort(sortBy("Name"));
 
 	var html = "";
-	for(var i=0; i < sponsor.length; i++) {
+	if(sponsor.length === 0) {
+		html += "<div class=\"row mt-5\"><div class=\"col-12\"><h3 class=\"text-center\">The Trons need your support!</h3><h4 class=\"text-center\">Be the first " + sponsorType + " sponsor to pledge your support this season.</h4></div></div>";
+	}
+	else {
+		for(var i=0; i < sponsor.length; i++) {
 
-		html += "<div class=\"row mt-5\">";
-		html += "  <div class=\"col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 px-5\">";
-		html += "    <img src=\"" + sponsor[i].Logo + "\" width=\"50%\">";
-		html += "    <h2 class=\"pt-2\">" + sponsor[i].Name + "</h2>";
-		html += "    <p>" + sponsor[i].Description + "</p>";
-		html += "    <h4 class=\"pb-4\">Sponsorship Years: " + sponsor[i].Years + "</h4>";
-		html += "    <a href=\"" + sponsor[i].URL + "\" class=\"btn trons-green-button trons-medium-button\">Visit " + sponsor[i].Nickname +  "</a>";
-		html += "  </div>";
-		html += "  <div class=\"col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12\">";
-		html += "    <img src=\"" + sponsor[i].Photo + "\" width=\"90%\">";
-		html += "  </div>";
-		html += "</div>";
+			html += "<div class=\"row mt-5\">";
+			html += "  <div class=\"col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 px-5\">";
+			html += "    <img src=\"" + sponsor[i].Logo + "\" width=\"50%\" class=\"animated fadeInUp wow\">";
+			html += "    <h2 class=\"pt-2\">" + sponsor[i].Name + "</h2>";
+			html += "    <p>" + sponsor[i].Description + "</p>";
+			html += "    <h4 class=\"pb-4\">Sponsorship Years: " + sponsor[i].Years + "</h4>";
+			html += "    <a href=\"" + sponsor[i].URL + "\" class=\"btn trons-green-button trons-medium-button\">Visit " + sponsor[i].Nickname +  "</a>";
+			html += "  </div>";
+			html += "  <div class=\"col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12\">";
+			html += "    <div style=\"background-image:url('" + sponsor[i].Photo + "');\" class=\"trons-img-card animated fadeIn wow\" data-wow-delay=\"0.5s\"></div>";
+			html += "  </div>";
+			html += "</div>";
+		}
 	}
 	document.getElementById(divId).innerHTML = html;
 }
@@ -126,14 +108,20 @@ function displaySponsorGrid(groupName,divId,slices) {
 	sponsor.sort(sortBy("Name"));
 
 	var html = "";
-	for(var i=0; i < sponsor.length; i++) {
-		html += "<div class=\"col-xl-" + slices + " col-lg-" + slices +" col-md-6 col-sm-12 col-xs-12 px-5\">";
-		html += "<div class=\"trons-sponsor-logo\" style=\"background-image:url('" + sponsor[i].Logo + "');\"></div>";
-		html += "<h4 class=\"pt-4\">" + sponsor[i].Name + "</h4>";
-		html += "<p>" + sponsor[i].Description + "</p>";
-		html += "<h6 class=\"pb-4\">Sponsorship Years: " + sponsor[i].Years + "</h6>";
-		html += "<a href=\"" + sponsor[i].URL + "\" class=\"btn trons-green-button trons-small-button\"> Visit " + sponsor[i].Nickname + "</a>";
-		html += "</div>";
+	if(sponsor.length === 0) {
+
+		html += "<div class=\"col-12\"><h3 class=\"text-center\">The Trons need your support!</h3><h4 class=\"text-center\">Be the first " + groupName + " sponsor to pledge your support this season.</h4></div>";
+	}
+	else {
+		for(var i=0; i < sponsor.length; i++) {
+			html += "<div class=\"col-xl-" + slices + " col-lg-" + slices +" col-md-6 col-sm-12 col-xs-12 px-5\">";
+			html += "<div class=\"trons-sponsor-logo animated fadeIn wow\" style=\"background-image:url('" + sponsor[i].Logo + "');\"></div>";
+			html += "<h4 class=\"pt-4\">" + sponsor[i].Name + "</h4>";
+			html += "<p>" + sponsor[i].Description + "</p>";
+			html += "<h6 class=\"pb-4\">Sponsorship Years: " + sponsor[i].Years + "</h6>";
+			html += "<a href=\"" + sponsor[i].URL + "\" class=\"btn trons-green-button trons-small-button\"> Visit " + sponsor[i].Nickname + "</a>";
+			html += "</div>";
+		}
 	}
 	document.getElementById(divId).innerHTML = html;
 }
@@ -155,7 +143,7 @@ function displaySponsorList(divId) {
 		var k=0;
 		var cell = k + colcnt * j;
 		while(k < colcnt && cell < sponsor.length) {
-			html += "    <li>" + sponsor[cell].Name + "</li>";
+			html += "    <li>" + sponsor[cell].Name + " " + sponsor[cell].Amount + "</li>";
 			k++;
 			cell = k + colcnt * j;
 		}

@@ -19,7 +19,7 @@
 
   <div class="row mt-5">
 		<div class="col-4 my-auto">
-			<img src="images/FIRST_logo.png" width="80%">
+			<img src="images/FIRST_logo.png" width="80%" class="animated flip">
 		</div>
 		<div class="col-8">
 			<p class="trons-intro mt-0 mb-0 pt-0 pb-0">Combining the excitement of sport with the rigors of science and technology. We call FIRST Robotics Competition the ultimate Sport for the Mind. High-school student participants call it “the hardest fun you’ll ever have.”</p>
@@ -43,7 +43,7 @@
 
 			<div class="row">
 				<div class="col-3 my-auto">
-					<h3>Impact</h3>
+					<h3 class="animated slideInLeft wow" data-wow-delay="0.1s">Impact</h3>
 				</div>
 				<div class="col-9">
 					<p class="trons-intro">The positive impact on FIRST Robotics Competition participants is gratifying and well documented. Over 88% have more interest in doing well in school and 92% are more interested in attending college.</p>
@@ -52,7 +52,7 @@
 
 			<div class="row">
 				<div class="col-3 my-auto">
-					<h3>Teamwork</h3>
+					<h3 class="animated slideInLeft wow" data-wow-delay="0.2s">Teamwork</h3>
 				</div>
 				<div class="col-9">
 					<p class="trons-intro">The really cool thing about FIRST Robotics Competition is…all skill levels are welcomed and needed, technical or non-technical. Read more about team basics, time frame, commitment, and skills required.</p>
@@ -61,7 +61,7 @@
 
 			<div class="row">
 				<div class="col-3 my-auto">
-					<h3>Competition</h3>
+					<h3 class="animated slideInLeft wow" data-wow-delay="0.3s">Competition</h3>
 				</div>
 				<div class="col-9">
 					<p class="trons-intro">Hard work pays off! Each FIRST Robotics Competition season culminates with district and regional events where qualifying teams compete for awards and a spot at the FIRST Championship.</p>
@@ -70,7 +70,7 @@
 
 			<div class="row">
 				<div class="col-3 my-auto">
-					<h3>Scholarships</h3>
+					<h3 class="animated slideInLeft wow" data-wow-delay="0.4s">Scholarships</h3>
 				</div>
 				<div class="col-9">
 					<p class="trons-intro">A big advantage to participating in FIRST is gaining access to millions in college scholarships made available by colleges, universities, and corporations who support FIRST. This is exclusive financial help open only to FIRST team members, giving them a competitive leg up on other students seeking educational funds.</p>

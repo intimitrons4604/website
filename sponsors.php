@@ -8,7 +8,7 @@
 <script src="js/sponsors.js"></script>
 
 
-<div class="container-fluid mt-5 px-5">
+<div class="container-fluid mt-5 px-xl-5 px-lg-5 px-md-5 px-sm-1 px-xs-1">
 
 	<div class="row">
 
@@ -72,11 +72,11 @@
 	</div>
 </div>
 
-<div class="container-fluid mt-5 px-5" id="sponsor">
+<div class="container-fluid mt-5 px-lg-5 px-xl-5 px-md-5 px-sm-1 px-xs-1" id="sponsor">
 
   <div class="row">
 
-	  <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+	  <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 pb-5">
 		  <img src="https://farm5.staticflickr.com/4223/34053637944_81e25c7ddc_h.jpg" alt="pitching for a sponsorship" width="100%">
 	  </div>
 
@@ -175,10 +175,10 @@
 		</div>
 	</div>
 	<div class="row px-3">
-		<div class="col-6 mx-auto">
+		<div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 mx-auto">
 			<h3 class="text-center">In-Kind Sponsorship</h3>
 		</div>
-		<div class="col-6 mx-auto">
+		<div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 mx-auto">
 			<h3 class="text-center">Crowdfunding</h3>
 		</div>
 	</div>

@@ -42,7 +42,7 @@
 
 	<div class="container-fluid">
 
-		<div class="row pl-5 pr-5 pt-5 pb-5">
+		<div class="row pl-xl-5 pl-lg-5 pl-md-5 pl-sm-0 pl-xs-0 pr-xl-5 pr-xl-5 pr-lg-5 pr-sm-0 pr-xs-0 pt-5 pb-5">
 			<div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
 				<h1>5 Years of STEM</h1>
 				<p style="font-size: 120%;">The Intimitrons From Area 51 is one of the few all girls FIRST Robotics teams in Canada. We are the first all-female team in Western Canada! Our objective is to encourage female participation in technical vocations- fields that are currently male dominated.  By creating robots to compete in FIRST competitions, we are able to accomplish this. The Intimitrons team was established in 2012, and this 2017 season was our fifth!</p>
@@ -73,17 +73,17 @@
 				</div>
 			</div>
 		</div>
-		<div class="row p-5">
-			<div class="col-12 pl-5 pr-5">
+		<div class="row p-l-5 p-xl-5 p-md-5 p-xs-0 p-sm-0">
+			<div class="col-12 pl-lg-5 pl-xl-5 pl-md-5 pl-sm-0 pl-xs-0 pr-xl-5 pr-lg-5 pr-md-5 pr-sm-0 pr-xs-0">
 				<nav class="nav nav-pills nav-justified" id="myTab" role="tablist">
 				  <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true"><i class="fa fa-book fa-3x"></i><br>Experience</a>
 				  <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false"><i class="fa fa-handshake-o fa-3x"></i><br>Teamwork</a>
 				  <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false"><i class="fa fa-lightbulb-o fa-3x"></i><br>Opportunities</a>
 				</nav>
-				<div class="tab-content p-5" id="nav-tabContent">
+				<div class="tab-content px-xl-5 px-lg-5 px-md-5 px-sm-1 px-xs-1 py-5" id="nav-tabContent">
 				  <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
 					  <div class="row">
-							<div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 mx-auto">
+							<div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 mx-auto pb-5">
 								<img src="https://farm5.staticflickr.com/4687/25232354778_e3c92780a8_k.jpg" width="100%">
 							</div>
 						  <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
@@ -93,7 +93,7 @@
 				  </div>
 				  <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
 					  <div class="row">
-							<div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+							<div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 mx-auto pb-5">
 								<img src="https://farm5.staticflickr.com/4578/38610809881_b793ec939b_b.jpg" width="100%">
 							</div>
 						  <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
@@ -103,7 +103,7 @@
 				  </div>
 				  <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
 						<div class="row">
-							<div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 mx-auto">
+							<div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 mx-auto pb-5">
 								<img src="https://farm4.staticflickr.com/3681/33584110061_6099022bb6_h.jpg" width="100%">
 							</div>
 							<div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">

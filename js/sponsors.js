@@ -85,7 +85,7 @@ function displaySponsorRow(sponsorType,divId) {
 		for(var i=0; i < sponsor.length; i++) {
 
 			html += "<div class=\"row mt-5\">";
-			html += "  <div class=\"col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 px-5\">";
+			html += "  <div class=\"col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 px-xl-5 px-lg-5 px-md-5 px-sm-1 px-xs-1 pb-5\">";
 			html += "    <img src=\"" + sponsor[i].Logo + "\" width=\"50%\" class=\"animated fadeInUp wow\">";
 			html += "    <h2 class=\"pt-2\">" + sponsor[i].Name + "</h2>";
 			html += "    <p>" + sponsor[i].Description + "</p>";
@@ -114,7 +114,7 @@ function displaySponsorGrid(groupName,divId,slices) {
 	}
 	else {
 		for(var i=0; i < sponsor.length; i++) {
-			html += "<div class=\"col-xl-" + slices + " col-lg-" + slices +" col-md-6 col-sm-12 col-xs-12 px-5\">";
+			html += "<div class=\"col-xl-" + slices + " col-lg-" + slices +" col-md-6 col-sm-12 col-xs-12 px-xl-5 px-lg-5 px-md-5 px-sm-1 px-xs-1 pb-5\">";
 			html += "<div class=\"trons-sponsor-logo animated fadeIn wow\" style=\"background-image:url('" + sponsor[i].Logo + "');\"></div>";
 			html += "<h4 class=\"pt-4\">" + sponsor[i].Name + "</h4>";
 			html += "<p>" + sponsor[i].Description + "</p>";

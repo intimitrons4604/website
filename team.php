@@ -20,7 +20,7 @@
 
 <div class="container-fluid mt-5">
 
-	<div class="row p-5">
+	<div class="row p-xl-5 p-lg-5 p-md-5 p-sm-1 p-xs-1">
 
 		<div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12 pb-5">
 			<div class="text-box trons-purple-bkgnd p-3">

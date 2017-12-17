@@ -123,7 +123,7 @@ function displayMediaRow(mediaType,divId) {
 		html += "<div class=\"row mb-5\" style=\"height:50px\" id=\"" + id + "\"></div>";
 
 		html += "<div class=\"row mt-5 mb-5\">";
-		html += "  <div class=\"col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12\">";
+		html += "  <div class=\"col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12 pb-5\">";
 		html += "    <img src=\"" + media[i].Thumbnail + "\" width=\"90%\" class=\"animated fadeIn wow\">";
 		html += "  </div>";
     html += "  <div class=\"col-xl-8 col-lg-8 col-md-8 col-sm-12 col-xs-12\">";

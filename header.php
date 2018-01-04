@@ -8,7 +8,6 @@
 	<link rel="stylesheet" href="css/style.css">
 
     <script src="https://use.fontawesome.com/acdf66c231.js"></script>
-    <script src="js/script.js"></script>
   </head>
 
 

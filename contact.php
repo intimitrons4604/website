@@ -18,26 +18,33 @@
 
 <div class="container mt-5 mb-5">
 
-	<div class="row mb-5">
+	<div class="row">
 		<div class="col-12">
 			<h1>The Trons Want to Hear from You</h1>
 			<p class="trons-intro">Are you looking for an after school activity that's different from the rest? FRC isn't just about robots. It's also about project management, leadership, building business skills, and design. Make new friends and build the confidence you'll need to meet the world on your terms.</p>
 		</div>
 	</div>
+	
+	<div class="row">
+		<div class="col-12">
+			<div id="contact-message" class="alert mb-5 hidden"></div>
+		</div>
+	</div>
 
-	<div class="row mt-5">
+	<div class="row">
 
 		<div class="col-xl-6 col-lg-6 col-md-9 col-sm-12 col-xs-12 mr-5">
 			<h2>Send Us a Message</h2>
-			<form action="" method="post" id="contact-form" name="contact-form" class="validate" target="_blank">
+						
+			<form method="post" id="contact-form" name="contact-form" class="validate">
 				<div class="form-row pb-3">
 					<div class="col-6">
 						<label for="firstName">First Name</label>
-						<input type="text" value="" id="firsName" class="form-control mb-2 mb-sm-0 required" placeholder="Jane">
+						<input type="text" name="firstName" id="firstName" class="form-control mb-2 mb-sm-0 required" placeholder="Jane" required>
 					</div>
 					<div class="col-6">
 						<label for="lastName">Last Name</label>
-						<input type="text" value="" id="lastName" class="form-control mb-2 mb-sm-0" placeholder="Doe">
+						<input type="text" name="lastName" id="lastName" class="form-control mb-2 mb-sm-0" placeholder="Doe">
 					</div>
 				</div>
 				<div class="form-row pb-3">
@@ -45,19 +52,19 @@
 						<label for="email">Email Address</label>
 						<div class="input-group mb-2 mb-sm-0">
 						<div class="input-group-addon"><i class="fa fa-envelope"></i></div>
-						<input type="email" value="" id="email" class="required form-control rounded-right" id="newsletter-email" placeholder="jane@example.org">
+						<input type="email" name="email" id="email" class="required form-control rounded-right" id="newsletter-email" placeholder="jane@example.org" required>
 						</div>
 					</div>
 				</div>
 				<div class="form-row pb-5">
 					<div class="col-12">
 						<label for="message">Message</label>
-						<textarea id="message" class="form-control mb-2 mb-sm-0 required" rows="5" placeholder="The Trons are wicked cool... where do I sign up?"></textarea>
+						<textarea id="message" name="message" class="form-control mb-2 mb-sm-0 required" rows="5" placeholder="The Trons are wicked cool... where do I sign up?" required></textarea>
 					</div>
 				</div>
 				<div class="form-row pb-5">
-					<div class="col-">
-						<button type="submit" value="Send" name="send" id="contact-send" class="btn trons-green-button">Send</button>
+					<div class="col-12">
+						<button type="submit" name="submit" id="submit" class="btn trons-green-button">Send</button>
 					</div>
 				</div>
 			</form>

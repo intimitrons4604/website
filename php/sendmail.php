@@ -51,15 +51,16 @@ if (array_key_exists('email', $_POST) and PHPMailer::validateAddress($_POST['ema
 if (!$failure) {
 	$mail = new PHPMailer;
 	$mail->isSendmail();
+	$mail->isHTML();
 	$mail->CharSet = 'utf-8';
 	//It's important not to use the submitter's address as the from address as it's forgery,
 	//which will cause your messages to fail SPF checks.
 	//Use an address in your own domain as the from address, put the submitter's address in a reply-to
-	$mail->setFrom('tami@ripeda.com', 'Website Contact Form');
-	$mail->addAddress('tami@ripeda.com');
+	$mail->setFrom('info@intimitrons.ca', 'Website Contact Form');
+	$mail->addAddress('info@intimitrons.ca');
 	$mail->addReplyTo($email, $name);
 	$mail->Subject = 'Contact form inquiry from ' . $name;
-	$mail->Body = 'Contact form submission\n\nName: '. $name .'\nEmail: '. $email .'\n\n'. $message;
+	$mail->Body = 'Contact form submission<br><br>Name: '. $name .'<br>Email: '. $email .'<br><br>'. $message;
 	if (!$mail->send()) {
 		$result .= "Mailer Error: " . $mail->ErrorInfo;
 		$failure = true;

@@ -37,30 +37,29 @@
 
 	</div>
 </div>
-
-
+	
 <div class="container-fluid trons-purple-bkgnd mt-5">
 
-	<div class="row p-5">
+	<div class="row px-5 pt-5 pb-0">
 
 		<div class="col-12">
 
 			<h5>Talk to us about sponsoring the Intimitrons and supporting Girls in STEM</h5>
-			<form action="" method="post" id="contact-form" name="contact-form" class="validate" target="_blank" novalidate>
+			<form method="post" id="contact-form" name="contact-form" class="validate" validate>
 			  <div class="form-row align-items-center">
 				<div class="col-sm-3">
 				  <label class="sr-only" for="fname">First Name</label>
-				  <input type="text" value="" name="fname" id="fname" class="form-control mb-2 mb-sm-0" placeholder="First name">
+				  <input type="text" value="" name="fname" id="fname" class="required form-control mb-2 mb-sm-0" placeholder="First name" required>
 				</div>
 				<div class="col-sm-3">
 				  <label class="sr-only" for="lname">Last Name</label>
-				  <input type="text" value="" name="lname" id="lname" class="form-control mb-2 mb-sm-0" placeholder="Last name">
+				  <input type="text" value="" name="lname" id="lname" class="required form-control mb-2 mb-sm-0" placeholder="Last name" required>
 				</div>
 				<div class="col-sm-3">
 				  <label class="sr-only" for="email">Email</label>
 				  <div class="input-group mb-2 mb-sm-0">
 					<div class="input-group-addon"><i class="fa fa-envelope"></i></div>
-					<input type="email" value="" name="email" id="email" class="required form-control" placeholder="Email">
+					<input type="email" value="" name="email" id="email" class="required form-control" placeholder="Email" required>
 				  </div>
 				</div>
 				<div class="col-auto">
@@ -70,7 +69,13 @@
 			</form>
 		</div>
 	</div>
-</div>
+	
+	<div class="row mx-auto px-5 pt-0 pb-4">
+		<div class="col-9 p-0">
+			<div id="contact-message" class="alert hidden mt-2"></div>
+		</div>
+	</div>
+</div>	
 
 <div class="container-fluid mt-5 px-lg-5 px-xl-5 px-md-5 px-sm-1 px-xs-1" id="sponsor">
 

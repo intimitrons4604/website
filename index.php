@@ -46,6 +46,7 @@
 			<div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
 				<h1>5 Years of STEM</h1>
 				<p class="trons-intro">The Intimitrons From Area 51 is one of the few all girls FIRST Robotics teams in Canada. We are the first all-female team in Western Canada! Our objective is to encourage female participation in technical vocations- fields that are currently male dominated.  By creating robots to compete in FIRST competitions, we are able to accomplish this. The Intimitrons team was established in 2012, and this 2017 season was our fifth!</p>
+				<img src="images/FIRST_LikeaGirl.png" width="80%">
 		   </div>
 			<div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
 				<div class="container">
@@ -87,7 +88,7 @@
 								<img src="https://farm5.staticflickr.com/4687/25232354778_e3c92780a8_k.jpg" width="100%">
 							</div>
 						  <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
-								Intimitrons learn fabrication skills such as welding, soldering and machining. We also learn how to program our robot and our website in a variety of coding languages. To bring our robot to life, we wire electronices such as a motor controllers, power distribution board and microcontroller. In the off-season we practice our electronics skills with Aurduino and Raspberry Pi prototyping. Our robot designs are created in Fusion 360, an 3-D Autodesk CAD tool.
+							  Intimitrons learn fabrication skills such as <strong>welding, soldering and machining</strong>. We also learn how to program our robot and our website in a variety of <strong>coding languages</strong>. To bring our robot to life, we wire electronics such as <strong>motor controllers, power distribution board sand microcontrollers</strong>. In the off-season we practice our electronics skills with <strong>Aurduino and Raspberry Pi</strong> prototyping. Our robot designs are created in <strong>Fusion 360</strong>, an 3-D Autodesk CAD tool.
 						  </div>
 					  </div>
 				  </div>
@@ -97,7 +98,7 @@
 								<img src="https://farm5.staticflickr.com/4578/38610809881_b793ec939b_b.jpg" width="100%">
 							</div>
 						  <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
-					  		In order to meet our 6-week build schedule, we create detailed project management plans in Basecamp and stick to our schedules and assignments. Intimitrons attend meetings and build sessions 3 times a week during the season. Working together as a team is a great way to build confidence and make <span class="trons-bold-purple">new friends</span>.
+							  In order to meet our 6-week build schedule, we create detailed <strong>project management</strong> plans in Basecamp and stick to our schedules and assignments. Intimitrons attend meetings and build sessions 3 times a week during the season. <strong>Working together as a team</strong> is a great way to build confidence and make <span class="trons-bold-purple">new friends</span>.
 						  </div>
 					  </div>
 				  </div>

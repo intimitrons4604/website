@@ -472,6 +472,11 @@ div#trons-vert-team-menu.btn-group-vertical.btn-group-lg {
    font-weight: 700;
 }
 
+strong {
+   color: #40276B;
+   font-weight: 700;
+}
+
 .trons-sponsor-logo {
 	background-size: contain;
 	background-position: center left;

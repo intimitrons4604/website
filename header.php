@@ -7,6 +7,7 @@
 	<link rel="stylesheet" href="css/animate.css">
 	<link rel="stylesheet" href="css/style.css">
 
+    <script src="js/script.js"></script>
     <script src="https://use.fontawesome.com/acdf66c231.js"></script>
   </head>
 

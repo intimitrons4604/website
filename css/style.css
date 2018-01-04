@@ -4,7 +4,7 @@
 body {
   background-color: white;
   font-family: "Droid Sans", sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   margin: 0;
   margin-top: 0px;
   color: #444;
@@ -477,14 +477,14 @@ div#trons-vert-team-menu.btn-group-vertical.btn-group-lg {
 	background-position: center left;
 	background-repeat: no-repeat;
 	height: 150px;
-  width:100%
+  width:100%;
   content: "";
   margin-bottom: 1em;
 }
 
 .nav-pills {
-  padding-left: 20%;
-  padding-right:20%;
+  padding-left: 3rem;
+  padding-right:3rem;
 }
 
 .nav-pills > .nav-item {

@@ -45,7 +45,7 @@
 		<div class="row pl-xl-5 pl-lg-5 pl-md-5 pl-sm-0 pl-xs-0 pr-xl-5 pr-xl-5 pr-lg-5 pr-sm-0 pr-xs-0 pt-5 pb-5">
 			<div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
 				<h1>5 Years of STEM</h1>
-				<p style="font-size: 120%;">The Intimitrons From Area 51 is one of the few all girls FIRST Robotics teams in Canada. We are the first all-female team in Western Canada! Our objective is to encourage female participation in technical vocations- fields that are currently male dominated.  By creating robots to compete in FIRST competitions, we are able to accomplish this. The Intimitrons team was established in 2012, and this 2017 season was our fifth!</p>
+				<p class="trons-intro">The Intimitrons From Area 51 is one of the few all girls FIRST Robotics teams in Canada. We are the first all-female team in Western Canada! Our objective is to encourage female participation in technical vocations- fields that are currently male dominated.  By creating robots to compete in FIRST competitions, we are able to accomplish this. The Intimitrons team was established in 2012, and this 2017 season was our fifth!</p>
 		   </div>
 			<div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
 				<div class="container">

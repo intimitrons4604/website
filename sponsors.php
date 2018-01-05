@@ -28,7 +28,7 @@
 				<button type="button" onclick="window.location.href='#Terabyte'" class="btn btn-secondary trons-green-button">Terabyte</button>
 				<button type="button" onclick="window.location.href='#Gigabyte'" class="btn btn-secondary trons-green-button">Gigabyte</button>
 				<button type="button" onclick="window.location.href='#Megabyte'" class="btn btn-secondary trons-green-button">Megabyte</button>
-			  <button type="button" onclick="window.location.href='#Kilobyte'" class="btn btn-secondary trons-green-button">Kilobyte</button>
+			 	<button type="button" onclick="window.location.href='#Kilobyte'" class="btn btn-secondary trons-green-button">Kilobyte</button>
 				<button type="button" onclick="window.location.href='#inkind'" class="btn btn-secondary trons-green-button">In-Kind</button>
 				<button type="button" onclick="window.location.href='#Byte'" class="btn btn-secondary trons-green-button">Nibbles & Bytes</button>
 

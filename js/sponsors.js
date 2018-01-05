@@ -39,7 +39,7 @@ function getSponsorData(sponsorLevel) {
 
 		"Kilobyte": [
 			{"Name":"Halliburton",
-			 "Nickname":"Lockheed",
+			 "Nickname":"Halliburton",
 			 "Years":[2016,2017,2018],
 			 "URL":"http://www.halliburton.com/en-US/default.page",
 			 "Logo":"../images/halliburton.jpg",

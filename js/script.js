@@ -26,7 +26,10 @@ function isInt(value) {
 
 function loaded() {
 
-	document.getElementById("contact-form").addEventListener("submit",
+	
+	var contactForm = document.getElementById("contact-form");
+	if(contactForm) {
+		contactForm.addEventListener("submit",
 		function(event) {
 
 			event.preventDefault(); // stop page from reloading
@@ -54,6 +57,7 @@ function loaded() {
 			});
 		},
 		false);
+	}
 }
 
 window.addEventListener("load", loaded, false);

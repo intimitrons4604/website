@@ -42,7 +42,7 @@
 			<a class="nav-link" href="sponsors.php">Sponsors</a>
 		  </li>
 		  <li <?php echo ($page == 'girls-in-stem-calgary.php') ? "class='nav-item active'" : "class='nav-item'"; ?>>
-			<a class="nav-link" href="girls-in-stem-calgary.php">News</a>
+			<a class="nav-link" href="girls-in-stem-calgary.php">Media</a>
 		  </li>
 		  <li <?php echo ($page == 'contact.php') ? "class='nav-item active'" : "class='nav-item'"; ?>>
 			<a class="nav-link" href="contact.php">Contact</a>

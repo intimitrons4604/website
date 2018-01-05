@@ -107,7 +107,7 @@
 <div class="container-fluid mt-5 mb-5">
 	<div class="row px-3 mx-auto">
 		<div class="col-12 mx-auto">
-			<div class="card-group">
+			<div class="card-group" id="sponsorLevels">
 				<!--<img class="card-img-top" src="images/stage-1531427_1920.jpg" alt="Card image cap">-->
 				<!--<div class="card">
 				  <div class="card-body">

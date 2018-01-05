@@ -72,6 +72,14 @@ function getMediaData(mediaType) {
 		"Button":"Watch Video",
 		"Title":"Intimitrons Safety Animation",
 		"Snippet":"This is our 2016 Safety Animation! The set theme this year was both 'Medieval' and 'Safety in the Workspace'. As our second ever safety animation, our team is a bit more experienced in the animation process. We enjoyed making this video, and we hope you enjoy watching it just as much!"
+		},
+		{"Source":"Intimitrons",
+		"Date":"2015-01-05",
+		"URL":"https://youtu.be/-N5bFvE4i-w",
+		"Thumbnail":"../images/safety2015.jpg",
+		"Button":"Watch Video",
+		"Title":"Intimitrons Safety Animation",
+		"Snippet":"This is the Intimitrons from Area 51's first ever safety animation for the FIRST Robotics Competition! This is the first animation done by our animating team, and lots of time and effort went into this. We are very proud!"
 		}
 
 	]};

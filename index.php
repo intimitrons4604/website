@@ -42,8 +42,8 @@
 
 	<div class="container-fluid">
 
-		<div class="row pl-xl-5 pl-lg-5 pl-md-5 pl-sm-0 pl-xs-0 pr-xl-5 pr-xl-5 pr-lg-5 pr-sm-0 pr-xs-0 pt-5 pb-5">
-			<div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+		<div class="row pl-xl-5 pl-lg-5 pl-md-5 pl-sm-0 pl-xs-0 pr-xl-5 pr-lg-5 pr-md-5  pr-sm-0 pr-xs-0 pt-5 pb-5">
+			<div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 pb-5">
 				<h1>5 Years of STEM</h1>
 				<p class="trons-intro">The Intimitrons From Area 51 is one of the few all girls FIRST Robotics teams in Canada. We are the first all-female team in Western Canada! Our objective is to encourage female participation in technical vocations- fields that are currently male dominated.  By creating robots to compete in FIRST competitions, we are able to accomplish this. The Intimitrons team was established in 2012, and this 2017 season was our fifth!</p>
 				<img src="images/FIRST_LikeaGirl.png" width="80%">
@@ -74,45 +74,44 @@
 				</div>
 			</div>
 		</div>
-		<div class="row p-l-5 p-xl-5 p-md-5 p-xs-0 p-sm-0">
-			<div class="col-12 pl-lg-5 pl-xl-5 pl-md-5 pl-sm-0 pl-xs-0 pr-xl-5 pr-lg-5 pr-md-5 pr-sm-0 pr-xs-0">
+		
+		<div class="row mx-auto pl-xl-5 pl-lg-5 pl-md-5 pl-sm-0 pl-xs-0 pr-xl-5 pr-xl-5 pr-lg-5 pr-sm-0 pr-xs-0 pt-5 pb-5">
+			<div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-xs-12 text-center">
+				<a href="alienated.php"><img src="alienated/no_flamethrowers_by_wildfirewhim-d8nm05k.png" class="w-100"></a>
+			</div>
+			<div class="col-xl-9 col-lg-9 col-md-12 col-sm-12 col-xs-12 justify-content-between">
 				<nav class="nav nav-pills nav-justified" id="myTab" role="tablist">
 				  <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true"><i class="fa fa-book fa-3x"></i><br>Experience</a>
 				  <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false"><i class="fa fa-handshake-o fa-3x"></i><br>Teamwork</a>
 				  <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false"><i class="fa fa-lightbulb-o fa-3x"></i><br>Opportunities</a>
 				</nav>
-				<div class="tab-content px-xl-5 px-lg-5 px-md-5 px-sm-1 px-xs-1 py-5" id="nav-tabContent">
-				  <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-					  <div class="row">
-							<div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 mx-auto pb-5">
-								<img src="https://farm5.staticflickr.com/4687/25232354778_e3c92780a8_k.jpg" width="100%">
-							</div>
-						  <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
-							  Intimitrons learn fabrication skills such as <strong>welding, soldering and machining</strong>. We also learn how to program our robot and our website in a variety of <strong>coding languages</strong>. To bring our robot to life, we wire electronics such as <strong>motor controllers, power distribution board sand microcontrollers</strong>. In the off-season we practice our electronics skills with <strong>Aurduino and Raspberry Pi</strong> prototyping. Our robot designs are created in <strong>Fusion 360</strong>, an 3-D Autodesk CAD tool.
-						  </div>
-					  </div>
+				<div class="tab-content px-xl-5 px-lg-5 px-md-5 px-sm-1 px-xs-1 pt-5" id="nav-tabContent">
+				  <div class="tab-pane fade show active h-100" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+					<img src="https://farm5.staticflickr.com/4687/25232354778_e3c92780a8_k.jpg" class='w-100'>
+					<div class="trons-intro pt-5">
+						Intimitrons learn fabrication skills such as <strong>welding, soldering and machining</strong>. We also learn how to program our robot and our website in a variety of <strong>coding languages</strong>. To bring our robot to life, we wire electronics such as <strong>motor controllers, power distribution board sand microcontrollers</strong>. In the off-season we practice our electronics skills with <strong>Aurduino and Raspberry Pi</strong> prototyping. Our robot designs are created in <strong>Fusion 360</strong>, an 3-D Autodesk CAD tool.  
+					</div>
 				  </div>
-				  <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
-					  <div class="row">
-							<div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 mx-auto pb-5">
-								<img src="https://farm5.staticflickr.com/4578/38610809881_b793ec939b_b.jpg" width="100%">
-							</div>
-						  <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
-							  In order to meet our 6-week build schedule, we create detailed <strong>project management</strong> plans in Basecamp and stick to our schedules and assignments. Intimitrons attend meetings and build sessions 3 times a week during the season. <strong>Working together as a team</strong> is a great way to build confidence and make <span class="trons-bold-purple">new friends</span>.
-						  </div>
-					  </div>
+				  <div class="tab-pane fade h-100" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+
+					<img src="https://farm5.staticflickr.com/4578/38610809881_b793ec939b_b.jpg" width="100%">
+					<div class="trons-intro pt-5">
+						In order to meet our 6-week build schedule, we create detailed <strong>project management</strong> plans in Basecamp and stick to our schedules and assignments. Intimitrons attend meetings and build sessions 3 times a week during the season. <strong>Working together as a team</strong> is a great way to build confidence and make <span class="trons-bold-purple">new friends</span>.
+				  	</div>
 				  </div>
-				  <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
-						<div class="row">
-							<div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 mx-auto pb-5">
-								<img src="https://farm4.staticflickr.com/3681/33584110061_6099022bb6_h.jpg" width="100%">
-							</div>
-							<div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
-								FIRST participants have opportunities to practice public speaking, as well as learn about <span class="trons-bold-purple">marketing and business skills</span>. We also have access to <span class="trons-bold-purple">scholarships</span> and make <span class="trons-bold-purple">connections</span> with professionals in STEM industries. We enjoy the chance to introduce other girls to <span class="trons-bold-purple">STEM</span> and show them that they can do it too.
-							</div>
-						</div>
+				  <div class="tab-pane fade h-100" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+
+					<img src="https://farm4.staticflickr.com/3681/33584110061_6099022bb6_h.jpg" width="100%">
+					<div class="trons-intro pt-5">
+						FIRST participants have opportunities to practice public speaking, as well as learn about <span class="trons-bold-purple">marketing and business skills</span>. We also have access to <span class="trons-bold-purple">scholarships</span> and make <span class="trons-bold-purple">connections</span> with professionals in STEM industries. We enjoy the chance to introduce other girls to <span class="trons-bold-purple">STEM</span> and show them that they can do it too.
+					</div>
 				  </div>
 				</div>
+				<div class="px-xl-5 px-lg-5 px-md-5 px-sm-1 px-xs-1 pt-5">
+					<h5>What's It Really Like to Be a Tron?</h5>
+					<a href="alienated.php" class="mt-3 btn trons-medium-button trons-purple-button">Read Alienated Comics</a>
+				</div>
+			</div>
 			<!--The Trons is a great place to make new friends, gain experience, a great after school activity that can lead to scholarships, learn new skills, build confidence, learn how to build robots, programming, welding, CAD on Fusion 360, public speaking, marketing and business skills, teamwork, project management, an opportunity to get girls involved with STEM,learn how to work with tools, animations, -->
 			</div>
 		</div>

@@ -17,11 +17,11 @@
 
 	</div>
 
-  <div class="row mt-5 mb-5">
-		<div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12 my-auto">
-			<img src="images/FIRST_logo.png" width="80%" class="animated flip">
+  <div class="row mt-5 mb-5 pb-5">
+		<div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12 my-auto text-center">
+			<img src="images/FIRST_logo.png" width="60%" class="animated flip">
 		</div>
-		<div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-xs-12">
+		<div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-xs-12 mt-3">
 			<p class="trons-intro mt-0 mb-0 pt-0 pb-0">Combining the excitement of sport with the rigors of science and technology. We call FIRST Robotics Competition the ultimate Sport for the Mind. High-school student participants call it “the hardest fun you’ll ever have.”</p>
 			<a href="images/first-robotics-competition-mini.pdf" class="mt-3 btn trons-medium-button trons-purple-button">DOWNLOAD FIRST BROCHURE</a>
 		</div>

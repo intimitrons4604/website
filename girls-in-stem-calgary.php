@@ -35,6 +35,7 @@
 
 		<div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-xs-12 pl-xl-5 pl-lg-5 pb-5">
 			<div id="trons-vert-team-menu" class="btn-group-vertical btn-group-lg" role="group" aria-label="Trons in the News">
+				<button type="button" onclick="window.location.href='alienated.php'" class="btn btn-secondary trons-green-button">Alienated</button>
 				<button type="button" onclick="window.location.href='#articles-menu'" class="btn btn-secondary trons-green-button">Articles</button>
 				<button type="button" onclick="window.location.href='#videos-menu'" class="btn btn-secondary trons-green-button">Videos</button>
 			</div>

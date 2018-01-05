@@ -551,3 +551,117 @@ li.nav-item.trons-bullet > a.nav-link {
   font-size: 14px;
   font-weight: 400;
 }
+
+
+.card-columns {
+	column-count: 3;
+}
+
+.card-columns > .card {
+	padding: 3em;
+	border: none;
+}
+
+.card-columns > .card > .card-img-top {
+	border-bottom: solid 2px black;
+}
+
+.card-columns > .card > .card-body {
+	background-color: #40276B;
+	color: white;
+	padding: 1em;
+	text-align: center;
+}
+
+@media all and (max-width: 768px) {
+	.card-columns {
+	 	column-count: 1;
+	}
+	.card-columns > .card {
+		padding: 1em;
+	}
+}
+
+@media all and (min-width: 769px) and (max-width: 1024px) {
+	.card-columns {
+	 	column-count: 2;
+	}
+}
+
+
+/* override card-group to make flex alwasy */
+.card-group {
+-ms-flex-flow: row wrap;
+	flex-flow: row wrap;
+}
+.card-group .card {
+-ms-flex: 1 0 0%;
+	flex: 1 0 0%;
+margin-bottom: 0rem;
+}
+.card-group .card + .card {
+margin-left: 0;
+border-left: 0;
+}
+.card-group .card:first-child {
+border-top-right-radius: 0;
+border-bottom-right-radius: 0;
+}
+.card-group .card:first-child .card-img-top {
+border-top-right-radius: 0;
+}
+.card-group .card:first-child .card-img-bottom {
+border-bottom-right-radius: 0;
+}
+.card-group .card:last-child {
+border-top-left-radius: 0;
+border-bottom-left-radius: 0;
+}
+.card-group .card:last-child .card-img-top {
+border-top-left-radius: 0;
+}
+.card-group .card:last-child .card-img-bottom {
+border-bottom-left-radius: 0;
+}
+.card-group .card:only-child {
+border-radius: 0.25rem;
+}
+.card-group .card:only-child .card-img-top {
+border-top-left-radius: 0.25rem;
+border-top-right-radius: 0.25rem;
+}
+.card-group .card:only-child .card-img-bottom {
+border-bottom-right-radius: 0.25rem;
+border-bottom-left-radius: 0.25rem;
+}
+.card-group .card:not(:first-child):not(:last-child):not(:only-child) {
+border-radius: 0;
+}
+.card-group .card:not(:first-child):not(:last-child):not(:only-child) .card-img-top,
+.card-group .card:not(:first-child):not(:last-child):not(:only-child) .card-img-bottom {
+border-radius: 0;
+}
+
+
+/* full row each */
+@media all and (max-width: 576px) {
+  .card-group .card {
+    -ms-flex: 1 0 100%;
+        flex: 1 0 100%;
+    margin-bottom: 1rem;
+  }
+}
+
+/* half row each */
+@media all and (min-width: 577px) and (max-width: 1024px) {
+  .card-group .card {
+	-ms-flex: 1 0 50%;
+		flex: 1 0 50%;
+	margin-bottom: 0rem;
+  }
+}
+
+.trons-mobile-hidden {
+	display: none;
+}
+

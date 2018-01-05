@@ -13,8 +13,8 @@ function getSponsorData(sponsorLevel) {
 			 "Years":[2018],
 			 "URL":"https://lockheedmartin.com",
 			 "Logo":"../images/lockheed-martin-logo.png",
-			 "Description":"It is this company’s second year in sponsoring the Intimitrons, and their support has been very beneficial to our team. This year, their financial support has payed for our team’s admission into the 2015 Western Canada competition. They are based in Calgary and integrate social, economic and environmental considerations into all of their operating practices.",
-			 "Photo":"https://farm3.staticflickr.com/2831/33178518034_49815cd58e_h.jpg"}
+			 "Description":"2018 is Lockheed Martin's first year sponsoring the Intimitrons. We are very grateful for their support which is critical for helping to cover our competition entrance fees and expenses for the Western Regional. Lockheed Martin CDL Systems specializes in the development and licensing of vehicle control station software for unmanned systems.",
+			 "Photo":"https://farm5.staticflickr.com/4222/34856250576_c78f02d25f_h.jpg"}
 		],
 
 		"Megabyte": [
@@ -23,17 +23,17 @@ function getSponsorData(sponsorLevel) {
 		"inkind": [
 			{"Name":"QSine",
 			 "Nickname":"QSine",
-			 "Years":[2013,2014,2015,2016,2017],
+			 "Years":[2013,2014,2015,2016,2017,2018],
 			 "URL":"http://qsine.ca",
 			 "Logo":"../images/qsine-logo.png",
 			 "Description":"QSine provides our team with a space to build and fabricate our robot, as well as mentors to help us in the welding and fabrication of our robot. At QSine, they use precision fabrication, welding and machining to produce high quality parts and products.",
 			 "Photo":""},
-			{"Name":"Schulich Community Robotics Program (SCRP)",
+			{"Name":"Schulich Community Robotics Program",
 			 "Nickname":"SCRP",
-			 "Years":[2013,2014,2015,2016,2017,2018],
+			 "Years":[2012,2013,2014,2015,2016,2017,2018],
 			 "URL":"https://www.ucalgary.ca/robotics/",
 			 "Logo":"../images/scrp.png",
-			 "Description":"The Schulich Community Robotics Program has provided us with not only space to work, and wonderful mentors for our team. They have also provided us with outreach opportunities to help out younger kids interested in robotics.",
+			 "Description":"The Schulich Community Robotics Program (SCRP) has provided us with not only space to work, and wonderful mentors for our team. They have also provided us with outreach opportunities to help out younger kids interested in robotics.",
 			 "Photo":""}
 		],
 

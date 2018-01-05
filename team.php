@@ -158,12 +158,19 @@
 		</div>
 	</div>
 
+	
 	<div class="row" id="alumni-grid">
+		
+		<div class="col-12">
+			<h3 class="text-center">Coming soon...</h3>
+		</div>
 
+		<!-- TODO
 		<script>
 			// look in teams.js for list of team members and this function
 			displayTeamGrid("alumni","alumni-grid");
 		</script>
+		-->
 
 	</div>
 

@@ -4,14 +4,14 @@ function getTeamData(groupName) {
 
 	var data = {
 	"trons": [
-		{"Name":"Brylee","Year":2017,"Tagline":"Awesome robot girl.","Photo":"images/Logo-Alien-Only.svg"},
-		{"Name":"Liz","Year":2017,"Tagline":"Liz is a grade 12 student who is passionate about robotics and wants to apply her knowledge to the aerospace industry.","Photo":"images/Logo-Alien-Only.svg"},
+		{"Name":"Brylee","Year":2017,"Tagline":"Brylee is new to our team this year and wants the full robotics expirience. She enjoys mechanical design and is super excited for the Power Up competion.","Photo":"images/Logo-Alien-Only.svg"},
+		{"Name":"Liz","Year":2017,"Tagline":"Liz is a grade 12 student who is passionate about robotics and wants to apply her knowledge to the aerospace industry.","Photo":"mac"},
 		{"Name":"Emma C","Year":2016,"Tagline":"Emma C. is a second-year Intimitron and is also a grade 10 student. She loves robotics, especially using strategies to help in building a robot! She’s also the main team programmer this year.","Photo":"images/emmac.jpg"},
-		{"Name":"Emma Z","Year":2016,"Tagline":"Emma Z. is the smart-but-silent type. She enjoys building mechanisms and was a huge part of constructing Ophelia! She’s in grade 8 and this is her second year. This is definatly her in her natural habitat.","Photo":"images/emmaz.jpg"},
+		{"Name":"Emma Z","Year":2016,"Tagline":"Emma Z. is the smart-but-silent type. She enjoys building mechanisms and was a huge part of constructing Ophelia! She’s in grade 8 and this is her second year on the team. The robotics enviroment is definatly her in her natural habitat.","Photo":"images/emmaz.jpg"},
 		{"Name":"Judy","Year":2016,"Tagline":"Judy is in grade 9 and is an expert at writing sponsorship emails and encouraging everyone! She’s also enjoys learning how to code and website designing. This year she will again be part of the drive team. ","Photo":"images/judy.jpg"},
 		{"Name":"Julia","Year":2017,"Tagline":"Awesome robot girl.","Photo":"images/julia.jpg"},
 		{"Name":"Julianna","Year":2017,"Tagline":"Like most of us, it is also her first year on the team. She is 15 and loves to learn new things about robotics and engineering. She continues to help us with future goals.","Photo":"images/julianna.jpg"},
-		{"Name":"Mackenzie","Year":2017,"Tagline":"Mackenzie is in her first year in the Intimitrons. She is in Grade 10 and enjoys coding and driving robots. ","Photo":"images/Logo-Alien-Only.svg"},
+		{"Name":"Mackenzie","Year":2017,"Tagline":"Mackenzie is in her first year in the Intimitrons. She is in Grade 10 and enjoys coding and driving robots. ","Photo":"images/mac.jpg"},
 		{"Name":"Naomi","Year":2017,"Tagline":"Naomi likes robots and is in grade 9. She likes to build and code robots. This is her second year on the team.","Photo":"images/naomi.jpg"},
 		{"Name":"Nikka","Year":2017,"Tagline":"Awesome robot girl.","Photo":"images/Logo-Alien-Only.svg"},
 		{"Name":"Sarah","Year":2015,"Tagline":"Sarah is currently in grade 11 and loves robotics. She is on the drive and mec/fab teams and was driver one during Ophelia’s season. I'm the future, Sarah hopes to develop robot legs as she is constantly injuring herself and on crutches.","Photo":"images/sarah.jpg"},

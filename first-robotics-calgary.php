@@ -87,7 +87,7 @@
 	<div class="row">
 		<div class="col-12 mx-auto" style="min-height:300px">
 			<div class="video-responsive">
-				<iframe src="https://www.youtube.com/embed/MM_JWAON6PI" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+				<iframe src="https://www.youtube.com/embed/HZbdwYiCY74" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
 			</div>
 		</div>
 	</div>

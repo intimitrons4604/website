@@ -4,6 +4,11 @@
  * PHPMailer simple contact form
  */
 
+/*
+error_reporting(E_ALL | E_STRICT);
+ini_set('display_errors', 1);
+*/
+
 use PHPMailer\PHPMailer\PHPMailer;
 require './PHPMailer.php';
 require './Exception.php';

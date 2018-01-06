@@ -14,10 +14,17 @@ function getSponsorData(sponsorLevel) {
 			 "URL":"https://lockheedmartin.com",
 			 "Logo":"../images/lockheed-martin-logo.png",
 			 "Description":"2018 is Lockheed Martin's first year sponsoring the Intimitrons. We are very grateful for their support which is critical for helping to cover our competition entrance fees and expenses for the Western Regional. Lockheed Martin CDL Systems specializes in the development and licensing of vehicle control station software for unmanned systems.",
-			 "Photo":"https://farm5.staticflickr.com/4222/34856250576_c78f02d25f_h.jpg"}
+			 "Photo":"https://farm5.staticflickr.com/4223/34053637944_81e25c7ddc_h.jpg"}
 		],
 
 		"Megabyte": [
+			{"Name":"Royal Bank of Canada",
+			 "Nickname":"RBC",
+			 "Years":[2015,2016,2017,2018],
+			 "URL":"http://www.rbcphnic.com/",
+			 "Logo":"../images/rbc.png",
+			 "Description":"We are so thankful for the generous support we received from RBC, the support they have given us will be so beneficial to our team’s success this year. RBC is a strong believer in community and sustainability, and diversity.",
+			 "Photo":"https://farm3.staticflickr.com/2937/33178496114_43ccdd64a6_h.jpg"}
 		],
 
 		"inkind": [
@@ -117,6 +124,9 @@ function displaySponsorGrid(groupName,divId,slices) {
 			html += "<div class=\"col-xl-" + slices + " col-lg-" + slices +" col-md-6 col-sm-12 col-xs-12 px-xl-5 px-lg-5 px-md-5 px-sm-1 px-xs-1 pb-5\">";
 			html += "<div class=\"trons-sponsor-logo animated fadeIn wow\" style=\"background-image:url('" + sponsor[i].Logo + "');\"></div>";
 			html += "<h4 class=\"pt-4\">" + sponsor[i].Name + "</h4>";
+			if(sponsor[i].Photo.length >0){
+				html += "<img class=\"trons-sponsor-photo animated fadeIn wow\" src='" + sponsor[i].Photo + "'>";
+			   }
 			html += "<p>" + sponsor[i].Description + "</p>";
 			html += "<h6 class=\"pb-4\">Sponsorship Years: " + sponsor[i].Years + "</h6>";
 			html += "<a href=\"" + sponsor[i].URL + "\" class=\"btn trons-green-button trons-small-button\"> Visit " + sponsor[i].Nickname + "</a>";

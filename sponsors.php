@@ -82,7 +82,7 @@
   <div class="row">
 
 	  <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 pb-5">
-		  <img src="https://farm5.staticflickr.com/4223/34053637944_81e25c7ddc_h.jpg" alt="pitching for a sponsorship" width="100%">
+		  <img src="https://farm5.staticflickr.com/4175/34139744040_dd7101632a_h.jpg" alt="pitching for a sponsorship" width="100%">
 	  </div>
 
 	  <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 px-3">

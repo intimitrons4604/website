@@ -11,12 +11,12 @@
 
 			<div class="row">
 
-				<div class="col-xl-9 col-lg-9 col-md-9 col-sm-12 col-sm-12 remove-padding">
+				<div class="col-xl-9 col-lg-9 col-md-12 col-sm-12 col-sm-12 remove-padding">
 					<div class="hero" style="background-image:url('https://farm5.staticflickr.com/4185/33682601574_0574678c36_h.jpg')">
 
 					</div>
 				</div>
-				<div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-sm-12 hero-sidebar remove-padding">
+				<div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-sm-12 hero-sidebar remove-padding">
 					<img class="animated zoomIn" width="200" height="200" src="images/Logo-Alien-Only.svg">
 					<div class="hero-sidebar-text">
 						 <h1 class="pt-5 pb-2">4604</h1>

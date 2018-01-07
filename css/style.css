@@ -306,7 +306,15 @@ h6 {
   height: 300px;
   background-attachment: fixed;
   background-size: cover;
+  background-repeat: no-repeat;
   background-position: center;
+}
+
+@media all and (max-width: 991px) {
+	
+	.parallax {
+		background-attachment: scroll;
+	}
 }
 
 /* hero */
@@ -327,7 +335,7 @@ h6 {
     content: '';
     position: absolute;
     width: 100%;
-    background-image: linear-gradient(to  right,rgba(0,0,0,0.1),rgba(0,0,0,0.9));
+    background-image: linear-gradient(to  right,rgba(0,0,0,0.1),rgba(0,0,0,0.6));
     opacity: .6;
     z-index: 0;
   }
@@ -403,7 +411,7 @@ h6 {
 .hero-sidebar {
 	background-color:#40276B;
 	color: black;
-	height: 70vh;
+	min-height: 70vh;
 	display: flex;
 	flex-flow: column nowrap;
 	align-items: center;
@@ -440,6 +448,7 @@ h6 {
   background-position: center center;
   background-repeat: no-repeat;
   height:100%;
+  min-height: 300px;
   content: '';
 }
 
@@ -586,75 +595,36 @@ li.nav-item.trons-bullet > a.nav-link {
 }
 
 
-/* override card-group to make flex alwasy */
-.card-group {
+/* override card-deck to make flex alwasy */
+.card-deck {
 -ms-flex-flow: row wrap;
 	flex-flow: row wrap;
 }
-.card-group .card {
+.card-deck .card {
 -ms-flex: 1 0 0%;
 	flex: 1 0 0%;
-margin-bottom: 0rem;
+	margin-bottom: 2em;
+	margin-left: 0;
+	margin-right: 0;
 }
-.card-group .card + .card {
-margin-left: 0;
-border-left: 0;
-}
-.card-group .card:first-child {
-border-top-right-radius: 0;
-border-bottom-right-radius: 0;
-}
-.card-group .card:first-child .card-img-top {
-border-top-right-radius: 0;
-}
-.card-group .card:first-child .card-img-bottom {
-border-bottom-right-radius: 0;
-}
-.card-group .card:last-child {
-border-top-left-radius: 0;
-border-bottom-left-radius: 0;
-}
-.card-group .card:last-child .card-img-top {
-border-top-left-radius: 0;
-}
-.card-group .card:last-child .card-img-bottom {
-border-bottom-left-radius: 0;
-}
-.card-group .card:only-child {
-border-radius: 0.25rem;
-}
-.card-group .card:only-child .card-img-top {
-border-top-left-radius: 0.25rem;
-border-top-right-radius: 0.25rem;
-}
-.card-group .card:only-child .card-img-bottom {
-border-bottom-right-radius: 0.25rem;
-border-bottom-left-radius: 0.25rem;
-}
-.card-group .card:not(:first-child):not(:last-child):not(:only-child) {
-border-radius: 0;
-}
-.card-group .card:not(:first-child):not(:last-child):not(:only-child) .card-img-top,
-.card-group .card:not(:first-child):not(:last-child):not(:only-child) .card-img-bottom {
-border-radius: 0;
-}
-
 
 /* full row each */
 @media all and (max-width: 576px) {
-  .card-group .card {
-    -ms-flex: 1 0 100%;
-        flex: 1 0 100%;
-    margin-bottom: 1rem;
+  .card-deck .card {
+    -ms-flex-basis: 100%;
+		flex-basis: 100%;
+		margin-left: 0;
+		margin-right: 0;
   }
 }
 
 /* half row each */
 @media all and (min-width: 577px) and (max-width: 1024px) {
-  .card-group .card {
-	-ms-flex: 1 0 50%;
-		flex: 1 0 50%;
-	margin-bottom: 0rem;
+  .card-deck .card {
+	-ms-flex-basis: 50%;
+		flex-basis: 50%;
+		margin-left: 0;
+		margin-right: 0;
   }
 }
 

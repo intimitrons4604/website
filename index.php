@@ -74,7 +74,7 @@
 				</div>
 			</div>
 		</div>
-		
+
 		<div class="row mx-auto pl-xl-5 pl-lg-5 pl-md-5 pl-sm-0 pl-xs-0 pr-xl-5 pr-xl-5 pr-lg-5 pr-sm-0 pr-xs-0 pt-5 pb-5">
 			<div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-xs-12 text-center">
 				<a href="alienated.php"><img src="alienated/no_flamethrowers_by_wildfirewhim-d8nm05k.png" class="w-100"></a>
@@ -89,7 +89,7 @@
 				  <div class="tab-pane fade show active h-100" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
 					<img src="https://farm5.staticflickr.com/4687/25232354778_e3c92780a8_k.jpg" class='w-100'>
 					<div class="trons-intro pt-5">
-						Intimitrons learn fabrication skills such as <strong>welding, soldering and machining</strong>. We also learn how to program our robot and our website in a variety of <strong>coding languages</strong>. To bring our robot to life, we wire electronics such as <strong>motor controllers, power distribution board sand microcontrollers</strong>. In the off-season we practice our electronics skills with <strong>Aurduino and Raspberry Pi</strong> prototyping. Our robot designs are created in <strong>Fusion 360</strong>, an 3-D Autodesk CAD tool.  
+						Intimitrons learn fabrication skills such as <strong>welding, soldering and machining</strong>. We also learn how to program our robot and our website in a variety of <strong>coding languages</strong>. To bring our robot to life, we wire electronics such as <strong>motor controllers, power distribution board sand microcontrollers</strong>. In the off-season we practice our electronics skills with <strong>Aurduino and Raspberry Pi</strong> prototyping. Our robot designs are created in <strong>Fusion 360</strong>, an 3-D Autodesk CAD tool.
 					</div>
 				  </div>
 				  <div class="tab-pane fade h-100" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
@@ -153,6 +153,6 @@
 
 
 
-    <div class="parallax" style="background-image: url('https://farm5.staticflickr.com/4510/38027486161_4ff58b2725_k.jpg');"></div>
+    <div class="parallax" style="background-image: url('https://farm5.staticflickr.com/4194/33682936464_fed8e392c8_b.jpg');"></div>
 
     <?php include_once('footer.php');?>

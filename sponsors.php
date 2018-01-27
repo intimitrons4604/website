@@ -37,7 +37,7 @@
 
 	</div>
 </div>
-	
+
 <div class="container-fluid trons-purple-bkgnd mt-5">
 
 	<div class="row px-5 pt-5 pb-0">
@@ -69,13 +69,13 @@
 			</form>
 		</div>
 	</div>
-	
+
 	<div class="row mx-auto px-5 pt-0 pb-4">
 		<div class="col-9 p-0">
 			<div id="contact-message" class="alert hidden mt-2"></div>
 		</div>
 	</div>
-</div>	
+</div>
 
 <div class="container-fluid mt-5 px-lg-5 px-xl-5 px-md-5 px-sm-1 px-xs-1" id="sponsor">
 
@@ -179,12 +179,16 @@
 			<h1 class="text-center">Other Ways to Support the Trons</h1>
 		</div>
 	</div>
-	<div class="row px-3">
-		<div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 mx-auto">
-			<h3 class="text-center">In-Kind Sponsorship</h3>
+	<div class="row px-3 mx-auto">
+		<div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-xs-12 px-2 mx-auto">
+			<h3 class="pb-2">In-Kind Sponsorship</h3>
+			<p class="trons-intro">In-kind sponsors are instrumental to our success by donating materials, workspace, equipment and most importantly their time. The expertise of professionals working in mechanical engineering, machining, software engineering, electrical engineering and more give us a head start on learning skills that prepare us for higher education.</p>
+			<p class="trons-intro">If you have machine shop or electronics equipment that is collecting dust, or you would like to support the next generation of girls in STEM by volunteering your time and experience, please send us email at <a href="mailto:info@intimitrons.ca">info@intimitrons.ca</a>.
+				<h3 class="pb-2">Crowdfunding</h3>
+				<p class="trons-intro">Support from the community through our GoFundMe helps us pay for entrance fees and travel expenses. The more supporters we have, the more opportunities we have to learn and grow! Every $ counts.</p>
 		</div>
-		<div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 mx-auto">
-			<h3 class="text-center">Crowdfunding</h3>
+		<div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-xs-12 mx-auto my-auto justify-content-center h-100">
+			<embed class="align-self-center" allowScriptAccess="always" src="https://funds.gofundme.com/index.php?route=widgets/typeb&url=intimitrons2018&c=0&t=3&iframe=1&nocache=1" quality="high" type="text/html" height="365"></embed>
 		</div>
 	</div>
 </div>

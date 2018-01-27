@@ -14,7 +14,7 @@ function getTeamData(groupName) {
 		{"Name":"Mackenzie","Year":2017,"Tagline":"Mackenzie is a first year member of the Intimitrons and currently in grade 10. Over the past 4 months she was been working on programing flashy blinky lights on Arduino and really enjoys design challenges.","Photo":"images/mac.jpg"},
 		{"Name":"Naomi","Year":2017,"Tagline":"Naomi likes robots and is in grade 9. She likes to build and code robots. This is her second year on the team.","Photo":"images/naomi.jpg"},
 		{"Name":"Nikka","Year":2017,"Tagline":"Awesome robot girl.","Photo":"images/nikka.jpg"},
-		{"Name":"Sarah","Year":2015,"Tagline":"Sarah is currently in grade 11 and loves robotics. She is on the drive and mec/fab teams and was driver one during Ophelia’s season. I'm the future, Sarah hopes to develop robot legs as she is constantly injuring herself and on crutches.","Photo":"images/sarah.jpg"},
+		{"Name":"Sarah","Year":2015,"Tagline":"Sarah is currently in grade 11 and loves robotics. She is on the drive and mec/fab teams and was driver one during Ophelia’s season. In the future, Sarah hopes to develop robot legs as she is constantly injuring herself and on crutches.","Photo":"images/sarah.jpg"},
 		{"Name":"Saskia","Year":2017,"Tagline":"Saskia is currently in grade 9. This is her first year with the team. She enjoys working with robots and loves robotics.","Photo":"images/saskia.jpg"},
 		{"Name":"Shuyang","Year":2017,"Tagline":"Shuyang is currently in grade 9. This is her first year in the team, she is still exploring the world of robotics and finds it very interesting.","Photo":"images/shuyang.jpg"},
 		{"Name":"Sraddha","Year":2017,"Tagline":"Sraddha is currently in grade 8. This is her first year on the team, she enjoys programming and driving robots.","Photo":"images/sraddha.jpg"},
@@ -32,7 +32,8 @@ function getTeamData(groupName) {
 		{"Name":"Tami","Year":2016,"Tagline":"She is a programmer. She has a daughter named Ms. Amalia. Tami has played a large part in building Ophelia this year.","Photo":"images/tami.jpg"},
 		{"Name":"Kirsty","Year":2016,"Tagline":"This is Kirsty’s second year with the Intimitrons. She is an electrical engineering student and she is excited to encourage STEM to interested youth.","Photo":"images/Logo-Alien-Only.svg"},
 		{"Name":"Leo","Year":2017,"Tagline":"Leo is a master machinst, he taught us how to solder!","Photo":"images/leo.jpg"},
-		{"Name":"Colin","Year":2016,"Tagline":"Colin is a Mechanical engineering student that coaches us on building and pneumatics.","Photo":"images/colin.jpg"}
+		{"Name":"Colin","Year":2016,"Tagline":"Colin is a Mechanical engineering student that coaches us on building and pneumatics.","Photo":"images/colin.jpg"},
+		{"Name":"Laura","Year":2017,"Tagline":"Laura is an electrical engineer who works with TransCanada in the oil and gas industry. In her spare time, she dedicates her time to volunteering with youth intrested in STEM.","Photo":"images/laura.jpg"},
 	],
 	"alumni": [
 		{"Name":"Amanda","Year":"2012-2014","Tagline":"Amanda joined Intimitrons this year driven by her interest in the field of robotics. She is part of the design and fabrication teams, and her goal is to learn the basics of fabrication. At school, she participates in school clubs, such as Amnesty and Science club, as well as playing percussion in Symphonic Band. Other than robotics and clubs, volunteering at the Canadian Blood Services is also a big part of her life. During her free time, she plans to read and exercise, yet ends up watching K-drama and painting. She is very excited to partake in building an amazing robot this season!","Photo":"images/amanda.jpg"}

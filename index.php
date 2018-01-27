@@ -12,8 +12,7 @@
 			<div class="row">
 
 				<div class="col-xl-9 col-lg-9 col-md-12 col-sm-12 col-sm-12 remove-padding">
-					<div class="hero" style="background-image:url('https://farm5.staticflickr.com/4185/33682601574_0574678c36_h.jpg')">
-
+					<div class="hero pull-right w-100" style="background-image:url('https://farm5.staticflickr.com/4185/33682601574_0574678c36_h.jpg')">
 					</div>
 				</div>
 				<div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-sm-12 hero-sidebar remove-padding">
@@ -40,16 +39,19 @@
 		</div>
 	  </div>
 
-	<div class="container-fluid">
+	<div class="container-fluid pt-3">
 
-		<div class="row pl-xl-5 pl-lg-5 pl-md-5 pl-sm-0 pl-xs-0 pr-xl-5 pr-lg-5 pr-md-5  pr-sm-0 pr-xs-0 pt-5 pb-5">
-			<div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 pb-5">
+		<div class="row mx-auto pl-xl-5 pl-lg-5 pl-md-3 pl-sm-3 pl-xs-3 pr-xl-5 pr-lg-5 pr-md-3 pr-sm-0 pr-xs-0 pt-5 pb-5">
+			<div class="col-xl-4 col-lg-8 col-md-12 col-sm-12 col-xs-12 pb-5">
 				<h1>5 Years of STEM</h1>
 				<p class="trons-intro">The Intimitrons From Area 51 is one of the few all girls FIRST Robotics teams in Canada. We are the first all-female team in Western Canada! Our objective is to encourage female participation in technical vocations- fields that are currently male dominated.  By creating robots to compete in FIRST competitions, we are able to accomplish this. The Intimitrons team was established in 2012, and this 2017 season was our fifth!</p>
 				<img src="images/FIRST_LikeaGirl.png" width="80%">
-		   </div>
-			<div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
-				<div class="container">
+		  </div>
+			<div class = "col-xl-3 col-lg-4 col-md-12 col-sm-12 col-xs-12 text-center pb-5">
+			  <embed class="align-self-center" allowScriptAccess="always" src="https://funds.gofundme.com/index.php?route=widgets/typeb&url=intimitrons2018&c=0&t=3&iframe=1&nocache=1" quality="high" type="text/html" height="365" width="260"></embed>
+      </div>
+			<div class="col-xl-5 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+				<div class="container-fluid">
 					<div id="season-photos-carousel" class="carousel slide" data-ride="carousel">
 					  <div class="carousel-inner" role="listbox">
 						<div class="carousel-item active">
@@ -75,7 +77,7 @@
 			</div>
 		</div>
 
-		<div class="row mx-auto pl-xl-5 pl-lg-5 pl-md-5 pl-sm-0 pl-xs-0 pr-xl-5 pr-xl-5 pr-lg-5 pr-sm-0 pr-xs-0 pt-5 pb-5">
+		<div class="row mx-auto pl-xl-5 pl-lg-5 pl-md-3 pl-sm-3 pl-xs-3 pr-xl-5 pr-lg-5 pr-md-3 pr-sm-0 pr-xs-0 pt-3 pb-5">
 			<div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-xs-12 text-center">
 				<a href="alienated.php"><img src="alienated/no_flamethrowers_by_wildfirewhim-d8nm05k.png" class="w-100"></a>
 			</div>

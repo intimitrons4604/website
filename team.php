@@ -11,7 +11,7 @@
 	<div class="container-fluid remove-padding">
 		<div class="row">
 			<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-sm-12 remove-padding">
-				<div class="trons-hero" style="background-image: url('../images/intimitrons-4604-team.jpg');">
+				<div class=" hero-team" style="background-image: url('images/hugging.robot.jpg');">
 				</div>
 			</div>
 		</div>
@@ -99,7 +99,7 @@
 			</form>
 		</div>
 	</div>
-	
+
 	<div class="row mx-auto px-5 pt-0 pb-4">
 		<div class="col-9 p-0">
 			<div id="contact-message" class="alert hidden mt-2"></div>
@@ -158,9 +158,9 @@
 		</div>
 	</div>
 
-	
+
 	<div class="row" id="alumni-grid">
-		
+
 		<div class="col-12">
 			<h3 class="text-center">Coming soon...</h3>
 		</div>

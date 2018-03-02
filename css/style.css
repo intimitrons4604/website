@@ -311,7 +311,7 @@ h6 {
 }
 
 @media all and (max-width: 991px) {
-	
+
 	.parallax {
 		background-attachment: scroll;
 	}
@@ -438,6 +438,13 @@ h6 {
 .trons-hero {
 	background-size: cover;
 	background-position: center center;
+	background-repeat: no-repeat;
+	height: 500px;
+  content: '';
+}
+.hero-team{
+  background-size: cover;
+	background-position: center top;
 	background-repeat: no-repeat;
 	height: 500px;
   content: '';
@@ -631,4 +638,3 @@ li.nav-item.trons-bullet > a.nav-link {
 .trons-mobile-hidden {
 	display: none;
 }
-

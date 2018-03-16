@@ -4,7 +4,7 @@ function getTeamData(groupName) {
 
 	var data = {
 	"trons": [
-		{"Name":"Brylee","Year":2017,"Tagline":"Brylee is new to our team this year and wants the full robotics expirience. She enjoys electronic components and is super excited for the Power Up competion.","Photo":"images/brylee.jpg"},
+		//{"Name":"Brylee","Year":2017,"Tagline":"Brylee is new to our team this year and wants the full robotics expirience. She enjoys electronic components and is super excited for the Power Up competion.","Photo":"images/brylee.jpg"},
 		{"Name":"Liz","Year":2017,"Tagline":"Liz is a grade 12 student who is passionate about robotics and wants to apply her knowledge to the aerospace industry.","Photo":"images/liz.jpg"},
 		{"Name":"Emma C","Year":2016,"Tagline":"Emma C. is a second-year Intimitron and is also a grade 10 student. She loves robotics, especially using strategies to help in building a robot! She’s also the main team programmer this year.","Photo":"images/emmac.jpg"},
 		{"Name":"Emma Z","Year":2016,"Tagline":"Emma Z. is the smart-but-silent type. She enjoys building mechanisms and was a huge part of constructing Ophelia! She’s in grade 8 and this is her second year on the team. The robotics enviroment is definatly her in her natural habitat.","Photo":"images/emmaz.jpg"},
@@ -17,7 +17,7 @@ function getTeamData(groupName) {
 		{"Name":"Sarah","Year":2015,"Tagline":"Sarah is currently in grade 11 and loves robotics. She is on the drive and mec/fab teams and was driver one during Ophelia’s season. In the future, Sarah hopes to develop robot legs as she is constantly injuring herself and on crutches.","Photo":"images/sarah.jpg"},
 		{"Name":"Saskia","Year":2017,"Tagline":"Saskia is currently in grade 9. This is her first year with the team. She enjoys working with robots and loves robotics.","Photo":"images/saskia.jpg"},
 		{"Name":"Shuyang","Year":2017,"Tagline":"Shuyang is currently in grade 9. This is her first year in the team, she is still exploring the world of robotics and finds it very interesting.","Photo":"images/shuyang.jpg"},
-		{"Name":"Sraddha","Year":2017,"Tagline":"Sraddha is currently in grade 8. This is her first year on the team, she enjoys programming and driving robots.","Photo":"images/sraddha.jpg"},
+		{"Name":"Sraddha","Year":2017,"Tagline":"Sraddha is currently in grade 8. She enjoys driving the robot, CAD and constructing the robot. Mostly learning about the robot was the biggest part of robotics.","Photo":"images/sraddha.2.jpg"},
 		//{"Name":"Tayla","Year":2017,"Tagline":"Tayla is a first year intimitron who is currently in Grade 11. She enjoys learning code, exploring the world of design and is very interested in robotics. It is her goal to apply what she has learned for the near future.","Photo":"images/Logo-Alien-Only.svg"},
 		{"Name":"Tomoe","Year":2016,"Tagline":"Tomoe is in Grade 9, this is her second year on the team. She's super enthusiastic and has a fantastic sense of humor. Not only is she very passionate for robotics, but she loves to play sports and play the violin.","Photo":"images/tomoe.jpg"}
 	],

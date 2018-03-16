@@ -24,7 +24,17 @@ function getSponsorData(sponsorLevel) {
 			 "URL":"http://www.rbcphnic.com/",
 			 "Logo":"../images/rbc.png",
 			 "Description":"We are so thankful for the generous support we received from RBC, the support they have given us will be so beneficial to our team’s success this year. RBC is a strong believer in community and sustainability, and diversity.",
-			 "Photo":"https://farm3.staticflickr.com/2937/33178496114_43ccdd64a6_h.jpg"}
+			 "Photo":"https://farm3.staticflickr.com/2937/33178496114_43ccdd64a6_h.jpg"},
+
+			 {"Name":"The Schulz Family Fund at the Calgary Foundation",
+ 			 "Nickname":"Schulz Family Fund",
+ 			 "Years":[2018],
+ 			 "URL":"https://calgaryfoundation.org/",
+ 			 "Logo":"../images/calgary.foundation.jpg",
+ 			 "Description":"We are so thankful for the generous support we received from Schulz Family Fund, the support they have given us will be so beneficial to our team’s success this year. RBC is a strong believer in community and sustainability, and diversity.",
+ 			 "Photo":""
+		 	}
+
 		],
 
 		"inkind": [

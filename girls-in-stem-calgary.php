@@ -30,7 +30,7 @@
 	<div class="row">
 
 		<div class="col-xl-9 col-lg-9 col-md-9 col-sm-12 col-xs-12">
-		 <script language="javascript" src="//intimitrons.us3.list-manage.com/generate-js/?u=d479728f08b6043f1d957d5b1&fid=15857&show=10" type="text/javascript"></script>
+            <script language="javascript" src="//intimitrons.us3.list-manage.com/generate-js/?u=d479728f08b6043f1d957d5b1&fid=23401&show=10" type="text/javascript"></script>
 	 	</div>
 
 		<div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-xs-12 pl-xl-5 pl-lg-5 pb-5">

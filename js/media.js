@@ -41,6 +41,14 @@ function getMediaData(mediaType) {
 	 ],
 
 	 "Videos": [
+		 {"Source":"CTV Feature",
+	 		"Date":"2018-04-06",
+			"URL":"https://calgary.ctvnews.ca/student-teams-putting-their-robots-to-the-test-at-calgary-competition-1.3874967",
+			"Thumbnail":"../images/ctv.jpg",
+			"Button":"Watch Video",
+			"Title":"Our CTV feature!",
+			"Snippet":"In our pits at the 2018 Power Up competition, we got a chance to meet CTV interviewers and present our robot Agatha and talk about our dreams for the future, and our competition season. This was shown on the CTV news website in a featurette",
+		},
 		{"Source":"Mount Royal TV",
 		"Date":"2016-04-25",
 		"URL": "https://youtu.be/yQ0omNn3CsM",

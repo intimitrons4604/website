@@ -35,7 +35,8 @@
 			<a class="nav-link" href="index.php">Home</a>
 		  </li>
 			<li class='nav-item'>
-			<a class="nav-link" href="https://www.gofundme.com/intimitrons2018">Donate</a>
+		<!--	<a class="nav-link" href="https://www.gofundme.com/intimitrons2018">Donate</a> -->
+			<a class="nav-link" href="https://www.gofundme.com/help-support-the-intimitrons-from-area-51">Donate</a>
 			</li>
 		  <li <?php echo ($page == 'first-robotics-calgary.php') ? "class='nav-item active'" : "class='nav-item'"; ?>>
 			<a class="nav-link" href="first-robotics-calgary.php">FIRST</a>

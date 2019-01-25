@@ -48,7 +48,8 @@
 				<img src="images/FIRST_LikeaGirl.png" width="80%">
 		  </div>
 			<div class = "col-xl-3 col-lg-4 col-md-12 col-sm-12 col-xs-12 text-center pb-5">
-			  <embed class="align-self-center" allowScriptAccess="always" src="https://funds.gofundme.com/index.php?route=widgets/typeb&url=intimitrons2018&c=0&t=3&iframe=1&nocache=1" quality="high" type="text/html" height="365" width="260"></embed>
+		<iframe class='gfm-media-widget' image='1' coinfo='1' width='100%' height='100%' frameborder='0' id='help-support-the-intimitrons-from-area-51'></iframe><script src='//funds.gofundme.com/js/5.0/media-widget.js'></script>
+			 <!-- <embed class="align-self-center" allowScriptAccess="always" src="https://funds.gofundme.com/index.php?route=widgets/typeb&url=intimitrons2018&c=0&t=3&iframe=1&nocache=1" quality="high" type="text/html" height="365" width="260"></embed>-->
       </div>
 			<div class="col-xl-5 col-lg-12 col-md-12 col-sm-12 col-xs-12">
 				<div class="container-fluid">

@@ -188,7 +188,8 @@
 				<p class="trons-intro">Support from the community through our GoFundMe helps us pay for entrance fees and travel expenses. The more supporters we have, the more opportunities we have to learn and grow! Every $ counts.</p>
 		</div>
 		<div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-xs-12 mx-auto my-auto justify-content-center h-100">
-			<embed class="align-self-center" allowScriptAccess="always" src="https://funds.gofundme.com/index.php?route=widgets/typeb&url=intimitrons2018&c=0&t=3&iframe=1&nocache=1" quality="high" type="text/html" height="365"></embed>
+		<!--<embed class="align-self-center" allowScriptAccess="always" src="https://funds.gofundme.com/index.php?route=widgets/typeb&url=intimitrons2018&c=0&t=3&iframe=1&nocache=1" quality="high" type="text/html" height="365"></embed>-->
+<iframe class='gfm-media-widget' image='1' coinfo='1' width='100%' height='100%' frameborder='0' id='help-support-the-intimitrons-from-area-51'></iframe><script src='//funds.gofundme.com/js/5.0/media-widget.js'></script>
 		</div>
 	</div>
 </div>

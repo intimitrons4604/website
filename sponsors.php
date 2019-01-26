@@ -29,8 +29,9 @@
 				<button type="button" onclick="window.location.href='#Gigabyte'" class="btn btn-secondary trons-green-button">Gigabyte</button>
 				<button type="button" onclick="window.location.href='#Megabyte'" class="btn btn-secondary trons-green-button">Megabyte</button>
 			 	<button type="button" onclick="window.location.href='#Kilobyte'" class="btn btn-secondary trons-green-button">Kilobyte</button>
+				<button type="button" onclick="window.location.href='#Byte'" class="btn btn-secondary trons-green-button">Bytes</button>
 				<button type="button" onclick="window.location.href='#inkind'" class="btn btn-secondary trons-green-button">In-Kind</button>
-				<button type="button" onclick="window.location.href='#Byte'" class="btn btn-secondary trons-green-button">Nibbles & Bytes</button>
+				<button type="button" onclick="window.location.href='#Bit'" class="btn btn-secondary trons-green-button">Bits</button>
 
 			</div>
 		</div>
@@ -85,7 +86,7 @@
 		  <img src="https://farm5.staticflickr.com/4175/34139744040_dd7101632a_h.jpg" alt="pitching for a sponsorship" width="100%">
 	  </div>
 
-	  <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 px-3">
+	  <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 px-3 pl-5 pt-5">
 		  <h1>Become a Sponsor</h1>
 
 		  <p class="trons-intro">FIRST Robotics Competition is a competition where high school aged students design and build a robot in a time frame of six weeks. Not only do we learn technical skills, but also important business and life skills along the way.</p>
@@ -98,6 +99,8 @@
 			  <li>Robot build and design space</li>
 			  <li>Knowledge</li>
 		  </ul>
+
+			<a href="images/sponsor2019.pdf" class="mt-3 btn trons-medium-button trons-purple-button">Download Sponsorship Kit</a>
 
 	  </div>
   </div>
@@ -122,14 +125,26 @@
 			  </div>-->
 				<div class="card">
 					<div class="card-body">
-					  <h3 class="card-title">Kilobyte</h3>
-					  <h1 class="mb-0 pb-0">$1000</h1>
-					  <p class="card-text">Kilobyte level is a great way to let Calgary know that your company supports STEM education. We rely on our sponsors to fund our regional competition entrance fees for each season as well as travel and robot parts.</p>
+					  <h3 class="card-title">Byte</h3>
+					  <h1 class="mb-0 pb-0">$500</h1>
+					  <p class="card-text">Byte level is a great way to let Calgary know that your company supports STEM education. We rely on our sponsors to fund our regional competition entrance fees for each season as well as travel and robot parts.</p>
 					</div>
 					<ul class="list-group list-group-flush">
 						<li class="list-group-item trons-green-bkgnd">Logo/Link on Trons Website</li>
+						<li class="list-group-item trons-green-bkgnd">Photo Op with the Trons</li>
+						<li class="list-group-item trons-green-bkgnd">Invite to Competition</li>
+					</ul>
+			  </div>
+				<div class="card">
+					<div class="card-body">
+					  <h3 class="card-title">Kilobyte</h3>
+					  <h1 class="mb-0 pb-0">$1000</h1>
+					  <p class="card-text">For our Kilobyte sponsorship level, you will get Byte perks plus we add your logo to some of our promotional materials such as flyers and on our season competition banner which is displayed in our pit and at outreach events.</p>
+					</div>
+					<ul class="list-group list-group-flush">
 						<li class="list-group-item trons-green-bkgnd">Logo on Some Promo Materials</li>
 						<li class="list-group-item trons-green-bkgnd">Logo on Competition Banner</li>
+						<li class="list-group-item trons-green-bkgnd">Choice of Trons Swag Item</li>
 					</ul>
 			  </div>
 			  <div class="card">
@@ -173,7 +188,7 @@
 	</div>
 </div>
 
-<div class="container mb-5">
+<div class="container-fluid mb-5">
 	<div class="row px-3 pb-3 mx-auto">
 		<div class="col-12 mx-auto">
 			<h1 class="text-center">Other Ways to Support the Trons</h1>
@@ -189,7 +204,7 @@
 		</div>
 		<div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-xs-12 mx-auto my-auto justify-content-center h-100">
 		<!--<embed class="align-self-center" allowScriptAccess="always" src="https://funds.gofundme.com/index.php?route=widgets/typeb&url=intimitrons2018&c=0&t=3&iframe=1&nocache=1" quality="high" type="text/html" height="365"></embed>-->
-<iframe class='gfm-media-widget' image='1' coinfo='1' width='100%' height='100%' frameborder='0' id='help-support-the-intimitrons-from-area-51'></iframe><script src='//funds.gofundme.com/js/5.0/media-widget.js'></script>
+		<iframe class='gfm-media-widget' image='1' coinfo='1' width='100%' height='100%' frameborder='0' id='help-support-the-intimitrons-from-area-51'></iframe><script src='//funds.gofundme.com/js/5.0/media-widget.js'></script>
 		</div>
 	</div>
 </div>
@@ -263,9 +278,18 @@
 		</div>
 	</div>
 
-	<div class="row mt-5" id="inkind-grid">
+	<div class="row py-5" id="inkind-op-grid">
+
 		<script>
-			displaySponsorGrid("inkind","inkind-grid",6);
+			displaySponsorRow("inkindop","inkind-op-grid");
+		</script>
+
+	</div>
+
+	<div class="row pt-5" id="inkind-grid">
+
+		<script>
+			displaySponsorGrid("inkind","inkind-grid",4);
 		</script>
 
 	</div>
@@ -285,21 +309,40 @@
 
 	<div class="row mt-5" id="kilobyte-grid">
 		<script>
-			displaySponsorGrid("Kilobyte","kilobyte-grid",3);
+			displaySponsorGrid("Kilobyte","kilobyte-grid",4);
 		</script>
 
 	</div>
 
 </div>
 
-<div class="parallax" style="background-image: url('https://farm3.staticflickr.com/2866/33003736466_55b163fefe_h.jpg');"></div>
+<div class="parallax" style="background-image: url('https://farm8.staticflickr.com/7811/46815681822_1ed0845e9b_k.jpg');"></div>
 
 <div class="container-fluid mt-5 mb-5 px-5" id="Byte">
 
+	<div class="row mt-5">
+		<div class="col-12">
+			<h1 class="text-center">Bytes Sponsors</h1>
+
+		</div>
+	</div>
+
+	<div class="row mt-5" id="byte-grid">
+		<script>
+			displaySponsorGrid("Byte","byte-grid",4);
+		</script>
+
+	</div>
+
+</div>
+
+<div class="parallax" style="background-image: url('https://farm5.staticflickr.com/4915/46815682412_71179fc4a8_k.jpg');"></div>
+
+<div class="container-fluid mt-5 mb-5 px-5" id="Bit">
 
 	<div class="row mt-5">
 		<div class="col-12">
-			<h1 class="text-center">Nibbles &amp; Bytes Sponsors</h1>
+			<h1 class="text-center">Bits Sponsors</h1>
 		</div>
 	</div>
 

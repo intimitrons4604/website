@@ -491,7 +491,7 @@ strong {
 	background-position: center left;
 	background-repeat: no-repeat;
 	height: 150px;
-  width:100%;
+  max-width:70%;
   content: "";
   margin-bottom: 1em;
 }

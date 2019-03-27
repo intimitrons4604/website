@@ -8,6 +8,7 @@ body {
   margin: 0;
   margin-top: 0px;
   color: #444;
+  overflow-x: hidden;
 }
 
 p {
@@ -85,6 +86,20 @@ h6 {
 .trons-purple-button:hover {
   background-color: grey;
   color: white;
+}
+
+.trons-invisible-button {
+  background-color: transparent;
+  color: inherit;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding:0;
+  transition: all 0.5s ease-in-out;
+}
+
+.trons-invisible-button:hover {
+  transform: translateX(10px) scale(1.05);
+  color: inherit;
 }
 
 .trons-green-button {
@@ -257,6 +272,7 @@ h6 {
   height: inherit;
   margin-top: 0px;
   padding-top: 0px;
+  height: 32px;
 }
 
 .social-list > li {
@@ -273,6 +289,7 @@ h6 {
 .social-list > li > a {
   text-decoration: none;
   color: white;
+  transition: all 0.2s ease-in;
 }
 
 .social-list > li:hover {

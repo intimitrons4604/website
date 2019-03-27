@@ -32,29 +32,26 @@ function getSponsorData(sponsorLevel) {
 
 			{"Name":"Royal Bank of Canada",
 			 "Nickname":"RBC",
-			 "Years":[2015,2016,2017,2018,2019],
+			 "Years":["2015-2019"],
 			 "URL":"http://www.rbcphnic.com/",
 			 "Logo":"../images/rbc.png",
 			 "Description":"We are so thankful for the generous support we received from RBC, the support they have given us will be so beneficial to our team’s success this year. RBC is a strong believer in community and sustainability, and diversity.",
 			 "Photo":"https://farm3.staticflickr.com/2937/33178496114_43ccdd64a6_h.jpg"},
 
-/*
-			 {"Name":"The Schulz Family Fund at the Calgary Foundation",
- 			 "Nickname":"Schulz Family Fund",
- 			 "Years":[2018],
- 			 "URL":"https://calgaryfoundation.org/",
- 			 "Logo":"../images/calgary.foundation.jpg",
- 			 "Description":"We are so thankful for the generous support we received from Schulz Family Fund, the support they have given us will be so beneficial to our team’s success this year. RBC is a strong believer in community and sustainability, and diversity.",
- 			 "Photo":""
-		 	},*/
-
+			 {"Name":"Microsoft",
+				"Nickname":"Microsoft",
+				"Years":[2019],
+				"URL":"http://www.microsoft.com/",
+				"Logo":"../images/microsoft.jpg",
+				"Description":"Microsoft is committed to positive STEM outcomes for youth and has teamed up with For Inspiration and Recognition of Science and Technology (FIRST) to provide grants for teams across Canada to participate in the FIRST Robotics Competitions. ",
+				"Photo":"../images/temp-microsoft.jpg"},
 		],
 
 	  "inkindop":
 		[
 			{"Name":"QSine",
 			 "Nickname":"QSine",
-			 "Years":[2013,2014,2015,2016,2017,2018,2019],
+			 "Years":["2013-2019"],
 			 "URL":"http://qsine.ca",
 			 "Logo":"../images/qsine-logo.png",
 			 "Description":"QSine provides our team with a space to build and fabricate our robot, as well as mentors to help us in the welding and fabrication of our robot. At QSine, they use precision fabrication, welding and machining to produce high quality parts and products.",
@@ -65,7 +62,7 @@ function getSponsorData(sponsorLevel) {
 
 			{"Name":"Schulich Community Robotics Program",
 			 "Nickname":"SCRP",
-			 "Years":[2012,2013,2014,2015,2016,2017,2018,2019],
+			 "Years":["2012-2019"],
 			 "URL":"https://www.ucalgary.ca/robotics/",
 			 "Logo":"../images/scrp.png",
 			 "Description":"The Schulich Community Robotics Program (SCRP) has provided us with not only space to work, and wonderful mentors for our team. They have also provided us with outreach opportunities to help out younger kids interested in robotics.",
@@ -90,6 +87,7 @@ function getSponsorData(sponsorLevel) {
 			 "Description":"It is this company’s third year in sponsoring the Intimitrons, and their support has been very beneficial to our team. This year, their financial support has payed for our team’s admission into the 2015 Western Canada competition. They are based in Calgary and integrate social, economic and environmental considerations into all of their operating practices.",
 			 "Photo":""},
 */
+/*
 			{"Name":"NSERC-CRSNG",
 			 "Nickname":"NSERC-CRSNG",
 			 "Years":[2019],
@@ -97,6 +95,16 @@ function getSponsorData(sponsorLevel) {
 			 "Logo":"../images/nserc-crsng.png",
 			 "Description":"NSERC promotes scientific discovery by funding university professors and students and fosters innovation by encouraging Canadian companies to participate and invest in postsecondary research and training. All of that starts years before -- contributions by NSERC-CRSNG help to ignite the spark for kids to pursue a future in STEM.",
 			 "Photo":""},
+			 */
+
+ 			 {"Name":"The Schulz Family Fund at the Calgary Foundation",
+  			 "Nickname":"Schulz Family Fund",
+  			 "Years":[2018,2019],
+  			 "URL":"https://calgaryfoundation.org/",
+  			 "Logo":"../images/calgary.foundation.jpg",
+  			 "Description":"We are so thankful for the generous support we received from Schulz Family Fund, the support they have given us will be so beneficial to our team’s success this year!",
+  			 "Photo":"../images/schultz-family.jpg"
+ 		 	}
 		],
 
 		"Byte": [

@@ -44,11 +44,6 @@
 		  <li <?php echo ($page == 'team.php') ? "class='nav-item active'" : "class='nav-item'"; ?>>
 			<a class="nav-link" href="team.php">Team</a>
 		  </li>
-			<!--
-		  <li <?php echo ($page == 'robots.php') ? "class='nav-item active'" : "class='nav-item'"; ?>>
-			<a class="nav-link" href="robots.php">Robots</a>
-		  </li>
-		-->
 		  <li <?php echo ($page == 'sponsors.php') ? "class='nav-item active'" : "class='nav-item'"; ?>>
 			<a class="nav-link" href="sponsors.php">Sponsors</a>
 		  </li>

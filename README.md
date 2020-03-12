@@ -22,17 +22,25 @@ Access the `version.json` file at the root. See the [Environments](#environments
 
 ### How do I deploy the website?
 #### Staging
-Pushing to `master` automatically trigger a deployment to `staging`.
+Pushing to `master` automatically triggers a deployment to the `staging` environment.
 
 #### Production
-**TODO**
-After staging deployment is merged, define and test a process and provide instructions here before pointing `public_html` to the active `production` symlink.
+Pushing to `production` automatically triggers a deployment to the `production` environment. **You should never commit or merge to the `production` branch**. Instead, perform the following steps to deploy to production.
+
+1. Checkout `master` and pull
+    1. `git checkout master`
+    1. `git pull`
+1. Identify the commit from the `master` branch that you wish to deploy, for example using `git log` or browsing commits on GitHub
+1. Update the `production` branch on GtiHub to trigger the deployment
+    1. `git push -f origin <sha1>:refs/heads/production` (e.g. `git push -f origin abcd123:refs/heads/production`)
+
+Note that the `production` branch is simply being used as a marker for the current commit which is deployed to production. It should always point to a commit on `master`. The `-f` option is used to allow you to both deploy newer versions and rollback to older versions of the website. The branch name is qualified with `refs/heads` so that the command works even if the `production` branch does not exist on the remote.
 
 ### Limitations
 Only one deployment can execute at once, per environment. **You are protected against concurrent deployments interfering with each other, but there is no ordering guarantee for which deployment wins when multiple deployments to an environment execute concurrently**. As a result, try to abide by the following guidelines:
-* Do not push commits directly to `master`. Work on a branch and merge all the work at once so it only results in a single deploy.
+* Do not push commits directly to `master`. Work on a branch and merge all the work at once so it only results in a single deploy to the staging environment.
 * Do not make multiple merges to `master` in quick succession. If you have multiple changes to deploy or multiple people have changes to deploy, coordinate and wait until the previous change is deployed before pushing the next one.
-* Do not publish multiple releases in quick succession. If you have multiple changes to deploy or multiple people have changes to deploy, coordinate and wait until the previous change is deployed before publishing the next one.
+* Do not make multiple pushes to the `production` branch in quick succession. If you have multiple changes to deploy or multiple people have changes to deploy, coordinate and wait until the previous change is deployed before pushing the next one.
 
 ### Why didn't my deploy work?
 

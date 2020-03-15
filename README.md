@@ -1,8 +1,20 @@
 # Website
+The website root is in the `www` directory. All files required by the website must be in the `www` directory. Any files outside the `www` directory will not be available on the server.
 
 ## Development
-**TODO**
-Provide instructions to allow the site to run locally for development.
+
+### Prerequisites
+* Install [Docker Desktop](https://www.docker.com/products/docker-desktop)
+
+### Running Locally
+To run the website locally to test changes, run `docker-compose -f ./dev/docker-compose.yml up` from this directory in the appropriate termnal for your platform. Then, navigate to http://localhost:8080/ in a web browser. Request logs will be output to the terminal. Press `Ctrl + C` in the terminal to stop the web server when finished.
+
+Changes you make to files in the `www` directory will automatically be picked up by the server - there is no need to restart it. You do however need to save the file and refresh the page in order to see your changes.
+
+Instructions on other usage of Docker is outside the scope of this README.
+
+### Limitations
+* The contact form does not work locally
 
 ## Environments
 The website is continuously available in two different environments: `staging` and `production`. Both are currently hosted on StableHost.

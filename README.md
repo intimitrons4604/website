@@ -7,7 +7,7 @@ The website root is in the `www` directory. All files required by the website mu
 * Install [Docker Desktop](https://www.docker.com/products/docker-desktop)
 
 ### Running Locally
-To run the website locally to test changes, run `docker-compose -f ./dev/docker-compose.yml up` from this directory in the appropriate termnal for your platform. Then, navigate to http://localhost:8080/ in a web browser. Request logs will be output to the terminal. Press `Ctrl + C` in the terminal to stop the web server when finished.
+To run the website locally to test changes, run `docker-compose -f ./dev/docker-compose.yml up` from this directory in the appropriate terminal for your platform. Then, navigate to http://localhost:8080/ in a web browser. Request logs will be output to the terminal. Press `Ctrl + C` in the terminal to stop the web server when finished.
 
 Changes you make to files in the `www` directory will automatically be picked up by the server - there is no need to restart it. You do however need to save the file and refresh the page in order to see your changes.
 
@@ -43,7 +43,7 @@ Pushing to `production` automatically triggers a deployment to the `production` 
     1. `git checkout master`
     1. `git pull`
 1. Identify the commit from the `master` branch that you wish to deploy, for example using `git log` or browsing commits on GitHub
-1. Update the `production` branch on GtiHub to trigger the deployment
+1. Update the `production` branch on GitHub to trigger the deployment
     1. `git push -f origin <sha1>:refs/heads/production` (e.g. `git push -f origin abcd123:refs/heads/production`)
 
 Note that the `production` branch is simply being used as a marker for the current commit which is deployed to production. It should always point to a commit on `master`. The `-f` option is used to allow you to both deploy newer versions and rollback to older versions of the website. The branch name is qualified with `refs/heads` so that the command works even if the `production` branch does not exist on the remote.
@@ -59,7 +59,7 @@ Only one deployment can execute at once, per environment. **You are protected ag
 Check the output for your deployment action. Warnings and errors should by yellow and red respectively, and you should be able to easily navigate to them in the GitHub Actions output.
 
 #### Manually unlocking an environment
-If your deployment fails due to the environment being locked, it is possible a previously failed deploy left behind a lock. The output may be able to identify the Build ID of the deployment which locked the environment. Confirm there are no concurrent deploys running and that the lock was not manually created for some reason. Removing the lock manually while a deployment is in progress is dangerous and could result in interference between deployments, leading to unavialability of the website.
+If your deployment fails due to the environment being locked, it is possible a previously failed deploy left behind a lock. The output may be able to identify the Build ID of the deployment which locked the environment. Confirm there are no concurrent deploys running and that the lock was not manually created for some reason. Removing the lock manually while a deployment is in progress is dangerous and could result in interference between deployments, leading to unavailability of the website.
 
 If you are sure it is safe to remove the lock, remove the lock file using cPanel or SSH. The lock file is named after the environment and is located at `/home/intimitr/www_root/deploy/lock/{environment}`. cPanel credentials and the SSH key used for deployment are in the Bitwarden vault.
 

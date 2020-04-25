@@ -1,0 +1,5 @@
+@import "~bootstrap/scss/bootstrap";
+@import "~animate.css/animate.css";
+
+// This has to come after the bootstrap styles because some of them are overridden in this file
+@import "legacy.scss";

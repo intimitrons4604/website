@@ -1,5 +1,11 @@
 # Website
-The website root is in the `www` directory. All files required by the website must be in the `www` directory. Any files outside the `www` directory will not be available on the server.
+There are currently two parallel versions of the website. The legacy PHP site (i.e. the current public facing website) is in the `www` directory and documented below. The new website is in the `next` directory and documented [there](next/).
+
+## Which version should I edit?
+If your changes need to be publicly visible, edit the legacy site. If your changes only concern the next site, make them there. **If you make changes to site content that exists in both sites, ensure you make the changes in both sites so that the content is not different when we switch to the new site.**
+
+# Website - Legacy
+The _legacy_ website root is in the `www` directory. All files required by the website must be in the `www` directory. Any files outside the `www` directory will not be available on the server.
 
 ## Development
 

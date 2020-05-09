@@ -1,9 +1,9 @@
-@import url("https://fonts.googleapis.com/css?family=Droid+Sans:400,700");
-@import url("https://fonts.googleapis.com/css?family=Orbitron");
+@import url('https://fonts.googleapis.com/css?family=Droid+Sans:400,700');
+@import url('https://fonts.googleapis.com/css?family=Orbitron');
 
 body {
   background-color: white;
-  font-family: "Droid Sans", sans-serif;
+  font-family: 'Droid Sans', sans-serif;
   font-size: 16px;
   margin: 0;
   margin-top: 0px;
@@ -12,7 +12,7 @@ body {
 }
 
 p {
-  font-family: "Droid Sans", sans-serif;
+  font-family: 'Droid Sans', sans-serif;
   font-size: 14px;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -25,13 +25,13 @@ h4,
 h5,
 h6,
 .campaign {
-  font-family: "Droid Sans", sans-serif;
+  font-family: 'Droid Sans', sans-serif;
   letter-spacing: 5px;
   text-transform: uppercase;
 }
 
 h1 {
-  font-family: "Orbitron", sans-serif;
+  font-family: 'Orbitron', sans-serif;
   font-size: 32px;
   font-weight: 700;
   padding-bottom: 20px;
@@ -122,7 +122,7 @@ h6 {
 .heading-separator:after {
   position: relative;
   bottom: -10px;
-  content: "";
+  content: '';
   height: 10px;
   display: block;
   border-bottom: solid;
@@ -170,7 +170,7 @@ h6 {
 .navbar-nav a.nav-link:after {
   height: 2px;
   position: absolute;
-  content: "";
+  content: '';
   -webkit-transition: all 0.35s ease;
   transition: all 0.35s ease;
   background-color: #ffffff;
@@ -200,7 +200,7 @@ h6 {
 }
 
 .nav-item {
-  font-family: "Droid Sans", sans-serif;
+  font-family: 'Droid Sans', sans-serif;
   text-transform: uppercase;
   letter-spacing: 2px;
 }
@@ -265,10 +265,14 @@ h6 {
 
 .hero:before {
   height: 70vh;
-  content: "";
+  content: '';
   position: absolute;
   width: 100%;
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6));
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.1),
+    rgba(0, 0, 0, 0.6)
+  );
   opacity: 0.6;
   z-index: 0;
 }
@@ -328,14 +332,14 @@ h6 {
   background-position: center center;
   background-repeat: no-repeat;
   height: 500px;
-  content: "";
+  content: '';
 }
 .hero-team {
   background-size: cover;
   background-position: center top;
   background-repeat: no-repeat;
   height: 500px;
-  content: "";
+  content: '';
 }
 
 .trons-img-card {
@@ -344,11 +348,11 @@ h6 {
   background-repeat: no-repeat;
   height: 100%;
   min-height: 300px;
-  content: "";
+  content: '';
 }
 
 .text-box-separator {
-  content: "";
+  content: '';
   border-bottom: solid 2px;
   border-color: #ffffff;
   width: 100%;
@@ -376,7 +380,7 @@ strong {
   background-repeat: no-repeat;
   height: 150px;
   max-width: 70%;
-  content: "";
+  content: '';
   margin-bottom: 1em;
 }
 
@@ -425,13 +429,13 @@ li.nav-item.trons-bullet {
 }
 
 li.nav-item.trons-bullet:before {
-  content: "";
+  content: '';
   display: inline-block;
   height: 1.5em;
   width: 1.5em;
   background-size: contain;
   background-repeat: no-repeat;
-  background-image: url("../images/Logo-Alien-Only.svg");
+  background-image: url('../images/Logo-Alien-Only.svg');
   background-color: #40276b;
   border-radius: 2em;
 }

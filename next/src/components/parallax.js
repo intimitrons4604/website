@@ -6,10 +6,9 @@ export const Parallax = styled.div`
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  background-image: url(${props => props.img});
+  background-image: url(${(props) => props.img});
 
   @media all and (max-width: 991px) {
     background-attachment: scroll;
   }
 `
-

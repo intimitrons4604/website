@@ -28,5 +28,8 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean"
+  },
+  "devDependencies": {
+    "prettier": "2.0.5"
   }
 }

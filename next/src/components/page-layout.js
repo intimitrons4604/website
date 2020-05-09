@@ -1,18 +1,16 @@
-import React from "react"
-import PropTypes from "prop-types"
+import React from 'react'
+import PropTypes from 'prop-types'
 
-import { Footer } from "./footer"
-import { NavBar } from "./navigation"
+import { Footer } from './footer'
+import { NavBar } from './navigation'
 
-import "../sass/main.scss"
+import '../sass/main.scss'
 
 export const PageLayout = ({ currentPage, children }) => {
   return (
     <>
       <NavBar currentPage={currentPage} />
-      <main>
-        {children}
-      </main>
+      <main>{children}</main>
       <Footer />
     </>
   )
@@ -20,5 +18,5 @@ export const PageLayout = ({ currentPage, children }) => {
 
 PageLayout.propTypes = {
   children: PropTypes.node.isRequired,
-  currentPage: PropTypes.string
+  currentPage: PropTypes.string,
 }

@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import Button from 'react-bootstrap/Button'
 import ButtonGroup from 'react-bootstrap/ButtonGroup'
 import Col from 'react-bootstrap/Col'
@@ -20,10 +21,11 @@ import flickr_34364767932_ea2fa26df3_h from '../images/flickr/34364767932_ea2fa2
 import flickr_34484143016_f1faef45e0_h from '../images/flickr/34484143016_f1faef45e0_h.jpg'
 import flickr_37996293252_3f5fcab7d4_h from '../images/flickr/37996293252_3f5fcab7d4_h.jpg'
 
-const TeamGrid = ({ team, groupName }) => {
-  return team.sort(sortBy('Name')).map((person, index) => {
+const TeamGrid = ({ members }) => {
+  return members.sort(sortBy('name')).map((person, index) => {
     return (
       <Col
+        // eslint-disable-next-line react/no-array-index-key -- Data used is static and has no unique key
         key={index}
         xs={12}
         sm={12}
@@ -36,26 +38,33 @@ const TeamGrid = ({ team, groupName }) => {
           className='circle-img animated fadeInUp wow'
           data-wow-delay={`${0.1 * (index % 4)}s`}
           style={{
-            backgroundImage: `url(${
-              person.Photo
-                ? require(`../images/team/${groupName}/${person.Photo}`)
-                : alienLogo
-            })`,
+            backgroundImage: `url(${person.photo || alienLogo})`,
           }}
         />
-        <h4>{person.Name}</h4>
+        <h4>{person.name}</h4>
         <h5 className='heading-separator'>
-          {isInt(person.Year) ? `Since ${person.Year}` : person.Year}
+          {isInt(person.year) ? `Since ${person.year}` : person.year}
         </h5>
-        <p>{person.Tagline}</p>
+        <p>{person.tagline}</p>
       </Col>
     )
   })
 }
+TeamGrid.propTypes = {
+  members: PropTypes.arrayOf(
+    PropTypes.shape({
+      name: PropTypes.string.isRequired,
+      year: PropTypes.oneOfType([PropTypes.number, PropTypes.string])
+        .isRequired,
+      tagline: PropTypes.string.isRequired,
+      photo: PropTypes.string,
+    })
+  ).isRequired,
+}
 
 const TeamPage = () => {
   return (
-    <PageLayout currentPage={'team'}>
+    <PageLayout currentPage='team'>
       <Jumbotron fluid={true} className='remove-padding'>
         <Container fluid={true} className='remove-padding'>
           <Row>
@@ -76,10 +85,10 @@ const TeamPage = () => {
               <img src={alienLogo} width='60%' className='center-block mb-2' />
               <h6>Team number:</h6>
               <h5>4604</h5>
-              <div className='text-box-separator'></div>
+              <div className='text-box-separator' />
               <h6>Started:</h6>
               <h5>2012-2013 Season</h5>
-              <div className='text-box-separator'></div>
+              <div className='text-box-separator' />
               <h6>From:</h6>
               <h5>
                 Calgary, Alberta
@@ -126,11 +135,11 @@ const TeamPage = () => {
             <ButtonGroup
               id='trons-vert-team-menu'
               vertical={true}
-              size={'lg'}
+              size='lg'
               aria-label='Meet the Team'
             >
               <Button
-                variant={'secondary'}
+                variant='secondary'
                 onClick={() => {
                   window.location.href = '#trons'
                 }}
@@ -139,7 +148,7 @@ const TeamPage = () => {
                 Roster
               </Button>
               <Button
-                variant={'secondary'}
+                variant='secondary'
                 onClick={() => {
                   window.location.href = '#mentors'
                 }}
@@ -148,7 +157,7 @@ const TeamPage = () => {
                 Mentors
               </Button>
               <Button
-                variant={'secondary'}
+                variant='secondary'
                 onClick={() => {
                   window.location.href = '#alumni'
                 }}
@@ -161,11 +170,7 @@ const TeamPage = () => {
         </Row>
       </Container>
 
-      <InlineContactForm
-        headline={
-          'Learn STEM, design thinking, business skills, and build confidence - become a Tron!'
-        }
-      />
+      <InlineContactForm headline='Learn STEM, design thinking, business skills, and build confidence - become a Tron!' />
 
       <Parallax img={flickr_34364767932_ea2fa26df3_h} />
 
@@ -176,7 +181,7 @@ const TeamPage = () => {
           </Col>
         </Row>
         <Row>
-          <TeamGrid team={team} groupName={'team'} />
+          <TeamGrid members={team} groupName='team' />
         </Row>
       </Container>
 
@@ -189,7 +194,7 @@ const TeamPage = () => {
           </Col>
         </Row>
         <Row>
-          <TeamGrid team={mentors} groupName={'mentors'} />
+          <TeamGrid members={mentors} groupName='mentors' />
         </Row>
       </Container>
 
@@ -202,7 +207,7 @@ const TeamPage = () => {
           </Col>
         </Row>
         <Row>
-          <TeamGrid team={alumni} groupName={'alumni'} />
+          <TeamGrid members={alumni} groupName='alumni' />
         </Row>
       </Container>
     </PageLayout>

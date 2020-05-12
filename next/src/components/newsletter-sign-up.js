@@ -22,31 +22,31 @@ export const NewsletterSignUp = () => {
           name='mc-embedded-subscribe-form'
           className='validate'
           target='_blank'
-          noValidate
+          noValidate={true}
         >
           <Form.Row className='align-items-center'>
             <Col sm={3}>
-              <Form.Group controlId={'mce-FNAME'}>
+              <Form.Group controlId='mce-FNAME'>
                 <Form.Label srOnly={true}>First Name</Form.Label>
                 <Form.Control
-                  type={'text'}
+                  type='text'
                   className='mb-2 mb-sm-0'
                   placeholder='First name'
                 />
               </Form.Group>
             </Col>
             <Col sm={3}>
-              <Form.Group controlId={'mce-LNAME'}>
+              <Form.Group controlId='mce-LNAME'>
                 <Form.Label srOnly={true}>Last Name</Form.Label>
                 <Form.Control
-                  type={'text'}
+                  type='text'
                   className='mb-2 mb-sm-0'
                   placeholder='Last name'
                 />
               </Form.Group>
             </Col>
             <Col sm={3}>
-              <Form.Group controlId={'mce-EMAIL'}>
+              <Form.Group controlId='mce-EMAIL'>
                 <Form.Label srOnly={true}>Email</Form.Label>
                 <InputGroup className='mb-2 mb-sm-0'>
                   <InputGroup.Prepend>
@@ -55,7 +55,7 @@ export const NewsletterSignUp = () => {
                     </InputGroup.Text>
                   </InputGroup.Prepend>
                   <Form.Control
-                    type={'email'}
+                    type='email'
                     className='required'
                     placeholder='Email'
                   />
@@ -72,7 +72,7 @@ export const NewsletterSignUp = () => {
                   name='b_d479728f08b6043f1d957d5b1_cc9ef4518a'
                   tabIndex='-1'
                   value=''
-                  readOnly
+                  readOnly={true}
                 />
               </div>
               <button

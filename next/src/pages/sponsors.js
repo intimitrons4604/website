@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import Button from 'react-bootstrap/Button'
 import ButtonGroup from 'react-bootstrap/ButtonGroup'
 import Card from 'react-bootstrap/Card'
@@ -53,8 +54,9 @@ const SponsorRow = ({ sponsors, sponsorType }) => {
     )
   }
 
-  return sponsors.sort(sortBy('Name')).map((sponsor, index) => {
+  return sponsors.sort(sortBy('name')).map((sponsor, index) => {
     return (
+      // eslint-disable-next-line react/no-array-index-key -- Data used is static and has no unique key
       <Row key={index} className='mt-5'>
         <Col
           xs={12}
@@ -65,24 +67,24 @@ const SponsorRow = ({ sponsors, sponsorType }) => {
           className='px-xl-5 px-lg-5 px-md-5 px-sm-1 px-xs-1 pb-5'
         >
           <img
-            src={require(`../images/sponsors/${sponsorType}/logo/${sponsor.Logo}`)}
+            src={sponsor.logo}
             width='50%'
             className='animated fadeInUp wow'
           />
-          <h2 className='pt-4'>{sponsor.Name}</h2>
-          <p>{sponsor.Description}</p>
-          <h4 className='pb-4'>Sponsorship Years: {sponsor.Years}</h4>
+          <h2 className='pt-4'>{sponsor.name}</h2>
+          <p>{sponsor.description}</p>
+          <h4 className='pb-4'>Sponsorship Years: {sponsor.years}</h4>
           <Button
-            href={sponsor.URL}
+            href={sponsor.url}
             className='trons-green-button trons-medium-button'
           >
-            Visit {sponsor.Nickname}
+            Visit {sponsor.nickname}
           </Button>
         </Col>
         <Col xs={12} sm={12} md={6} lg={6} xl={6}>
           <div
             style={{
-              backgroundImage: `url(${require(`../images/sponsors/${sponsorType}/photo/${sponsor.Photo}`)})`,
+              backgroundImage: `url(${sponsor.photo})`,
             }}
             className='trons-img-card animated fadeIn wow'
             data-wow-delay='0.5s'
@@ -91,6 +93,23 @@ const SponsorRow = ({ sponsors, sponsorType }) => {
       </Row>
     )
   })
+}
+SponsorRow.propTypes = {
+  sponsors: PropTypes.arrayOf(
+    PropTypes.shape({
+      name: PropTypes.string.isRequired,
+      nickname: PropTypes.string.isRequired,
+      years: PropTypes.oneOfType([
+        PropTypes.arrayOf(PropTypes.number),
+        PropTypes.string,
+      ]).isRequired,
+      description: PropTypes.string.isRequired,
+      url: PropTypes.string.isRequired,
+      logo: PropTypes.string.isRequired,
+      photo: PropTypes.string.isRequired,
+    })
+  ).isRequired,
+  sponsorType: PropTypes.string,
 }
 
 /* usually for Megabyte, Kilobyte and In-Kind sponsors with different # slices */
@@ -106,9 +125,10 @@ const SponsorGrid = ({ sponsors, sponsorType, slices }) => {
     )
   }
 
-  return sponsors.sort(sortBy('Name')).map((sponsor, index) => {
+  return sponsors.sort(sortBy('name')).map((sponsor, index) => {
     return (
       <Col
+        // eslint-disable-next-line react/no-array-index-key -- Data used is static and has no unique key
         key={index}
         xs={12}
         sm={12}
@@ -120,37 +140,55 @@ const SponsorGrid = ({ sponsors, sponsorType, slices }) => {
         <div
           className='trons-sponsor-logo animated fadeIn wow'
           style={{
-            backgroundImage: `url(${require(`../images/sponsors/${sponsorType}/logo/${sponsor.Logo}`)})`,
+            backgroundImage: `url(${sponsor.logo})`,
           }}
         />
-        <h4 className='pt-4'>{sponsor.Name}</h4>
-        {sponsor.Photo ? (
+        <h4 className='pt-4'>{sponsor.name}</h4>
+        {sponsor.photo ? (
           <img
             className='trons-sponsor-photo animated fadeIn wow'
-            src={require(`../images/sponsors/${sponsorType}/photo/${sponsor.Photo}`)}
+            src={sponsor.photo}
           />
         ) : null}
-        <p>{sponsor.Description}</p>
-        <h6 className='pb-4'>Sponsorship Years: {sponsor.Years}</h6>
+        <p>{sponsor.description}</p>
+        <h6 className='pb-4'>Sponsorship Years: {sponsor.years}</h6>
         <Button
-          href={sponsor.URL}
+          href={sponsor.url}
           className='trons-green-button trons-small-button'
         >
-          Visit {sponsor.Nickname}
+          Visit {sponsor.nickname}
         </Button>
       </Col>
     )
   })
+}
+SponsorGrid.propTypes = {
+  sponsors: PropTypes.arrayOf(
+    PropTypes.shape({
+      name: PropTypes.string.isRequired,
+      nickname: PropTypes.string.isRequired,
+      years: PropTypes.oneOfType([
+        PropTypes.arrayOf(PropTypes.number),
+        PropTypes.string,
+      ]).isRequired,
+      description: PropTypes.string.isRequired,
+      url: PropTypes.string.isRequired,
+      logo: PropTypes.string.isRequired,
+      photo: PropTypes.string,
+    })
+  ).isRequired,
+  sponsorType: PropTypes.string,
 }
 
 const SponsorList = ({ sponsors }) => {
   return (
     <Col xs={12} sm={12} md={6} lg={3} xl={3} className='px-5'>
       <ul>
-        {sponsors.sort(sortBy('Name')).map((sponsor, index) => {
+        {sponsors.sort(sortBy('name')).map((sponsor, index) => {
           return (
+            // eslint-disable-next-line react/no-array-index-key -- Data used is static and has no unique key
             <li key={index}>
-              {sponsor.Name} {sponsor.Amount}
+              {sponsor.name} {sponsor.amount}
             </li>
           )
         })}
@@ -158,10 +196,18 @@ const SponsorList = ({ sponsors }) => {
     </Col>
   )
 }
+SponsorList.propTypes = {
+  sponsors: PropTypes.arrayOf(
+    PropTypes.shape({
+      name: PropTypes.string.isRequired,
+      amount: PropTypes.string.isRequired,
+    })
+  ).isRequired,
+}
 
 const SponsorsPage = () => {
   return (
-    <PageLayout currentPage={'sponsors'}>
+    <PageLayout currentPage='sponsors'>
       <Container
         fluid={true}
         className='mt-5 px-xl-5 px-lg-5 px-md-5 px-sm-1 px-xs-1'
@@ -187,12 +233,12 @@ const SponsorsPage = () => {
               From our new home on Planet Earth to the depths of outer space,
               the Intimitrons from Area 51 would like to thank our sponsors for
               their generous contributions to our team and our cause. Without
-              their support, we wouldn't be able to participate in competition,
-              have access to advanced tools and equipment, or purchase materials
-              to build study and learn. More importantly, we wouldn't have been
-              able to reach dozens of young women in Calgary and provide them
-              with the opportunity to explore STEM and build confidence in their
-              abilities.
+              their support, we wouldn&apos;t be able to participate in
+              competition, have access to advanced tools and equipment, or
+              purchase materials to build study and learn. More importantly, we
+              wouldn&apos;t have been able to reach dozens of young women in
+              Calgary and provide them with the opportunity to explore STEM and
+              build confidence in their abilities.
             </p>
           </Col>
           <Col
@@ -206,11 +252,11 @@ const SponsorsPage = () => {
             <ButtonGroup
               id='trons-vert-team-menu'
               vertical={true}
-              size={'lg'}
+              size='lg'
               aria-label='Meet the Team'
             >
               <Button
-                variant={'secondary'}
+                variant='secondary'
                 onClick={() => {
                   window.location.href = '#Terabyte'
                 }}
@@ -219,7 +265,7 @@ const SponsorsPage = () => {
                 Terabyte
               </Button>
               <Button
-                variant={'secondary'}
+                variant='secondary'
                 onClick={() => {
                   window.location.href = '#Gigabyte'
                 }}
@@ -228,7 +274,7 @@ const SponsorsPage = () => {
                 Gigabyte
               </Button>
               <Button
-                variant={'secondary'}
+                variant='secondary'
                 onClick={() => {
                   window.location.href = '#Megabyte'
                 }}
@@ -237,7 +283,7 @@ const SponsorsPage = () => {
                 Megabyte
               </Button>
               <Button
-                variant={'secondary'}
+                variant='secondary'
                 onClick={() => {
                   window.location.href = '#Kilobyte'
                 }}
@@ -246,7 +292,7 @@ const SponsorsPage = () => {
                 Kilobyte
               </Button>
               <Button
-                variant={'secondary'}
+                variant='secondary'
                 onClick={() => {
                   window.location.href = '#Byte'
                 }}
@@ -255,7 +301,7 @@ const SponsorsPage = () => {
                 Bytes
               </Button>
               <Button
-                variant={'secondary'}
+                variant='secondary'
                 onClick={() => {
                   window.location.href = '#inkind'
                 }}
@@ -264,7 +310,7 @@ const SponsorsPage = () => {
                 In-Kind
               </Button>
               <Button
-                variant={'secondary'}
+                variant='secondary'
                 onClick={() => {
                   window.location.href = '#Bit'
                 }}
@@ -277,11 +323,7 @@ const SponsorsPage = () => {
         </Row>
       </Container>
 
-      <InlineContactForm
-        headline={
-          'Talk to us about sponsoring the Intimitrons and supporting Girls in STEM'
-        }
-      />
+      <InlineContactForm headline='Talk to us about sponsoring the Intimitrons and supporting Girls in STEM' />
 
       <Container
         fluid={true}
@@ -338,7 +380,7 @@ const SponsorsPage = () => {
                     as well as travel and robot parts.
                   </Card.Text>
                 </Card.Body>
-                <ListGroup variant={'flush'}>
+                <ListGroup variant='flush'>
                   <ListGroup.Item className='trons-green-bkgnd'>
                     Logo/Link on Trons Website
                   </ListGroup.Item>
@@ -363,7 +405,7 @@ const SponsorsPage = () => {
                     displayed in our pit and at outreach events.
                   </Card.Text>
                 </Card.Body>
-                <ListGroup variant={'flush'}>
+                <ListGroup variant='flush'>
                   <ListGroup.Item className='trons-green-bkgnd'>
                     Logo on Some Promo Materials
                   </ListGroup.Item>
@@ -384,11 +426,11 @@ const SponsorsPage = () => {
                   <Card.Text>
                     For our Megabyte sponsorship level, you get Kilobyte perks
                     plus we give your company a shout-out on social media as
-                    well as display your logo on our robot. It's important to us
-                    that people know how awesome our sponsors are.
+                    well as display your logo on our robot. It&apos;s important
+                    to us that people know how awesome our sponsors are.
                   </Card.Text>
                 </Card.Body>
-                <ListGroup variant={'flush'}>
+                <ListGroup variant='flush'>
                   <ListGroup.Item className='trons-green-bkgnd'>
                     Logo Displayed on Robot
                   </ListGroup.Item>
@@ -409,11 +451,11 @@ const SponsorsPage = () => {
                   <Card.Text>
                     For our Gigabyte sponsorship level, you get all Megabyte
                     perks plus 1 banner ad on our website and a VIP tour of our
-                    pit at 1 regional compeititon where you'll get to experience
-                    the excitement of FRC first hand.
+                    pit at 1 regional compeititon where you&apos;ll get to
+                    experience the excitement of FRC first hand.
                   </Card.Text>
                 </Card.Body>
-                <ListGroup variant={'flush'}>
+                <ListGroup variant='flush'>
                   <ListGroup.Item className='trons-green-bkgnd'>
                     Logo on All Promo Material
                   </ListGroup.Item>
@@ -439,7 +481,7 @@ const SponsorsPage = () => {
                     additional VIP tour and 2 award banquet invitations.
                   </Card.Text>
                 </Card.Body>
-                <ListGroup variant={'flush'}>
+                <ListGroup variant='flush'>
                   <ListGroup.Item className='trons-green-bkgnd'>
                     Prominent Logo Display
                   </ListGroup.Item>
@@ -499,7 +541,7 @@ const SponsorsPage = () => {
           </Col>
         </Row>
         <div>
-          <SponsorRow sponsors={terabyte} sponsorType={'terabyte'} />
+          <SponsorRow sponsors={terabyte} sponsorType='terabyte' />
         </div>
       </Container>
 
@@ -512,7 +554,7 @@ const SponsorsPage = () => {
           </Col>
         </Row>
         <div>
-          <SponsorRow sponsors={gigabyte} sponsorType={'gigabyte'} />
+          <SponsorRow sponsors={gigabyte} sponsorType='gigabyte' />
         </div>
       </Container>
 
@@ -525,11 +567,7 @@ const SponsorsPage = () => {
           </Col>
         </Row>
         <Row className='mt-5'>
-          <SponsorGrid
-            sponsors={megabyte}
-            sponsorType={'megabyte'}
-            slices={6}
-          />
+          <SponsorGrid sponsors={megabyte} sponsorType='megabyte' slices={6} />
         </Row>
       </Container>
 
@@ -542,10 +580,10 @@ const SponsorsPage = () => {
           </Col>
         </Row>
         <Row className='py-5'>
-          <SponsorRow sponsors={inkindop} sponsorType={'inkindop'} />
+          <SponsorRow sponsors={inkindop} sponsorType='inkindop' />
         </Row>
         <Row className='pt-5'>
-          <SponsorGrid sponsors={inkind} sponsorType={'inkind'} slices={4} />
+          <SponsorGrid sponsors={inkind} sponsorType='inkind' slices={4} />
         </Row>
       </Container>
 
@@ -558,11 +596,7 @@ const SponsorsPage = () => {
           </Col>
         </Row>
         <Row className='mt-5' id='kilobyte-grid'>
-          <SponsorGrid
-            sponsors={kilobyte}
-            sponsorType={'kilobyte'}
-            slices={4}
-          />
+          <SponsorGrid sponsors={kilobyte} sponsorType='kilobyte' slices={4} />
         </Row>
       </Container>
 
@@ -575,7 +609,7 @@ const SponsorsPage = () => {
           </Col>
         </Row>
         <Row className='mt-5'>
-          <SponsorGrid sponsors={byte} sponsorType={'byte'} slices={4} />
+          <SponsorGrid sponsors={byte} sponsorType='byte' slices={4} />
         </Row>
       </Container>
 

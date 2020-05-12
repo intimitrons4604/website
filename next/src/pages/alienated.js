@@ -50,7 +50,7 @@ const AlienetadPage = () => {
           <CardColumns>
             <Card>
               <Card.Img
-                variant={'top'}
+                variant='top'
                 src={alienated_blame_game_by_wildfirewhim_d8fdgb6}
               />
               <Card.Body>
@@ -59,7 +59,7 @@ const AlienetadPage = () => {
             </Card>
             <Card>
               <Card.Img
-                variant={'top'}
+                variant='top'
                 src={alienated_character_ref_sheet_by_wildfirewhim_d9obdyt}
               />
               <Card.Body>
@@ -68,7 +68,7 @@ const AlienetadPage = () => {
             </Card>
             <Card>
               <Card.Img
-                variant={'top'}
+                variant='top'
                 src={alienated_cold_by_wildfirewhim_d9u98z1}
               />
               <Card.Body>
@@ -77,7 +77,7 @@ const AlienetadPage = () => {
             </Card>
             <Card>
               <Card.Img
-                variant={'top'}
+                variant='top'
                 src={alienated_competitive_by_wildfirewhim_d7csnyv}
               />
               <Card.Body>
@@ -86,7 +86,7 @@ const AlienetadPage = () => {
             </Card>
             <Card>
               <Card.Img
-                variant={'top'}
+                variant='top'
                 src={alienated_happy_pi_day__by_wildfirewhim_d8lqr36}
               />
               <Card.Body>
@@ -95,7 +95,7 @@ const AlienetadPage = () => {
             </Card>
             <Card>
               <Card.Img
-                variant={'top'}
+                variant='top'
                 src={alienated_happy_valentines__by_wildfirewhim_d8i1y7n}
               />
               <Card.Body>
@@ -104,7 +104,7 @@ const AlienetadPage = () => {
             </Card>
             <Card>
               <Card.Img
-                variant={'top'}
+                variant='top'
                 src={alienated_happy_valentines__by_wildfirewhim_d9rsgqd}
               />
               <Card.Body>
@@ -113,7 +113,7 @@ const AlienetadPage = () => {
             </Card>
             <Card>
               <Card.Img
-                variant={'top'}
+                variant='top'
                 src={alienated_introductions_by_wildfirewhim_d8mqp33}
               />
               <Card.Body>
@@ -122,7 +122,7 @@ const AlienetadPage = () => {
             </Card>
             <Card>
               <Card.Img
-                variant={'top'}
+                variant='top'
                 src={alienated_it_me_by_wildfirewhim_d9v9ouc}
               />
               <Card.Body>
@@ -131,7 +131,7 @@ const AlienetadPage = () => {
             </Card>
             <Card>
               <Card.Img
-                variant={'top'}
+                variant='top'
                 src={alienated_megalomania_by_wildfirewhim_d9spgh6}
               />
               <Card.Body>
@@ -140,7 +140,7 @@ const AlienetadPage = () => {
             </Card>
             <Card>
               <Card.Img
-                variant={'top'}
+                variant='top'
                 src={alienated_meme_team_by_wildfirewhim_d9q4yso}
               />
               <Card.Body>
@@ -149,7 +149,7 @@ const AlienetadPage = () => {
             </Card>
             <Card>
               <Card.Img
-                variant={'top'}
+                variant='top'
                 src={alienated_no_flamethrowers_by_wildfirewhim_d8nm05k}
               />
               <Card.Body>
@@ -158,7 +158,7 @@ const AlienetadPage = () => {
             </Card>
             <Card>
               <Card.Img
-                variant={'top'}
+                variant='top'
                 src={alienated_of_space_and_time_by_wildfirewhim_d8kxlxd}
               />
               <Card.Body>
@@ -167,7 +167,7 @@ const AlienetadPage = () => {
             </Card>
             <Card>
               <Card.Img
-                variant={'top'}
+                variant='top'
                 src={alienated_sentient_being_by_wildfirewhim_d9tf8p6}
               />
               <Card.Body>
@@ -176,7 +176,7 @@ const AlienetadPage = () => {
             </Card>
             <Card>
               <Card.Img
-                variant={'top'}
+                variant='top'
                 src={alienated_so_safe_by_wildfirewhim_d8djgl8}
               />
               <Card.Body>
@@ -185,7 +185,7 @@ const AlienetadPage = () => {
             </Card>
             <Card>
               <Card.Img
-                variant={'top'}
+                variant='top'
                 src={alienated_status_light_by_wildfirewhim_d8j4jtj}
               />
               <Card.Body>
@@ -194,7 +194,7 @@ const AlienetadPage = () => {
             </Card>
             <Card>
               <Card.Img
-                variant={'top'}
+                variant='top'
                 src={alienated_stopping_traffic_by_wildfirewhim_d9mlgdj}
               />
               <Card.Body>
@@ -203,7 +203,7 @@ const AlienetadPage = () => {
             </Card>
             <Card>
               <Card.Img
-                variant={'top'}
+                variant='top'
                 src={alienated_walk_of_shame_by_wildfirewhim_d8k0cob}
               />
               <Card.Body>
@@ -212,7 +212,7 @@ const AlienetadPage = () => {
             </Card>
             <Card>
               <Card.Img
-                variant={'top'}
+                variant='top'
                 src={alienated_weld_the_power_by_wildfirewhim_d86njk4}
               />
               <Card.Body>
@@ -221,11 +221,11 @@ const AlienetadPage = () => {
             </Card>
             <Card>
               <Card.Img
-                variant={'top'}
+                variant='top'
                 src={alienated_what_s_sleep__by_wildfirewhim_d8g9vdy}
               />
               <Card.Body>
-                <Card.Title>WHAT'S SLEEP</Card.Title>
+                <Card.Title>WHAT&apos;S SLEEP</Card.Title>
               </Card.Body>
             </Card>
           </CardColumns>

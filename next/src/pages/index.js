@@ -30,7 +30,7 @@ import flickr_38610809881_b793ec939b_b from '../images/flickr/38610809881_b793ec
 
 const HomePage = () => {
   return (
-    <PageLayout currentPage={'home'}>
+    <PageLayout currentPage='home'>
       <Jumbotron fluid={true} className='pr-3 pl-3 pl-xl-0 pl-lg-0 pl-md-0'>
         <Container fluid={true} className='remove-padding'>
           <Row>
@@ -83,7 +83,7 @@ const HomePage = () => {
         <Row className='align-items-center pl-4 pt-5 pb-3'>
           <Col xs={12} sm={6} md={6} lg={9} xl={9}>
             <h2>The Intimitrons from AREA 51</h2>
-            <h5>Western Canada's First All-Girls FRC Robotics Team</h5>
+            <h5>Western Canada&apos;s First All-Girls FRC Robotics Team</h5>
           </Col>
           <Col xs={12} sm={6} md={6} lg={3} xl={3} className='text-center'>
             <Button
@@ -154,32 +154,32 @@ const HomePage = () => {
             xl={9}
             className='justify-content-between'
           >
-            <Tab.Container defaultActiveKey={'experience'}>
-              <Nav variant={'pills'} justify={'true'}>
+            <Tab.Container defaultActiveKey='experience'>
+              <Nav variant='pills' justify='true'>
                 <Nav.Item>
-                  <Nav.Link eventKey={'experience'}>
-                    <FontAwesomeIcon icon={faBook} size={'3x'} />
+                  <Nav.Link eventKey='experience'>
+                    <FontAwesomeIcon icon={faBook} size='3x' />
                     <br />
                     Experience
                   </Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
-                  <Nav.Link eventKey={'teamwork'}>
-                    <FontAwesomeIcon icon={faHandshake} size={'3x'} />
+                  <Nav.Link eventKey='teamwork'>
+                    <FontAwesomeIcon icon={faHandshake} size='3x' />
                     <br />
                     Teamwork
                   </Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
-                  <Nav.Link eventKey={'opportunities'}>
-                    <FontAwesomeIcon icon={faLightbulb} size={'3x'} />
+                  <Nav.Link eventKey='opportunities'>
+                    <FontAwesomeIcon icon={faLightbulb} size='3x' />
                     <br />
                     Opportunities
                   </Nav.Link>
                 </Nav.Item>
               </Nav>
               <Tab.Content className='px-xl-5 px-lg-5 px-md-5 px-sm-1 px-xs-1 pt-5'>
-                <Tab.Pane eventKey={'experience'} className='h-100'>
+                <Tab.Pane eventKey='experience' className='h-100'>
                   <img
                     src={flickr_25232354778_e3c92780a8_k}
                     className='w-100'
@@ -200,7 +200,7 @@ const HomePage = () => {
                     3-D Autodesk CAD tool.
                   </div>
                 </Tab.Pane>
-                <Tab.Pane eventKey={'teamwork'} className='h-100'>
+                <Tab.Pane eventKey='teamwork' className='h-100'>
                   <img src={flickr_38610809881_b793ec939b_b} width='100%' />
                   <div className='trons-intro pt-5'>
                     In order to meet our 6-week build schedule, we create
@@ -213,7 +213,7 @@ const HomePage = () => {
                     <span className='trons-bold-purple'>new friends</span>.
                   </div>
                 </Tab.Pane>
-                <Tab.Pane eventKey={'opportunities'} className='h-100'>
+                <Tab.Pane eventKey='opportunities' className='h-100'>
                   <img src={flickr_33584110061_6099022bb6_h} width='100%' />
                   <div className='trons-intro pt-5'>
                     FIRST participants have opportunities to practice public
@@ -233,7 +233,7 @@ const HomePage = () => {
               </Tab.Content>
             </Tab.Container>
             <div className='px-xl-5 px-lg-5 px-md-5 px-sm-1 px-xs-1 pt-5'>
-              <h5>What's It Really Like to Be a Tron?</h5>
+              <h5>What&apos;s It Really Like to Be a Tron?</h5>
               <Button
                 href='/alienated'
                 className='mt-3 trons-medium-button trons-purple-button'

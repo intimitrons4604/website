@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import Button from 'react-bootstrap/Button'
 import ButtonGroup from 'react-bootstrap/ButtonGroup'
 import Col from 'react-bootstrap/Col'
@@ -33,17 +34,18 @@ const MediaMenu = ({ media, mediaType }) => {
       <h1 className='text-center'>{mediaType}</h1>
       <Nav className='flex-column'>
         {media
-          .sort(sortBy('Date'))
+          .sort(sortBy('date'))
           .reverse()
           .map((item, index, arr) => {
             return (
+              // eslint-disable-next-line react/no-array-index-key -- Data used is static and has no unique key
               <React.Fragment key={index}>
                 <Nav.Item className='trons-bullet'>
-                  <Nav.Link href={`#${getMenuDivId(item.Title)}`}>
-                    {item.Title}
+                  <Nav.Link href={`#${getMenuDivId(item.title)}`}>
+                    {item.title}
                     <br />
-                    <h6>{item.Source}</h6>
-                    <h6>{moment(item.Date).format('MMMM Do YYYY')}</h6>
+                    <h6>{item.source}</h6>
+                    <h6>{moment(item.date).format('MMMM Do YYYY')}</h6>
                   </Nav.Link>
                 </Nav.Item>
                 {index < arr.length - 1 ? (
@@ -56,45 +58,56 @@ const MediaMenu = ({ media, mediaType }) => {
     </div>
   )
 }
+MediaMenu.propTypes = {
+  media: PropTypes.arrayOf(
+    PropTypes.shape({
+      title: PropTypes.string.isRequired,
+      source: PropTypes.string.isRequired,
+      date: PropTypes.string.isRequired,
+    })
+  ).isRequired,
+  mediaType: PropTypes.string,
+}
 
-const MediaRow = ({ media, mediaType }) => {
+const MediaRow = ({ media }) => {
   return media
-    .sort(sortBy('Date'))
+    .sort(sortBy('date'))
     .reverse()
     .map((item, index) => {
       return (
+        // eslint-disable-next-line react/no-array-index-key -- Data used is static and has no unique key
         <React.Fragment key={index}>
           <Row
             className='mb-5'
             style={{ height: '50px' }}
-            id={getMenuDivId(item.Title)}
+            id={getMenuDivId(item.title)}
           />
           <Row className='mt-5 mb-5'>
             <Col xs={12} sm={12} md={4} lg={4} xl={4} className='pb-5'>
               <img
-                src={require(`../images/media-thumbnail/${mediaType}/${item.Thumbnail}`)}
+                src={item.thumbnail}
                 width='90%'
                 className='animated fadeIn wow'
               />
             </Col>
             <Col xs={12} sm={12} md={8} lg={8} xl={8}>
-              <h3>{item.Title}</h3>
+              <h3>{item.title}</h3>
               <div className='d-flex justify-content-between align-items-end'>
                 <div className='p-0 m-0'>
-                  <h6 className='p-0 m-0'>{item.Source}</h6>
+                  <h6 className='p-0 m-0'>{item.source}</h6>
                 </div>
                 <div className='p-0 m-0'>
                   <h6 className='p-0 m-0 text-right'>
-                    {moment(item.Date).format('MMMM Do YYYY')}
+                    {moment(item.date).format('MMMM Do YYYY')}
                   </h6>
                 </div>
               </div>
-              <p>{item.Snippet}</p>
+              <p>{item.snippet}</p>
               <Button
-                href={item.URL}
+                href={item.url}
                 className='trons-green-button trons-small-button'
               >
-                {item.Button}
+                {item.button}
               </Button>
             </Col>
           </Row>
@@ -102,10 +115,22 @@ const MediaRow = ({ media, mediaType }) => {
       )
     })
 }
+MediaRow.propTypes = {
+  media: PropTypes.arrayOf(
+    PropTypes.shape({
+      title: PropTypes.string.isRequired,
+      source: PropTypes.string.isRequired,
+      date: PropTypes.string.isRequired,
+      thumbnail: PropTypes.string.isRequired,
+      snippet: PropTypes.string.isRequired,
+      button: PropTypes.string.isRequired,
+    })
+  ).isRequired,
+}
 
 const MediaPage = () => {
   return (
-    <PageLayout currentPage={'media'}>
+    <PageLayout currentPage='media'>
       <Jumbotron fluid={true} className='remove-padding'>
         <Container fluid={true} className='remove-padding'>
           <Row>
@@ -124,7 +149,7 @@ const MediaPage = () => {
       <Container className='mt-5'>
         <Row>
           <Col>
-            <h1 className='text-center'>What's Up Trons?</h1>
+            <h1 className='text-center'>What&apos;s Up Trons?</h1>
           </Col>
         </Row>
         <Row>
@@ -146,11 +171,11 @@ const MediaPage = () => {
             <ButtonGroup
               id='trons-vert-team-menu'
               vertical={true}
-              size={'lg'}
+              size='lg'
               aria-label='Trons in the News'
             >
               <Button
-                variant={'secondary'}
+                variant='secondary'
                 onClick={() => {
                   window.location.href = 'alienated'
                 }}
@@ -159,7 +184,7 @@ const MediaPage = () => {
                 Alienated
               </Button>
               <Button
-                variant={'secondary'}
+                variant='secondary'
                 onClick={() => {
                   window.location.href = '#articles-menu'
                 }}
@@ -168,7 +193,7 @@ const MediaPage = () => {
                 Articles
               </Button>
               <Button
-                variant={'secondary'}
+                variant='secondary'
                 onClick={() => {
                   window.location.href = '#videos-menu'
                 }}
@@ -190,23 +215,23 @@ const MediaPage = () => {
       <Container fluid={true}>
         <Row>
           <Col className='p-0' id='articles-menu'>
-            <MediaMenu media={articles} mediaType={'articles'} />
+            <MediaMenu media={articles} mediaType='articles' />
           </Col>
         </Row>
       </Container>
       <Container className='mt-5' id='articles'>
-        <MediaRow media={articles} mediaType={'articles'} />
+        <MediaRow media={articles} mediaType='articles' />
       </Container>
 
       <Container fluid={true}>
         <Row>
           <Col className='p-0' id='videos-menu'>
-            <MediaMenu media={videos} mediaType={'videos'} />
+            <MediaMenu media={videos} mediaType='videos' />
           </Col>
         </Row>
       </Container>
       <Container className='mt-5' id='videos'>
-        <MediaRow media={videos} mediaType={'videos'} />
+        <MediaRow media={videos} mediaType='videos' />
       </Container>
     </PageLayout>
   )

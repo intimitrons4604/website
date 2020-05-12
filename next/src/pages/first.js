@@ -128,11 +128,12 @@ const FirstRoboticsPage = () => {
           <Col className='mx-auto' style={{ minHeight: '300px' }}>
             <div className='video-responsive'>
               <iframe
+                title='2019 FIRST Robotics Competition Destination: Deep Space Game Animation'
                 src='https://www.youtube.com/embed/Mew6G_og-PI'
                 frameBorder='0'
                 allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture'
                 gesture='media'
-                allowFullScreen
+                allowFullScreen={true}
               />
             </div>
           </Col>

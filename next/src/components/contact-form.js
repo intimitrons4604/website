@@ -3,6 +3,7 @@ import Col from 'react-bootstrap/Col'
 import Container from 'react-bootstrap/Container'
 import Form from 'react-bootstrap/Form'
 import InputGroup from 'react-bootstrap/InputGroup'
+import PropTypes from 'prop-types'
 import Row from 'react-bootstrap/Row'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -23,29 +24,29 @@ export const InlineContactForm = ({ headline }) => {
           >
             <Form.Row className='align-items-center'>
               <Col sm={3}>
-                <Form.Group controlId={'fname'}>
+                <Form.Group controlId='fname'>
                   <Form.Label srOnly={true}>First Name</Form.Label>
                   <Form.Control
-                    type={'text'}
+                    type='text'
                     className='required mb-2 mb-sm-0'
                     placeholder='First name'
-                    required
+                    required={true}
                   />
                 </Form.Group>
               </Col>
               <Col sm={3}>
-                <Form.Group controlId={'lname'}>
+                <Form.Group controlId='lname'>
                   <Form.Label srOnly={true}>Last Name</Form.Label>
                   <Form.Control
-                    type={'text'}
+                    type='text'
                     className='required mb-2 mb-sm-0'
                     placeholder='Last name'
-                    required
+                    required={true}
                   />
                 </Form.Group>
               </Col>
               <Col sm={3}>
-                <Form.Group controlId={'email'}>
+                <Form.Group controlId='email'>
                   <Form.Label srOnly={true}>Email</Form.Label>
                   <InputGroup className='mb-2 mb-sm-0'>
                     <InputGroup.Prepend>
@@ -54,10 +55,10 @@ export const InlineContactForm = ({ headline }) => {
                       </InputGroup.Text>
                     </InputGroup.Prepend>
                     <Form.Control
-                      type={'email'}
+                      type='email'
                       className='required'
                       placeholder='Email'
-                      required
+                      required={true}
                     />
                   </InputGroup>
                 </Form.Group>
@@ -79,9 +80,13 @@ export const InlineContactForm = ({ headline }) => {
       </Row>
       <Row className='mx-auto px-5 pt-0 pb-4'>
         <Col xs={9} sm={9} md={9} lg={9} xl={9} className='p-0'>
-          <div id='contact-message' className='alert hidden mt-2'></div>
+          <div id='contact-message' className='alert hidden mt-2' />
         </Col>
       </Row>
     </Container>
   )
+}
+
+InlineContactForm.propTypes = {
+  headline: PropTypes.string.isRequired,
 }

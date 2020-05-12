@@ -16,7 +16,7 @@ import talkToTrons from '../images/talk-to-trons.jpg'
 
 const ContactPage = () => {
   return (
-    <PageLayout currentPage={'contact'}>
+    <PageLayout currentPage='contact'>
       <Jumbotron fluid={true} className='remove-padding'>
         <Container fluid={true} className='remove-padding'>
           <Row>
@@ -35,11 +35,11 @@ const ContactPage = () => {
           <Col>
             <h1>The Trons Want to Hear from You</h1>
             <p className='trons-intro'>
-              Are you looking for an after school activity that's different from
-              the rest? FRC isn't just about robots. It's also about project
-              management, leadership, building business skills, and design. Make
-              new friends and build the confidence you'll need to meet the world
-              on your terms.
+              Are you looking for an after school activity that&apos;s different
+              from the rest? FRC isn&apos;t just about robots. It&apos;s also
+              about project management, leadership, building business skills,
+              and design. Make new friends and build the confidence you&apos;ll
+              need to meet the world on your terms.
             </p>
           </Col>
         </Row>
@@ -59,21 +59,21 @@ const ContactPage = () => {
             >
               <Form.Row className='pb-3'>
                 <Col xs={6} sm={6} md={6} lg={6} xl={6}>
-                  <Form.Group controlId={'firstName'}>
+                  <Form.Group controlId='firstName'>
                     <Form.Label>First Name</Form.Label>
                     <Form.Control
-                      type={'text'}
+                      type='text'
                       className='mb-2 mb-sm-0 required'
                       placeholder='Jane'
-                      required
+                      required={true}
                     />
                   </Form.Group>
                 </Col>
                 <Col xs={6} sm={6} md={6} lg={6} xl={6}>
-                  <Form.Group controlId={'lastName'}>
+                  <Form.Group controlId='lastName'>
                     <Form.Label>Last Name</Form.Label>
                     <Form.Control
-                      type={'text'}
+                      type='text'
                       className='mb-2 mb-sm-0'
                       placeholder='Doe'
                     />
@@ -82,7 +82,7 @@ const ContactPage = () => {
               </Form.Row>
               <Form.Row className='pb-3'>
                 <Col>
-                  <Form.Group controlId={'email'}>
+                  <Form.Group controlId='email'>
                     <Form.Label>Email Address</Form.Label>
                     <InputGroup className='mb-2 mb-sm-0'>
                       <InputGroup.Prepend>
@@ -91,10 +91,10 @@ const ContactPage = () => {
                         </InputGroup.Text>
                       </InputGroup.Prepend>
                       <Form.Control
-                        type={'email'}
+                        type='email'
                         className='required rounded-right'
                         placeholder='jane@example.org'
-                        required
+                        required={true}
                       />
                     </InputGroup>
                   </Form.Group>
@@ -102,14 +102,14 @@ const ContactPage = () => {
               </Form.Row>
               <Form.Row className='pb-5'>
                 <Col>
-                  <Form.Group controlId={'message'}>
+                  <Form.Group controlId='message'>
                     <Form.Label>Message</Form.Label>
                     <Form.Control
-                      as={'textarea'}
+                      as='textarea'
                       className='mb-2 mb-sm-0 required'
                       rows='5'
                       placeholder='The Trons are wicked cool... where do I sign up?'
-                      required
+                      required={true}
                     />
                   </Form.Group>
                 </Col>
@@ -133,10 +133,10 @@ const ContactPage = () => {
               <img src={alienLogo} width='60%' className='center-block mb-2' />
               <h6>Email:</h6>
               <h5>info@intimitrons.ca</h5>
-              <div className='text-box-separator'></div>
+              <div className='text-box-separator' />
               <h6>Location:</h6>
               <h5>University of Calgary</h5>
-              <div className='text-box-separator'></div>
+              <div className='text-box-separator' />
               <h6>Schedule:</h6>
               <h5>Tues/Thurs 6pm-8pm + Sat 10am-4pm</h5>
             </div>

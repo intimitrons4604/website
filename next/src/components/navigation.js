@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 import Nav from 'react-bootstrap/Nav'
 import Navbar from 'react-bootstrap/Navbar'
@@ -8,12 +9,12 @@ import headerLogo from '../images/Logo-header-white.svg'
 export const NavBar = ({ currentPage }) => {
   return (
     <Navbar
-      expand={'lg'}
-      sticky={'top'}
-      variant={'dark'}
+      expand='lg'
+      sticky='top'
+      variant='dark'
       className='trons-purple-bkgnd'
     >
-      <Navbar.Brand href={'#'}>
+      <Navbar.Brand href='#'>
         <img src={headerLogo} height='65' />
       </Navbar.Brand>
       <Navbar.Toggle />
@@ -58,4 +59,15 @@ export const NavBar = ({ currentPage }) => {
       </Navbar.Collapse>
     </Navbar>
   )
+}
+
+NavBar.propTypes = {
+  currentPage: PropTypes.oneOf([
+    'home',
+    'first',
+    'team',
+    'sponsors',
+    'media',
+    'contact',
+  ]),
 }

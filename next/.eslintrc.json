@@ -1,0 +1,97 @@
+{
+  "env": {
+    "browser": true,
+    "es2020": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:import/react",
+    "plugin:jsx-a11y/recommended",
+    "plugin:react/recommended",
+    "plugin:react-hooks/recommended",
+    "prettier"
+  ],
+  "globals": {
+    "Atomics": "readonly",
+    "SharedArrayBuffer": "readonly"
+  },
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "sourceType": "module"
+  },
+  "plugins": ["import", "jsx-a11y", "react", "react-hooks"],
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  },
+  "overrides": [
+    {
+      "files": [
+        "./gatsby-browser.js",
+        "./gatsby-config.js",
+        "./gatsby-node.js",
+        "./gatsby-ssr.js"
+      ],
+      "env": {
+        "browser": false,
+        "node": true
+      }
+    }
+  ],
+  "rules": {
+    "import/default": "error",
+    "import/export": "error",
+    "import/first": "error",
+    "import/named": "error",
+    "import/namespace": "error",
+    "import/no-absolute-path": "error",
+    "import/no-dynamic-require": "error",
+    "import/no-mutable-exports": "error",
+    "import/no-named-as-default": "error",
+    "import/no-named-as-default-member": "error",
+    "import/no-named-default": "error",
+    "import/no-self-import": "error",
+    "import/no-unresolved": "error",
+    "import/no-useless-path-segments": "error",
+    "import/no-webpack-loader-syntax": "error",
+    // See Issue #55
+    "jsx-a11y/alt-text": "warn",
+    "no-alert": "error",
+    "no-console": "error",
+    "no-duplicate-imports": "error",
+    "no-eval": "error",
+    "no-extend-native": "error",
+    "no-floating-decimal": "error",
+    "no-param-reassign": "error",
+    "no-return-await": "error",
+    "no-shadow": ["error", { "builtinGlobals": true }],
+    "no-useless-call": "error",
+    "prefer-const": "error",
+    "prefer-numeric-literals": "error",
+    "prefer-rest-params": "error",
+    "prefer-spread": "error",
+    "react/button-has-type": "error",
+    "react/default-props-match-prop-types": "error",
+    "react/jsx-boolean-value": ["error", "always"],
+    "react/jsx-fragments": "error",
+    "react/jsx-no-script-url": "error",
+    "react/jsx-no-useless-fragment": "error",
+    "react/jsx-pascal-case": "error",
+    "react/no-access-state-in-setstate": "error",
+    "react/no-danger": "error",
+    "react/no-redundant-should-component-update": "error",
+    "react/no-this-in-sfc": "error",
+    "react/no-typos": "error",
+    "react/no-array-index-key": "error",
+    "react/no-unsafe": "error",
+    "react/no-unused-state": "error",
+    "react/prefer-es6-class": "error",
+    "react/self-closing-comp": "error",
+    "react/void-dom-elements-no-children": "error",
+    "require-atomic-updates": "error",
+    "require-await": "error"
+  }
+}

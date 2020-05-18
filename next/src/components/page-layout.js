@@ -1,8 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import { Footer } from './footer'
-import { NavBar } from './navigation'
+import { Footer } from './footer.js'
+import { NavBar } from './navigation.js'
 
 import '../sass/main.scss'
 

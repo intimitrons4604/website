@@ -5,7 +5,7 @@ import React from 'react'
 import Row from 'react-bootstrap/Row'
 import moment from 'moment'
 
-import { getMenuDivId, sortBy } from '../util/legacy-util'
+import { getMenuDivId, sortBy } from '../util/legacy-util.js'
 
 export const MediaRows = ({ media }) => {
   return media

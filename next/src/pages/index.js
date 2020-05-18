@@ -12,9 +12,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBook, faHeart } from '@fortawesome/free-solid-svg-icons'
 import { faHandshake, faLightbulb } from '@fortawesome/free-regular-svg-icons'
 
-import { NewsletterSignUp } from '../components/newsletter-sign-up'
-import { PageLayout } from '../components/page-layout'
-import { Parallax } from '../components/parallax'
+import { NewsletterSignUp } from '../components/newsletter-sign-up.js'
+import { PageLayout } from '../components/page-layout.js'
+import { Parallax } from '../components/parallax.js'
 
 import firstLikeAGirl from '../images/FIRST_LikeaGirl.png'
 import alienLogo from '../images/Logo-Alien-Only.svg'

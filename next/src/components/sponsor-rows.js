@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 import React from 'react'
 import Row from 'react-bootstrap/Row'
 
-import { sortBy } from '../util/legacy-util'
+import { sortBy } from '../util/legacy-util.js'
 
 /* usually for Terabyte and/or Gigabyte Level */
 export const SponsorRows = ({ sponsors, sponsorType }) => {

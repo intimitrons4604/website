@@ -9,7 +9,7 @@ import Row from 'react-bootstrap/Row'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 
-import { PageLayout } from '../components/page-layout'
+import { PageLayout } from '../components/page-layout.js'
 
 import alienLogo from '../images/Logo-Alien-Only.svg'
 import talkToTrons from '../images/talk-to-trons.jpg'

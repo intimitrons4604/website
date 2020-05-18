@@ -4,7 +4,7 @@ import Col from 'react-bootstrap/Col'
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 
-import { PageLayout } from '../components/page-layout'
+import { PageLayout } from '../components/page-layout.js'
 
 import firstRoboticsCompetitionMini from '../files/first-robotics-competition-mini.pdf'
 

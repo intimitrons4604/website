@@ -3,7 +3,7 @@ import Col from 'react-bootstrap/Col'
 import PropTypes from 'prop-types'
 import React from 'react'
 
-import { sortBy } from '../util/legacy-util'
+import { sortBy } from '../util/legacy-util.js'
 
 /* usually for Megabyte, Kilobyte and In-Kind sponsors with different # slices */
 export const SponsorGrid = ({ sponsors, sponsorType, slices }) => {

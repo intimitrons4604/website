@@ -2,7 +2,7 @@ import Col from 'react-bootstrap/Col'
 import PropTypes from 'prop-types'
 import React from 'react'
 
-import { sortBy } from '../util/legacy-util'
+import { sortBy } from '../util/legacy-util.js'
 
 export const SponsorList = ({ sponsors }) => {
   return (

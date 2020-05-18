@@ -3,7 +3,7 @@ import React from 'react'
 import Nav from 'react-bootstrap/Nav'
 import moment from 'moment'
 
-import { getMenuDivId, sortBy } from '../util/legacy-util'
+import { getMenuDivId, sortBy } from '../util/legacy-util.js'
 
 export const MediaMenu = ({ media, mediaType }) => {
   return (

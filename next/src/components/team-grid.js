@@ -1,7 +1,7 @@
 import Col from 'react-bootstrap/Col'
 import React from 'react'
 import PropTypes from 'prop-types'
-import { sortBy, isInt } from '../util/legacy-util'
+import { sortBy, isInt } from '../util/legacy-util.js'
 
 import alienLogo from '../images/Logo-Alien-Only.svg'
 

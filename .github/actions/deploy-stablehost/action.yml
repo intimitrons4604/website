@@ -1,20 +1,18 @@
----
-name: 'Deploy to StableHost'
-description: 'Deploy website to StableHost'
+name: Deploy to StableHost
+description: Deploy website to StableHost
 branding:
-  icon: 'arrow-up-circle'  
-  color: 'green'
+  icon: arrow-up-circle
+  color: green
 inputs:
   environment:
-    description: 'Environment to deploy to. One of [''staging'', ''production''].'
+    description: Environment to deploy to. One of ['staging', 'production'].
     required: true
   private_key:
-    description: 'The SSH private key to connect to StableHost'
+    description: The SSH private key to connect to StableHost
     required: true
 runs:
-  using: 'docker'
-  image: 'Dockerfile'
+  using: docker
+  image: Dockerfile
   args:
     - ${{ inputs.environment }}
     - ${{ inputs.private_key }}
-...

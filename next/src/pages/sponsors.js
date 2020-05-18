@@ -1,5 +1,4 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 import Button from 'react-bootstrap/Button'
 import ButtonGroup from 'react-bootstrap/ButtonGroup'
 import Card from 'react-bootstrap/Card'
@@ -15,6 +14,9 @@ import { faHandSpock } from '@fortawesome/free-regular-svg-icons'
 import { InlineContactForm } from '../components/contact-form'
 import { PageLayout } from '../components/page-layout'
 import { Parallax } from '../components/parallax'
+import { SponsorGrid } from '../components/sponsor-grid'
+import { SponsorList } from '../components/sponsor-list'
+import { SponsorRows } from '../components/sponsor-rows'
 
 import {
   terabyte,
@@ -27,8 +29,6 @@ import {
   bit,
 } from '../data/sponsors.js'
 
-import { sortBy } from '../util/legacy-util'
-
 import sponsor2019 from '../files/sponsor2019.pdf'
 
 import flickr_26251669169_532a2e461b_h from '../images/flickr/26251669169_532a2e461b_h.jpg'
@@ -37,173 +37,6 @@ import flickr_34139744040_dd7101632a_h from '../images/flickr/34139744040_dd7101
 import flickr_37252186395_e2a8f6c242_h from '../images/flickr/37252186395_e2a8f6c242_h.jpg'
 import flickr_46815681822_1ed0845e9b_k from '../images/flickr/46815681822_1ed0845e9b_k.jpg'
 import flickr_46815682412_71179fc4a8_k from '../images/flickr/46815682412_71179fc4a8_k.jpg'
-
-/* usually for Terabyte and/or Gigabyte Level */
-const SponsorRow = ({ sponsors, sponsorType }) => {
-  if (sponsors.length === 0) {
-    return (
-      <Row className='mt-5'>
-        <Col>
-          <h3 className='text-center'>The Trons need your support!</h3>
-          <h4 className='text-center'>
-            Be the first {sponsorType} sponsor to pledge your support this
-            season.
-          </h4>
-        </Col>
-      </Row>
-    )
-  }
-
-  return sponsors.sort(sortBy('name')).map((sponsor, index) => {
-    return (
-      // eslint-disable-next-line react/no-array-index-key -- Data used is static and has no unique key
-      <Row key={index} className='mt-5'>
-        <Col
-          xs={12}
-          sm={12}
-          md={6}
-          lg={6}
-          xl={6}
-          className='px-xl-5 px-lg-5 px-md-5 px-sm-1 px-xs-1 pb-5'
-        >
-          <img
-            src={sponsor.logo}
-            width='50%'
-            className='animated fadeInUp wow'
-          />
-          <h2 className='pt-4'>{sponsor.name}</h2>
-          <p>{sponsor.description}</p>
-          <h4 className='pb-4'>Sponsorship Years: {sponsor.years}</h4>
-          <Button
-            href={sponsor.url}
-            className='trons-green-button trons-medium-button'
-          >
-            Visit {sponsor.nickname}
-          </Button>
-        </Col>
-        <Col xs={12} sm={12} md={6} lg={6} xl={6}>
-          <div
-            style={{
-              backgroundImage: `url(${sponsor.photo})`,
-            }}
-            className='trons-img-card animated fadeIn wow'
-            data-wow-delay='0.5s'
-          />
-        </Col>
-      </Row>
-    )
-  })
-}
-SponsorRow.propTypes = {
-  sponsors: PropTypes.arrayOf(
-    PropTypes.shape({
-      name: PropTypes.string.isRequired,
-      nickname: PropTypes.string.isRequired,
-      years: PropTypes.oneOfType([
-        PropTypes.arrayOf(PropTypes.number),
-        PropTypes.string,
-      ]).isRequired,
-      description: PropTypes.string.isRequired,
-      url: PropTypes.string.isRequired,
-      logo: PropTypes.string.isRequired,
-      photo: PropTypes.string.isRequired,
-    })
-  ).isRequired,
-  sponsorType: PropTypes.string,
-}
-
-/* usually for Megabyte, Kilobyte and In-Kind sponsors with different # slices */
-const SponsorGrid = ({ sponsors, sponsorType, slices }) => {
-  if (sponsors.length === 0) {
-    return (
-      <Col>
-        <h3 className='text-center'>The Trons need your support!</h3>
-        <h4 className='text-center'>
-          Be the first {sponsorType} sponsor to pledge your support this season.
-        </h4>
-      </Col>
-    )
-  }
-
-  return sponsors.sort(sortBy('name')).map((sponsor, index) => {
-    return (
-      <Col
-        // eslint-disable-next-line react/no-array-index-key -- Data used is static and has no unique key
-        key={index}
-        xs={12}
-        sm={12}
-        md={6}
-        lg={slices}
-        xl={slices}
-        className='px-xl-5 px-lg-5 px-md-5 px-sm-1 px-xs-1 pb-5'
-      >
-        <div
-          className='trons-sponsor-logo animated fadeIn wow'
-          style={{
-            backgroundImage: `url(${sponsor.logo})`,
-          }}
-        />
-        <h4 className='pt-4'>{sponsor.name}</h4>
-        {sponsor.photo ? (
-          <img
-            className='trons-sponsor-photo animated fadeIn wow'
-            src={sponsor.photo}
-          />
-        ) : null}
-        <p>{sponsor.description}</p>
-        <h6 className='pb-4'>Sponsorship Years: {sponsor.years}</h6>
-        <Button
-          href={sponsor.url}
-          className='trons-green-button trons-small-button'
-        >
-          Visit {sponsor.nickname}
-        </Button>
-      </Col>
-    )
-  })
-}
-SponsorGrid.propTypes = {
-  sponsors: PropTypes.arrayOf(
-    PropTypes.shape({
-      name: PropTypes.string.isRequired,
-      nickname: PropTypes.string.isRequired,
-      years: PropTypes.oneOfType([
-        PropTypes.arrayOf(PropTypes.number),
-        PropTypes.string,
-      ]).isRequired,
-      description: PropTypes.string.isRequired,
-      url: PropTypes.string.isRequired,
-      logo: PropTypes.string.isRequired,
-      photo: PropTypes.string,
-    })
-  ).isRequired,
-  sponsorType: PropTypes.string,
-}
-
-const SponsorList = ({ sponsors }) => {
-  return (
-    <Col xs={12} sm={12} md={6} lg={3} xl={3} className='px-5'>
-      <ul>
-        {sponsors.sort(sortBy('name')).map((sponsor, index) => {
-          return (
-            // eslint-disable-next-line react/no-array-index-key -- Data used is static and has no unique key
-            <li key={index}>
-              {sponsor.name} {sponsor.amount}
-            </li>
-          )
-        })}
-      </ul>
-    </Col>
-  )
-}
-SponsorList.propTypes = {
-  sponsors: PropTypes.arrayOf(
-    PropTypes.shape({
-      name: PropTypes.string.isRequired,
-      amount: PropTypes.string.isRequired,
-    })
-  ).isRequired,
-}
 
 const SponsorsPage = () => {
   return (
@@ -541,7 +374,7 @@ const SponsorsPage = () => {
           </Col>
         </Row>
         <div>
-          <SponsorRow sponsors={terabyte} sponsorType='terabyte' />
+          <SponsorRows sponsors={terabyte} sponsorType='terabyte' />
         </div>
       </Container>
 
@@ -554,7 +387,7 @@ const SponsorsPage = () => {
           </Col>
         </Row>
         <div>
-          <SponsorRow sponsors={gigabyte} sponsorType='gigabyte' />
+          <SponsorRows sponsors={gigabyte} sponsorType='gigabyte' />
         </div>
       </Container>
 
@@ -580,7 +413,7 @@ const SponsorsPage = () => {
           </Col>
         </Row>
         <Row className='py-5'>
-          <SponsorRow sponsors={inkindop} sponsorType='inkindop' />
+          <SponsorRows sponsors={inkindop} sponsorType='inkindop' />
         </Row>
         <Row className='pt-5'>
           <SponsorGrid sponsors={inkind} sponsorType='inkind' slices={4} />

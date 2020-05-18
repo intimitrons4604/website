@@ -1,5 +1,4 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 import Button from 'react-bootstrap/Button'
 import ButtonGroup from 'react-bootstrap/ButtonGroup'
 import Col from 'react-bootstrap/Col'
@@ -10,57 +9,15 @@ import Row from 'react-bootstrap/Row'
 import { InlineContactForm } from '../components/contact-form'
 import { PageLayout } from '../components/page-layout'
 import { Parallax } from '../components/parallax'
+import { TeamGrid } from '../components/team-grid'
 
 import { team, mentors, alumni } from '../data/team.js'
-
-import { sortBy, isInt } from '../util/legacy-util'
 
 import alienLogo from '../images/Logo-Alien-Only.svg'
 import huggingRobot from '../images/hugging.robot.jpg'
 import flickr_34364767932_ea2fa26df3_h from '../images/flickr/34364767932_ea2fa26df3_h.jpg'
 import flickr_34484143016_f1faef45e0_h from '../images/flickr/34484143016_f1faef45e0_h.jpg'
 import flickr_37996293252_3f5fcab7d4_h from '../images/flickr/37996293252_3f5fcab7d4_h.jpg'
-
-const TeamGrid = ({ members }) => {
-  return members.sort(sortBy('name')).map((person, index) => {
-    return (
-      <Col
-        // eslint-disable-next-line react/no-array-index-key -- Data used is static and has no unique key
-        key={index}
-        xs={12}
-        sm={12}
-        md={6}
-        lg={3}
-        xl={3}
-        className='center-block text-center'
-      >
-        <div
-          className='circle-img animated fadeInUp wow'
-          data-wow-delay={`${0.1 * (index % 4)}s`}
-          style={{
-            backgroundImage: `url(${person.photo || alienLogo})`,
-          }}
-        />
-        <h4>{person.name}</h4>
-        <h5 className='heading-separator'>
-          {isInt(person.year) ? `Since ${person.year}` : person.year}
-        </h5>
-        <p>{person.tagline}</p>
-      </Col>
-    )
-  })
-}
-TeamGrid.propTypes = {
-  members: PropTypes.arrayOf(
-    PropTypes.shape({
-      name: PropTypes.string.isRequired,
-      year: PropTypes.oneOfType([PropTypes.number, PropTypes.string])
-        .isRequired,
-      tagline: PropTypes.string.isRequired,
-      photo: PropTypes.string,
-    })
-  ).isRequired,
-}
 
 const TeamPage = () => {
   return (

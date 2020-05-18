@@ -19,3 +19,9 @@ export function isInt(value) {
     })(parseFloat(value))
   )
 }
+
+export function getMenuDivId(title) {
+  var id = title.toLowerCase()
+  id.replace(/\s/g, '-')
+  return id
+}

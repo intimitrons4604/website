@@ -26,7 +26,18 @@ You can also access GraphiQL to aid in working with the Gatsby data layer at htt
 
 ## Environments and Deployment
 
-The next website is not currently hosted anywhere.
+Pushing to `master` automatically triggers a deployment to a development environment.
+
+The site is currently available at https://next.intimitrons.ca.
+
+### Limitations
+
+There is currently no way to tell which version is deployed.
+
+Only one deployment can safely execute at once. Deployments are not protected from interfering with each other. As a result, try to abide by the following guidelines:
+
+- Do not push commits directly to `master`. Work on a branch and merge all the work at once so it only results in a single deploy.
+- Do not make multiple merges to `master` in quick succession. If you have multiple changes to deploy or multiple people have changes to deploy, coordinate and wait until the previous change is deployed before pushing the next one.
 
 ## Visual Studio Code Setup
 

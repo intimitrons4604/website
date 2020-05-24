@@ -25,7 +25,7 @@ export const MediaRows = ({ media }) => {
               <img
                 src={item.thumbnail}
                 width='90%'
-                className='animated fadeIn wow'
+                className='animate__animated animate__fadeIn wow'
               />
             </Col>
             <Col xs={12} sm={12} md={8} lg={8} xl={8}>

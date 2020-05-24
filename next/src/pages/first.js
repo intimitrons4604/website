@@ -32,7 +32,11 @@ const FirstRoboticsPage = () => {
             xl={4}
             className='my-auto text-center'
           >
-            <img src={firstLogo} width='60%' className='animated flip' />
+            <img
+              src={firstLogo}
+              width='60%'
+              className='animate__animated animate__flip'
+            />
           </Col>
           <Col xs={12} sm={12} md={8} lg={8} xl={8} className='mt-3'>
             <p className='trons-intro mt-0 mb-0 pt-0 pb-0'>
@@ -62,7 +66,10 @@ const FirstRoboticsPage = () => {
       <Container className='mt-5'>
         <Row>
           <Col xs={12} sm={12} md={3} lg={3} xl={3} className='my-auto'>
-            <h3 className='animated slideInLeft wow' data-wow-delay='0.1s'>
+            <h3
+              className='animate__animated animate__slideInLeft wow'
+              data-wow-delay='0.1s'
+            >
               Impact
             </h3>
           </Col>
@@ -77,7 +84,10 @@ const FirstRoboticsPage = () => {
         </Row>
         <Row>
           <Col xs={12} sm={12} md={3} lg={3} xl={3} className='my-auto'>
-            <h3 className='animated slideInLeft wow' data-wow-delay='0.2s'>
+            <h3
+              className='animate__animated animate__slideInLeft wow'
+              data-wow-delay='0.2s'
+            >
               Teamwork
             </h3>
           </Col>
@@ -92,7 +102,10 @@ const FirstRoboticsPage = () => {
         </Row>
         <Row>
           <Col xs={12} sm={12} md={3} lg={3} xl={3} className='my-auto'>
-            <h3 className='animated slideInLeft wow' data-wow-delay='0.3s'>
+            <h3
+              className='animate__animated animate__slideInLeft wow'
+              data-wow-delay='0.3s'
+            >
               Competition
             </h3>
           </Col>
@@ -106,7 +119,10 @@ const FirstRoboticsPage = () => {
         </Row>
         <Row>
           <Col xs={12} sm={12} md={3} lg={3} xl={3} className='my-auto'>
-            <h3 className='animated slideInLeft wow' data-wow-delay='0.4s'>
+            <h3
+              className='animate__animated animate__slideInLeft wow'
+              data-wow-delay='0.4s'
+            >
               Scholarships
             </h3>
           </Col>

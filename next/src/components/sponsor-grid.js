@@ -31,7 +31,7 @@ export const SponsorGrid = ({ sponsors, sponsorType, slices }) => {
         className='px-xl-5 px-lg-5 px-md-5 px-sm-1 px-xs-1 pb-5'
       >
         <div
-          className='trons-sponsor-logo animated fadeIn wow'
+          className='trons-sponsor-logo animate__animated animate__fadeIn wow'
           style={{
             backgroundImage: `url(${sponsor.logo})`,
           }}
@@ -39,7 +39,7 @@ export const SponsorGrid = ({ sponsors, sponsorType, slices }) => {
         <h4 className='pt-4'>{sponsor.name}</h4>
         {sponsor.photo ? (
           <img
-            className='trons-sponsor-photo animated fadeIn wow'
+            className='trons-sponsor-photo animate__animated animate__fadeIn wow'
             src={sponsor.photo}
           />
         ) : null}

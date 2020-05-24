@@ -19,7 +19,7 @@ export const TeamGrid = ({ members }) => {
         className='center-block text-center'
       >
         <div
-          className='circle-img animated fadeInUp wow'
+          className='circle-img animate__animated animate__fadeInUp wow'
           data-wow-delay={`${0.1 * (index % 4)}s`}
           style={{
             backgroundImage: `url(${person.photo || alienLogo})`,

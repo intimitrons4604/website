@@ -58,7 +58,7 @@ const HomePage = () => {
               className='hero-sidebar remove-padding'
             >
               <img
-                className='animated zoomIn'
+                className='animate__animated animate__zoomIn'
                 width='200'
                 height='200'
                 src={alienLogo}
@@ -68,7 +68,7 @@ const HomePage = () => {
                 <h2 className='pt-0'>
                   <FontAwesomeIcon
                     icon={faHeart}
-                    className='animated pulse infinite'
+                    className='animate__animated animate__pulse animate__infinite'
                     style={{ fontSize: '32px' }}
                   />
                 </h2>

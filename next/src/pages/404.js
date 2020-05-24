@@ -1,12 +1,12 @@
 import React from 'react'
 
-import { PageLayout } from '../components/page-layout.js'
+import { Page } from '../components/page.js'
 
 const NotFoundPage = () => {
   return (
-    <PageLayout>
+    <Page title='NotFoundPage'>
       <p>NotFoundPage</p>
-    </PageLayout>
+    </Page>
   )
 }
 

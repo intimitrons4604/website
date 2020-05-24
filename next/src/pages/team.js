@@ -7,7 +7,7 @@ import Jumbotron from 'react-bootstrap/Jumbotron'
 import Row from 'react-bootstrap/Row'
 
 import { InlineContactForm } from '../components/contact-form.js'
-import { PageLayout } from '../components/page-layout.js'
+import { Page } from '../components/page.js'
 import { Parallax } from '../components/parallax.js'
 import { TeamGrid } from '../components/team-grid.js'
 
@@ -21,7 +21,7 @@ import flickr_37996293252_3f5fcab7d4_h from '../images/flickr/37996293252_3f5fca
 
 const TeamPage = () => {
   return (
-    <PageLayout currentPage='team'>
+    <Page activePage='team' title='Meet the Team'>
       <Jumbotron fluid={true} className='remove-padding'>
         <Container fluid={true} className='remove-padding'>
           <Row>
@@ -167,7 +167,7 @@ const TeamPage = () => {
           <TeamGrid members={alumni} groupName='alumni' />
         </Row>
       </Container>
-    </PageLayout>
+    </Page>
   )
 }
 

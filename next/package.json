@@ -12,6 +12,7 @@
     "babel-plugin-styled-components": "^1.10.7",
     "bootstrap": "^4.5.0",
     "gatsby": "^2.22.9",
+    "gatsby-plugin-react-helmet": "^3.3.2",
     "gatsby-plugin-sass": "^2.3.2",
     "gatsby-plugin-styled-components": "^3.3.2",
     "moment": "^2.26.0",
@@ -20,6 +21,7 @@
     "react": "^16.13.1",
     "react-bootstrap": "^1.0.1",
     "react-dom": "^16.13.1",
+    "react-helmet": "^6.0.0",
     "styled-components": "^5.1.0"
   },
   "scripts": {

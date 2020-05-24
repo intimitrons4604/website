@@ -4,7 +4,7 @@ import Col from 'react-bootstrap/Col'
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 
-import { PageLayout } from '../components/page-layout.js'
+import { Page } from '../components/page.js'
 
 import firstRoboticsCompetitionMini from '../files/first-robotics-competition-mini.pdf'
 
@@ -13,7 +13,10 @@ import firstRoboticsProgramsCalgary from '../images/first-robotics-programs-calg
 
 const FirstRoboticsPage = () => {
   return (
-    <PageLayout currentPage={'first'}>
+    <Page
+      activePage='first-robotics-competition'
+      title='FIRST Robotics Competition'
+    >
       <Container className='mt-5'>
         <Row>
           <Col>
@@ -155,7 +158,7 @@ const FirstRoboticsPage = () => {
           </Col>
         </Row>
       </Container>
-    </PageLayout>
+    </Page>
   )
 }
 

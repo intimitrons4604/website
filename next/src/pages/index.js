@@ -13,7 +13,7 @@ import { faBook, faHeart } from '@fortawesome/free-solid-svg-icons'
 import { faHandshake, faLightbulb } from '@fortawesome/free-regular-svg-icons'
 
 import { NewsletterSignUp } from '../components/newsletter-sign-up.js'
-import { PageLayout } from '../components/page-layout.js'
+import { Page } from '../components/page.js'
 import { Parallax } from '../components/parallax.js'
 
 import firstLikeAGirl from '../images/FIRST_LikeaGirl.png'
@@ -30,7 +30,7 @@ import flickr_38610809881_b793ec939b_b from '../images/flickr/38610809881_b793ec
 
 const HomePage = () => {
   return (
-    <PageLayout currentPage='home'>
+    <Page activePage='home' title='FRC Team 4604'>
       <Jumbotron fluid={true} className='pr-3 pl-3 pl-xl-0 pl-lg-0 pl-md-0'>
         <Container fluid={true} className='remove-padding'>
           <Row>
@@ -250,7 +250,7 @@ const HomePage = () => {
       </Container>
 
       <Parallax img={flickr_33682936464_fed8e392c8_b} />
-    </PageLayout>
+    </Page>
   )
 }
 

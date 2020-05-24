@@ -12,7 +12,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHandSpock } from '@fortawesome/free-regular-svg-icons'
 
 import { InlineContactForm } from '../components/contact-form.js'
-import { PageLayout } from '../components/page-layout.js'
+import { Page } from '../components/page.js'
 import { Parallax } from '../components/parallax.js'
 import { SponsorGrid } from '../components/sponsor-grid.js'
 import { SponsorList } from '../components/sponsor-list.js'
@@ -40,7 +40,7 @@ import flickr_46815682412_71179fc4a8_k from '../images/flickr/46815682412_71179f
 
 const SponsorsPage = () => {
   return (
-    <PageLayout currentPage='sponsors'>
+    <Page activePage='sponsors' title='Our Sponsors'>
       <Container
         fluid={true}
         className='mt-5 px-xl-5 px-lg-5 px-md-5 px-sm-1 px-xs-1'
@@ -458,7 +458,7 @@ const SponsorsPage = () => {
           <SponsorList sponsors={bit} />
         </Row>
       </Container>
-    </PageLayout>
+    </Page>
   )
 }
 

@@ -6,7 +6,7 @@ import Navbar from 'react-bootstrap/Navbar'
 
 import headerLogo from '../images/Logo-header-white.svg'
 
-export const NavBar = ({ currentPage }) => {
+export const NavBar = ({ activePage }) => {
   return (
     <Navbar
       expand='lg'
@@ -21,7 +21,7 @@ export const NavBar = ({ currentPage }) => {
       <Navbar.Collapse>
         <Nav className='ml-auto'>
           <Nav.Item>
-            <Nav.Link href='/' active={currentPage === 'home'}>
+            <Nav.Link href='/' active={activePage === 'home'}>
               Home
             </Nav.Link>
           </Nav.Item>
@@ -31,27 +31,30 @@ export const NavBar = ({ currentPage }) => {
             </Nav.Link>
           </Nav.Item>
           <Nav.Item>
-            <Nav.Link href='/first' active={currentPage === 'first'}>
+            <Nav.Link
+              href='/first-robotics-competition'
+              active={activePage === 'first-robotics-competition'}
+            >
               FIRST
             </Nav.Link>
           </Nav.Item>
           <Nav.Item>
-            <Nav.Link href='/team' active={currentPage === 'team'}>
+            <Nav.Link href='/team' active={activePage === 'team'}>
               Team
             </Nav.Link>
           </Nav.Item>
           <Nav.Item>
-            <Nav.Link href='/sponsors' active={currentPage === 'sponsors'}>
+            <Nav.Link href='/sponsors' active={activePage === 'sponsors'}>
               Sponsors
             </Nav.Link>
           </Nav.Item>
           <Nav.Item>
-            <Nav.Link href='/media' active={currentPage === 'media'}>
+            <Nav.Link href='/media' active={activePage === 'media'}>
               Media
             </Nav.Link>
           </Nav.Item>
           <Nav.Item>
-            <Nav.Link href='/contact' active={currentPage === 'contact'}>
+            <Nav.Link href='/contact' active={activePage === 'contact'}>
               Contact
             </Nav.Link>
           </Nav.Item>
@@ -62,9 +65,9 @@ export const NavBar = ({ currentPage }) => {
 }
 
 NavBar.propTypes = {
-  currentPage: PropTypes.oneOf([
+  activePage: PropTypes.oneOf([
     'home',
-    'first',
+    'first-robotics-competition',
     'team',
     'sponsors',
     'media',

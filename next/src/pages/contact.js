@@ -9,14 +9,14 @@ import Row from 'react-bootstrap/Row'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 
-import { PageLayout } from '../components/page-layout.js'
+import { Page } from '../components/page.js'
 
 import alienLogo from '../images/Logo-Alien-Only.svg'
 import talkToTrons from '../images/talk-to-trons.jpg'
 
 const ContactPage = () => {
   return (
-    <PageLayout currentPage='contact'>
+    <Page activePage='contact' title='Contact Us'>
       <Jumbotron fluid={true} className='remove-padding'>
         <Container fluid={true} className='remove-padding'>
           <Row>
@@ -143,7 +143,7 @@ const ContactPage = () => {
           </Col>
         </Row>
       </Container>
-    </PageLayout>
+    </Page>
   )
 }
 

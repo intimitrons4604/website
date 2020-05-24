@@ -6,7 +6,7 @@ import Container from 'react-bootstrap/Container'
 import Jumbotron from 'react-bootstrap/Jumbotron'
 import Row from 'react-bootstrap/Row'
 
-import { PageLayout } from '../components/page-layout.js'
+import { Page } from '../components/page.js'
 
 import alienated_blame_game_by_wildfirewhim_d8fdgb6 from '../images/alienated/blame_game_by_wildfirewhim_d8fdgb6.png'
 import alienated_character_ref_sheet_by_wildfirewhim_d9obdyt from '../images/alienated/character_ref_sheet_by_wildfirewhim_d9obdyt.png'
@@ -32,7 +32,7 @@ import alienated_what_s_sleep__by_wildfirewhim_d8g9vdy from '../images/alienated
 
 const AlienetadPage = () => {
   return (
-    <PageLayout>
+    <Page title='Alienated Comics'>
       <Jumbotron fluid={true} className='remove-padding'>
         <Container fluid={true} className='remove-padding'>
           <Row>
@@ -231,7 +231,7 @@ const AlienetadPage = () => {
           </CardColumns>
         </Row>
       </Container>
-    </PageLayout>
+    </Page>
   )
 }
 

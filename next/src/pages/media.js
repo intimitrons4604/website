@@ -9,7 +9,7 @@ import Row from 'react-bootstrap/Row'
 import { MediaMenu } from '../components/media-menu.js'
 import { MediaRows } from '../components/media-rows.js'
 import { NewsletterSignUp } from '../components/newsletter-sign-up.js'
-import { PageLayout } from '../components/page-layout.js'
+import { Page } from '../components/page.js'
 import { Parallax } from '../components/parallax.js'
 
 import { articles, videos } from '../data/media.js'
@@ -19,7 +19,7 @@ import flickr_37996293252_3f5fcab7d4_h from '../images/flickr/37996293252_3f5fca
 
 const MediaPage = () => {
   return (
-    <PageLayout currentPage='media'>
+    <Page activePage='media' title='Media'>
       <Jumbotron fluid={true} className='remove-padding'>
         <Container fluid={true} className='remove-padding'>
           <Row>
@@ -122,7 +122,7 @@ const MediaPage = () => {
       <Container className='mt-5' id='videos'>
         <MediaRows media={videos} mediaType='videos' />
       </Container>
-    </PageLayout>
+    </Page>
   )
 }
 

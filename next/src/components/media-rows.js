@@ -20,7 +20,7 @@ export const MediaRows = ({ media }) => {
             style={{ height: '50px' }}
             id={getMenuDivId(item.title)}
           />
-          <Row className='mt-5 mb-5'>
+          <Row className='my-5'>
             <Col xs={12} sm={12} md={4} lg={4} xl={4} className='pb-5'>
               <img
                 src={item.thumbnail}

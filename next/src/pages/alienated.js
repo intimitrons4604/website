@@ -1,7 +1,6 @@
 import React from 'react'
 import Card from 'react-bootstrap/Card'
 import CardColumns from 'react-bootstrap/CardColumns'
-import Col from 'react-bootstrap/Col'
 import Container from 'react-bootstrap/Container'
 import Jumbotron from 'react-bootstrap/Jumbotron'
 import Row from 'react-bootstrap/Row'
@@ -33,28 +32,22 @@ import alienated_what_s_sleep__by_wildfirewhim_d8g9vdy from '../images/alienated
 const AlienetadPage = () => {
   return (
     <Page title='Alienated Comics'>
-      <Jumbotron fluid={true} className='remove-padding'>
-        <Container fluid={true} className='remove-padding'>
-          <Row>
-            <Col className='remove-padding'>
-              <img
-                src={alienated_join_our_cult__by_wildfirewhim_d9qw4bn}
-                className='w-100'
-              />
-            </Col>
-          </Row>
-        </Container>
+      <Jumbotron fluid={true} className='py-0'>
+        <img
+          src={alienated_join_our_cult__by_wildfirewhim_d9qw4bn}
+          className='w-100'
+        />
       </Jumbotron>
       <Container fluid={true}>
         <Row>
-          <CardColumns>
+          <CardColumns className='w-100'>
             <Card>
               <Card.Img
                 variant='top'
                 src={alienated_blame_game_by_wildfirewhim_d8fdgb6}
               />
               <Card.Body>
-                <Card.Title>BLAME GAME</Card.Title>
+                <Card.Title as='h1'>BLAME GAME</Card.Title>
               </Card.Body>
             </Card>
             <Card>
@@ -63,7 +56,7 @@ const AlienetadPage = () => {
                 src={alienated_character_ref_sheet_by_wildfirewhim_d9obdyt}
               />
               <Card.Body>
-                <Card.Title>Characters</Card.Title>
+                <Card.Title as='h1'>Characters</Card.Title>
               </Card.Body>
             </Card>
             <Card>
@@ -72,7 +65,7 @@ const AlienetadPage = () => {
                 src={alienated_cold_by_wildfirewhim_d9u98z1}
               />
               <Card.Body>
-                <Card.Title>COLD</Card.Title>
+                <Card.Title as='h1'>COLD</Card.Title>
               </Card.Body>
             </Card>
             <Card>
@@ -81,7 +74,7 @@ const AlienetadPage = () => {
                 src={alienated_competitive_by_wildfirewhim_d7csnyv}
               />
               <Card.Body>
-                <Card.Title>COMPETITIVE</Card.Title>
+                <Card.Title as='h1'>COMPETITIVE</Card.Title>
               </Card.Body>
             </Card>
             <Card>
@@ -90,7 +83,7 @@ const AlienetadPage = () => {
                 src={alienated_happy_pi_day__by_wildfirewhim_d8lqr36}
               />
               <Card.Body>
-                <Card.Title>HAPPY PI DAY</Card.Title>
+                <Card.Title as='h1'>HAPPY PI DAY</Card.Title>
               </Card.Body>
             </Card>
             <Card>
@@ -99,7 +92,7 @@ const AlienetadPage = () => {
                 src={alienated_happy_valentines__by_wildfirewhim_d8i1y7n}
               />
               <Card.Body>
-                <Card.Title>HAPPY VALENTINES</Card.Title>
+                <Card.Title as='h1'>HAPPY VALENTINES</Card.Title>
               </Card.Body>
             </Card>
             <Card>
@@ -108,7 +101,7 @@ const AlienetadPage = () => {
                 src={alienated_happy_valentines__by_wildfirewhim_d9rsgqd}
               />
               <Card.Body>
-                <Card.Title>HAPPY VALENTINES</Card.Title>
+                <Card.Title as='h1'>HAPPY VALENTINES</Card.Title>
               </Card.Body>
             </Card>
             <Card>
@@ -117,7 +110,7 @@ const AlienetadPage = () => {
                 src={alienated_introductions_by_wildfirewhim_d8mqp33}
               />
               <Card.Body>
-                <Card.Title>INTRODUCTIONS</Card.Title>
+                <Card.Title as='h1'>INTRODUCTIONS</Card.Title>
               </Card.Body>
             </Card>
             <Card>
@@ -126,7 +119,7 @@ const AlienetadPage = () => {
                 src={alienated_it_me_by_wildfirewhim_d9v9ouc}
               />
               <Card.Body>
-                <Card.Title>IT ... ME</Card.Title>
+                <Card.Title as='h1'>IT ... ME</Card.Title>
               </Card.Body>
             </Card>
             <Card>
@@ -135,7 +128,7 @@ const AlienetadPage = () => {
                 src={alienated_megalomania_by_wildfirewhim_d9spgh6}
               />
               <Card.Body>
-                <Card.Title>MEGALOMANIA</Card.Title>
+                <Card.Title as='h1'>MEGALOMANIA</Card.Title>
               </Card.Body>
             </Card>
             <Card>
@@ -144,7 +137,7 @@ const AlienetadPage = () => {
                 src={alienated_meme_team_by_wildfirewhim_d9q4yso}
               />
               <Card.Body>
-                <Card.Title>MEME TEAM</Card.Title>
+                <Card.Title as='h1'>MEME TEAM</Card.Title>
               </Card.Body>
             </Card>
             <Card>
@@ -153,7 +146,7 @@ const AlienetadPage = () => {
                 src={alienated_no_flamethrowers_by_wildfirewhim_d8nm05k}
               />
               <Card.Body>
-                <Card.Title>NO FLAMETHROWERS</Card.Title>
+                <Card.Title as='h1'>NO FLAMETHROWERS</Card.Title>
               </Card.Body>
             </Card>
             <Card>
@@ -162,7 +155,7 @@ const AlienetadPage = () => {
                 src={alienated_of_space_and_time_by_wildfirewhim_d8kxlxd}
               />
               <Card.Body>
-                <Card.Title>OF SPACE AND TIME</Card.Title>
+                <Card.Title as='h1'>OF SPACE AND TIME</Card.Title>
               </Card.Body>
             </Card>
             <Card>
@@ -171,7 +164,7 @@ const AlienetadPage = () => {
                 src={alienated_sentient_being_by_wildfirewhim_d9tf8p6}
               />
               <Card.Body>
-                <Card.Title>SENTIENT BEING</Card.Title>
+                <Card.Title as='h1'>SENTIENT BEING</Card.Title>
               </Card.Body>
             </Card>
             <Card>
@@ -180,7 +173,7 @@ const AlienetadPage = () => {
                 src={alienated_so_safe_by_wildfirewhim_d8djgl8}
               />
               <Card.Body>
-                <Card.Title>SO SAFE</Card.Title>
+                <Card.Title as='h1'>SO SAFE</Card.Title>
               </Card.Body>
             </Card>
             <Card>
@@ -189,7 +182,7 @@ const AlienetadPage = () => {
                 src={alienated_status_light_by_wildfirewhim_d8j4jtj}
               />
               <Card.Body>
-                <Card.Title>STATUS LIGHT</Card.Title>
+                <Card.Title as='h1'>STATUS LIGHT</Card.Title>
               </Card.Body>
             </Card>
             <Card>
@@ -198,7 +191,7 @@ const AlienetadPage = () => {
                 src={alienated_stopping_traffic_by_wildfirewhim_d9mlgdj}
               />
               <Card.Body>
-                <Card.Title>STOPPING TRAFFIC</Card.Title>
+                <Card.Title as='h1'>STOPPING TRAFFIC</Card.Title>
               </Card.Body>
             </Card>
             <Card>
@@ -207,7 +200,7 @@ const AlienetadPage = () => {
                 src={alienated_walk_of_shame_by_wildfirewhim_d8k0cob}
               />
               <Card.Body>
-                <Card.Title>WALK OF SHAME</Card.Title>
+                <Card.Title as='h1'>WALK OF SHAME</Card.Title>
               </Card.Body>
             </Card>
             <Card>
@@ -216,7 +209,7 @@ const AlienetadPage = () => {
                 src={alienated_weld_the_power_by_wildfirewhim_d86njk4}
               />
               <Card.Body>
-                <Card.Title>WELD THE POWER</Card.Title>
+                <Card.Title as='h1'>WELD THE POWER</Card.Title>
               </Card.Body>
             </Card>
             <Card>
@@ -225,7 +218,7 @@ const AlienetadPage = () => {
                 src={alienated_what_s_sleep__by_wildfirewhim_d8g9vdy}
               />
               <Card.Body>
-                <Card.Title>WHAT&apos;S SLEEP</Card.Title>
+                <Card.Title as='h1'>WHAT&apos;S SLEEP</Card.Title>
               </Card.Body>
             </Card>
           </CardColumns>

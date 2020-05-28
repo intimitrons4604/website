@@ -11,7 +11,7 @@ import Row from 'react-bootstrap/Row'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHandSpock } from '@fortawesome/free-regular-svg-icons'
 
-import { InlineContactForm } from '../components/contact-form.js'
+import { InlineContactForm } from '../components/inline-contact-form.js'
 import { Page } from '../components/page.js'
 import { Parallax } from '../components/parallax.js'
 import { SponsorGrid } from '../components/sponsor-grid.js'
@@ -82,12 +82,7 @@ const SponsorsPage = () => {
             xl={3}
             className='pl-xl-5 pl-lg-5 pb-5'
           >
-            <ButtonGroup
-              id='trons-vert-team-menu'
-              vertical={true}
-              size='lg'
-              aria-label='Meet the Team'
-            >
+            <ButtonGroup vertical={true} size='lg' className='w-100'>
               <Button
                 variant='secondary'
                 onClick={() => {
@@ -161,7 +156,6 @@ const SponsorsPage = () => {
       <Container
         fluid={true}
         className='mt-5 px-lg-5 px-xl-5 px-md-5 px-sm-1 px-xs-1'
-        id='sponsor'
       >
         <Row>
           <Col xs={12} sm={12} md={6} lg={6} xl={6} className='pb-5'>
@@ -199,7 +193,7 @@ const SponsorsPage = () => {
       <Container fluid={true} className='mt-5 mb-5'>
         <Row className='px-3 mx-auto'>
           <Col className='mx-auto'>
-            <CardDeck id='sponsorLevels'>
+            <CardDeck>
               <Card>
                 <Card.Body>
                   <Card.Title>
@@ -367,7 +361,7 @@ const SponsorsPage = () => {
 
       <Parallax img={flickr_26251669169_532a2e461b_h} />
 
-      <Container fluid={true} className='mt-5 mb-5 px-5' id='Terabyte'>
+      <Container fluid={true} className='my-5 px-5' id='Terabyte'>
         <Row>
           <Col>
             <h1 className='text-center'>Terabyte Sponsors</h1>
@@ -380,7 +374,7 @@ const SponsorsPage = () => {
 
       <Parallax img={flickr_26251669169_532a2e461b_h} />
 
-      <Container fluid={true} className='mt-5 mb-5 px-5' id='Gigabyte'>
+      <Container fluid={true} className='my-5 px-5' id='Gigabyte'>
         <Row>
           <Col>
             <h1 className='text-center'>Gigabyte Sponsors</h1>
@@ -393,7 +387,7 @@ const SponsorsPage = () => {
 
       <Parallax img={flickr_37252186395_e2a8f6c242_h} />
 
-      <Container fluid={true} className='mt-5 mb-5 px-5' id='Megabyte'>
+      <Container fluid={true} className='my-5 px-5' id='Megabyte'>
         <Row className='mt-5'>
           <Col>
             <h1 className='text-center'>Megabyte Sponsors</h1>
@@ -422,20 +416,20 @@ const SponsorsPage = () => {
 
       <Parallax img={flickr_33329082910_ae4f890331_h} />
 
-      <Container fluid={true} className='mt-5 mb-5 px-5' id='Kilobyte'>
+      <Container fluid={true} className='my-5 px-5' id='Kilobyte'>
         <Row className='mt-5'>
           <Col>
             <h1 className='text-center'>Kilobyte Sponsors</h1>
           </Col>
         </Row>
-        <Row className='mt-5' id='kilobyte-grid'>
+        <Row className='mt-5'>
           <SponsorGrid sponsors={kilobyte} sponsorType='kilobyte' slices={4} />
         </Row>
       </Container>
 
       <Parallax img={flickr_46815681822_1ed0845e9b_k} />
 
-      <Container fluid={true} className='mt-5 mb-5 px-5' id='Byte'>
+      <Container fluid={true} className='my-5 px-5' id='Byte'>
         <Row className='mt-5'>
           <Col>
             <h1 className='text-center'>Bytes Sponsors</h1>
@@ -448,13 +442,13 @@ const SponsorsPage = () => {
 
       <Parallax img={flickr_46815682412_71179fc4a8_k} />
 
-      <Container fluid={true} className='mt-5 mb-5 px-5' id='Bit'>
+      <Container fluid={true} className='my-5 px-5' id='Bit'>
         <Row className='mt-5'>
           <Col>
             <h1 className='text-center'>Bits Sponsors</h1>
           </Col>
         </Row>
-        <Row className='mt-5 mb-5'>
+        <Row className='my-5'>
           <SponsorList sponsors={bit} />
         </Row>
       </Container>

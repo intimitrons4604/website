@@ -19,11 +19,8 @@ import footerLogo from '../images/intimitronsLOGO_square.png'
 
 export const Footer = () => {
   return (
-    <Container
-      fluid={true}
-      className='trons-purple-bkgnd remove-padding pt-0 px-0 pb-5'
-    >
-      <Row className='pr-5 pl-5 pt-4'>
+    <Container fluid={true} className='trons-purple-bkgnd pt-0 px-0 pb-5'>
+      <Row className='px-5 pt-4'>
         <Row className='pt-4 pb-2'>
           <Col xs={12} sm={12} md={4} lg={4} xl={4} className='m-auto'>
             <img src={footerLogo} width='90%' />

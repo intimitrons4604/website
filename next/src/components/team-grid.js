@@ -16,7 +16,7 @@ export const TeamGrid = ({ members }) => {
         md={6}
         lg={3}
         xl={3}
-        className='center-block text-center'
+        className='d-block mx-auto text-center'
       >
         <div
           className='circle-img animate__animated animate__fadeInUp wow'

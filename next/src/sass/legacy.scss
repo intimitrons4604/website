@@ -22,8 +22,7 @@ h2,
 h3,
 h4,
 h5,
-h6,
-.campaign {
+h6 {
   font-family: 'Droid Sans', sans-serif;
   letter-spacing: 5px;
   text-transform: uppercase;
@@ -67,19 +66,24 @@ h6 {
 }
 
 .trons-purple-button {
-  background-color: #40276b;
+  @include button-variant(#40276b, transparent);
+
   color: white;
   text-transform: uppercase;
   letter-spacing: 2px;
 }
 
-.trons-purple-button:hover {
-  background-color: grey;
+.trons-green-button {
+  @include button-variant(#88cc32, transparent);
+
   color: white;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 .trons-invisible-button {
-  background-color: transparent;
+  @include button-variant(transparent, transparent);
+
   color: inherit;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -92,18 +96,6 @@ h6 {
   color: inherit;
 }
 
-.trons-green-button {
-  background-color: #88cc32;
-  color: white;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-}
-
-.trons-green-button:hover {
-  background-color: grey;
-  color: white;
-}
-
 .trons-small-button {
   font-size: 14px;
   padding: 15px;
@@ -112,6 +104,10 @@ h6 {
 .trons-medium-button {
   font-size: 18px;
   padding: 15px;
+}
+
+.btn-group-vertical .btn {
+  border: 1px solid #868e96;
 }
 
 .heading-separator {
@@ -192,9 +188,9 @@ h6 {
 }
 
 .navbar-nav a.nav-link:hover::before,
-.navbar-nav .active a::before,
+.navbar-nav a.active::before,
 .navbar-nav a.nav-link:hover::after,
-.navbar-nav .active a::after {
+.navbar-nav a.active::after {
   width: 100%;
 }
 
@@ -298,11 +294,6 @@ h6 {
   height: 100%;
 }
 
-.remove-padding {
-  padding-left: 0 !important;
-  padding-right: 0 !important;
-}
-
 .hero-sidebar {
   background-color: #40276b;
   color: black;
@@ -333,13 +324,6 @@ h6 {
   height: 500px;
   content: '';
 }
-.hero-team {
-  background-size: cover;
-  background-position: center top;
-  background-repeat: no-repeat;
-  height: 500px;
-  content: '';
-}
 
 .trons-img-card {
   background-size: cover;
@@ -359,16 +343,7 @@ h6 {
   margin-bottom: 10px;
 }
 
-div#trons-vert-team-menu.btn-group-vertical.btn-group-lg {
-  width: 100% !important;
-}
-
 .trons-bold-purple {
-  color: #40276b;
-  font-weight: 700;
-}
-
-strong {
   color: #40276b;
   font-weight: 700;
 }
@@ -387,25 +362,22 @@ strong {
   width: 100%;
   margin-bottom: 1em;
 }
+
 .nav-pills {
   padding-left: 3rem;
   padding-right: 3rem;
 }
 
-.nav-pills > .nav-item {
+.nav-pills > .nav-item > .nav-link {
   background-color: white;
   color: #40276b;
   font-weight: 700;
 }
 
-.nav-pills > .nav-item.active {
+.nav-pills > .nav-item > .nav-link.active {
   background-color: #40276b;
   color: #fff;
   font-weight: 700;
-}
-
-#nav-tabContent {
-  min-height: 400px;
 }
 
 .video-responsive {
@@ -423,11 +395,11 @@ strong {
   position: absolute;
 }
 
-li.nav-item.trons-bullet {
+.nav-item.trons-bullet {
   list-style: none;
 }
 
-li.nav-item.trons-bullet::before {
+.nav-item.trons-bullet::before {
   content: '';
   display: inline-block;
   height: 1.5em;
@@ -439,7 +411,7 @@ li.nav-item.trons-bullet::before {
   border-radius: 2em;
 }
 
-li.nav-item.trons-bullet > a.nav-link {
+.nav-item.trons-bullet > a.nav-link {
   margin-left: 1em;
   margin-top: -2.5em;
   color: white;

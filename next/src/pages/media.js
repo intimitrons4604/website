@@ -6,9 +6,9 @@ import Container from 'react-bootstrap/Container'
 import Jumbotron from 'react-bootstrap/Jumbotron'
 import Row from 'react-bootstrap/Row'
 
+import { InlineNewsletterSignUp } from '../components/inline-newsletter-sign-up.js'
 import { MediaMenu } from '../components/media-menu.js'
 import { MediaRows } from '../components/media-rows.js'
-import { NewsletterSignUp } from '../components/newsletter-sign-up.js'
 import { Page } from '../components/page.js'
 import { Parallax } from '../components/parallax.js'
 
@@ -20,19 +20,13 @@ import flickr_37996293252_3f5fcab7d4_h from '../images/flickr/37996293252_3f5fca
 const MediaPage = () => {
   return (
     <Page activePage='media' title='Media'>
-      <Jumbotron fluid={true} className='remove-padding'>
-        <Container fluid={true} className='remove-padding'>
-          <Row>
-            <Col className='remove-padding'>
-              <div
-                className='trons-hero'
-                style={{
-                  backgroundImage: `url(${flickr_37996293252_3f5fcab7d4_h})`,
-                }}
-              />
-            </Col>
-          </Row>
-        </Container>
+      <Jumbotron fluid={true} className='py-0'>
+        <div
+          className='trons-hero'
+          style={{
+            backgroundImage: `url(${flickr_37996293252_3f5fcab7d4_h})`,
+          }}
+        />
       </Jumbotron>
 
       <Container className='mt-5'>
@@ -43,11 +37,13 @@ const MediaPage = () => {
         </Row>
         <Row>
           <Col xs={12} sm={12} md={9} lg={9} xl={9}>
+            {/* See https://github.com/intimitrons4604/website/issues/23
             <script
               language='javascript'
               src='https://intimitrons.us3.list-manage.com/generate-js/?u=d479728f08b6043f1d957d5b1&fid=23401&show=10'
               type='text/javascript'
             />
+            */}
           </Col>
           <Col
             xs={12}
@@ -57,16 +53,11 @@ const MediaPage = () => {
             xl={3}
             className='pl-xl-5 pl-lg-5 pb-5'
           >
-            <ButtonGroup
-              id='trons-vert-team-menu'
-              vertical={true}
-              size='lg'
-              aria-label='Trons in the News'
-            >
+            <ButtonGroup vertical={true} size='lg' className='w-100'>
               <Button
                 variant='secondary'
                 onClick={() => {
-                  window.location.href = 'alienated'
+                  window.location.href = '/alienated'
                 }}
                 className='trons-green-button'
               >
@@ -96,7 +87,7 @@ const MediaPage = () => {
       </Container>
 
       <Container fluid={true} className='trons-purple-bkgnd mt-5'>
-        <NewsletterSignUp />
+        <InlineNewsletterSignUp />
       </Container>
 
       <Parallax img={flickr_34364767932_ea2fa26df3_h} />
@@ -108,7 +99,7 @@ const MediaPage = () => {
           </Col>
         </Row>
       </Container>
-      <Container className='mt-5' id='articles'>
+      <Container className='mt-5'>
         <MediaRows media={articles} mediaType='articles' />
       </Container>
 
@@ -119,7 +110,7 @@ const MediaPage = () => {
           </Col>
         </Row>
       </Container>
-      <Container className='mt-5' id='videos'>
+      <Container className='mt-5'>
         <MediaRows media={videos} mediaType='videos' />
       </Container>
     </Page>

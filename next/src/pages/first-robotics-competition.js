@@ -42,7 +42,7 @@ const FirstRoboticsPage = () => {
             />
           </Col>
           <Col xs={12} sm={12} md={8} lg={8} xl={8} className='mt-3'>
-            <p className='trons-intro mt-0 mb-0 pt-0 pb-0'>
+            <p className='trons-intro my-0 py-0'>
               Combining the excitement of sport with the rigors of science and
               technology. We call FIRST Robotics Competition the ultimate Sport
               for the Mind. High-school student participants call it “the
@@ -142,7 +142,7 @@ const FirstRoboticsPage = () => {
         </Row>
       </Container>
 
-      <Container className='mt-5 mb-5'>
+      <Container className='my-5'>
         <Row>
           <Col className='mx-auto' style={{ minHeight: '300px' }}>
             <div className='video-responsive'>

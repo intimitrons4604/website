@@ -1,4 +1,6 @@
 import React from 'react'
+import Alert from 'react-bootstrap/Alert'
+import Button from 'react-bootstrap/Button'
 import Col from 'react-bootstrap/Col'
 import Container from 'react-bootstrap/Container'
 import Form from 'react-bootstrap/Form'
@@ -17,20 +19,14 @@ import talkToTrons from '../images/talk-to-trons.jpg'
 const ContactPage = () => {
   return (
     <Page activePage='contact' title='Contact Us'>
-      <Jumbotron fluid={true} className='remove-padding'>
-        <Container fluid={true} className='remove-padding'>
-          <Row>
-            <Col>
-              <div
-                className='trons-hero'
-                style={{ backgroundImage: `url(${talkToTrons})` }}
-              />
-            </Col>
-          </Row>
-        </Container>
+      <Jumbotron fluid={true} className='py-0'>
+        <div
+          className='trons-hero'
+          style={{ backgroundImage: `url(${talkToTrons})` }}
+        />
       </Jumbotron>
 
-      <Container className='mt-5 mb-5'>
+      <Container className='my-5'>
         <Row>
           <Col>
             <h1>The Trons Want to Hear from You</h1>
@@ -45,25 +41,28 @@ const ContactPage = () => {
         </Row>
         <Row>
           <Col>
-            <div id='contact-message' className='alert mb-5 hidden' />
+            <Alert show={false} variant='success' className='mt-2'>
+              Thank you! Your information was sent. We will be in touch shortly.
+            </Alert>
+            <Alert show={false} variant='danger' className='mt-2'>
+              Uh oh! There was a problem with your submission. Please correct
+              the error and try again.
+              <br />
+              legacy data.message placeholder
+            </Alert>
           </Col>
         </Row>
         <Row>
           <Col xs={12} sm={12} md={9} lg={6} xl={6} className='mr-5'>
             <h2>Send Us a Message</h2>
-            <Form
-              method='post'
-              id='contact-form'
-              name='contact-form'
-              className='validate'
-            >
+            <Form method='post'>
               <Form.Row className='pb-3'>
                 <Col xs={6} sm={6} md={6} lg={6} xl={6}>
                   <Form.Group controlId='firstName'>
                     <Form.Label>First Name</Form.Label>
                     <Form.Control
                       type='text'
-                      className='mb-2 mb-sm-0 required'
+                      className='mb-2 mb-sm-0'
                       placeholder='Jane'
                       required={true}
                     />
@@ -92,7 +91,6 @@ const ContactPage = () => {
                       </InputGroup.Prepend>
                       <Form.Control
                         type='email'
-                        className='required rounded-right'
                         placeholder='jane@example.org'
                         required={true}
                       />
@@ -116,21 +114,20 @@ const ContactPage = () => {
               </Form.Row>
               <Form.Row className='pb-5'>
                 <Col>
-                  <button
-                    type='submit'
-                    name='submit'
-                    id='submit'
-                    className='btn trons-green-button'
-                  >
+                  <Button type='submit' className='trons-green-button'>
                     Send
-                  </button>
+                  </Button>
                 </Col>
               </Form.Row>
             </Form>
           </Col>
           <Col xs={12} sm={12} md={6} lg={4} xl={4} className='pb-5'>
-            <div className='text-box trons-purple-bkgnd p-3 tex-center'>
-              <img src={alienLogo} width='60%' className='center-block mb-2' />
+            <div className='text-box trons-purple-bkgnd p-3'>
+              <img
+                src={alienLogo}
+                width='60%'
+                className='d-block mx-auto mb-2'
+              />
               <h6>Email:</h6>
               <h5>info@intimitrons.ca</h5>
               <div className='text-box-separator' />

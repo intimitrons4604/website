@@ -12,7 +12,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBook, faHeart } from '@fortawesome/free-solid-svg-icons'
 import { faHandshake, faLightbulb } from '@fortawesome/free-regular-svg-icons'
 
-import { NewsletterSignUp } from '../components/newsletter-sign-up.js'
+import { InlineNewsletterSignUp } from '../components/inline-newsletter-sign-up.js'
 import { Page } from '../components/page.js'
 import { Parallax } from '../components/parallax.js'
 
@@ -31,19 +31,12 @@ import flickr_38610809881_b793ec939b_b from '../images/flickr/38610809881_b793ec
 const HomePage = () => {
   return (
     <Page activePage='home' title='FRC Team 4604'>
-      <Jumbotron fluid={true} className='pr-3 pl-3 pl-xl-0 pl-lg-0 pl-md-0'>
-        <Container fluid={true} className='remove-padding'>
+      <Jumbotron fluid={true} className='mb-0 py-0'>
+        <Container fluid={true}>
           <Row>
-            <Col
-              xs={12}
-              sm={12}
-              md={12}
-              lg={9}
-              xl={9}
-              className='remove-padding'
-            >
+            <Col xs={12} sm={12} md={12} lg={9} xl={9} className='p-0'>
               <div
-                className='hero pull-right w-100'
+                className='hero'
                 style={{
                   backgroundImage: `url(${flickr_33682601574_0574678c36_h})`,
                 }}
@@ -55,7 +48,7 @@ const HomePage = () => {
               md={12}
               lg={3}
               xl={3}
-              className='hero-sidebar remove-padding'
+              className='px-0 hero-sidebar'
             >
               <img
                 className='animate__animated animate__zoomIn'
@@ -178,7 +171,10 @@ const HomePage = () => {
                   </Nav.Link>
                 </Nav.Item>
               </Nav>
-              <Tab.Content className='px-xl-5 px-lg-5 px-md-5 px-sm-1 px-xs-1 pt-5'>
+              <Tab.Content
+                className='px-xl-5 px-lg-5 px-md-5 px-sm-1 px-xs-1 pt-5'
+                style={{ minHeight: '400px' }}
+              >
                 <Tab.Pane eventKey='experience' className='h-100'>
                   <img
                     src={flickr_25232354778_e3c92780a8_k}
@@ -186,17 +182,23 @@ const HomePage = () => {
                   />
                   <div className='trons-intro pt-5'>
                     Intimitrons learn fabrication skills such as{' '}
-                    <strong>welding, soldering and machining</strong>. We also
-                    learn how to program our robot and our website in a variety
-                    of <strong>coding languages</strong>. To bring our robot to
-                    life, we wire electronics such as{' '}
-                    <strong>
+                    <span className='trons-bold-purple'>
+                      welding, soldering and machining
+                    </span>
+                    . We also learn how to program our robot and our website in
+                    a variety of{' '}
+                    <span className='trons-bold-purple'>coding languages</span>.
+                    To bring our robot to life, we wire electronics such as{' '}
+                    <span className='trons-bold-purple'>
                       motor controllers, power distribution board sand
                       microcontrollers
-                    </strong>
+                    </span>
                     . In the off-season we practice our electronics skills with{' '}
-                    <strong>Aurduino and Raspberry Pi</strong> prototyping. Our
-                    robot designs are created in <strong>Fusion 360</strong>, an
+                    <span className='trons-bold-purple'>
+                      Aurduino and Raspberry Pi
+                    </span>{' '}
+                    prototyping. Our robot designs are created in{' '}
+                    <span className='trons-bold-purple'>Fusion 360</span>, an
                     3-D Autodesk CAD tool.
                   </div>
                 </Tab.Pane>
@@ -204,12 +206,17 @@ const HomePage = () => {
                   <img src={flickr_38610809881_b793ec939b_b} width='100%' />
                   <div className='trons-intro pt-5'>
                     In order to meet our 6-week build schedule, we create
-                    detailed <strong>project management</strong> plans in
-                    Basecamp and stick to our schedules and assignments.
-                    Intimitrons attend meetings and build sessions 3 times a
-                    week during the season.{' '}
-                    <strong>Working together as a team</strong> is a great way
-                    to build confidence and make{' '}
+                    detailed{' '}
+                    <span className='trons-bold-purple'>
+                      project management
+                    </span>{' '}
+                    plans in Basecamp and stick to our schedules and
+                    assignments. Intimitrons attend meetings and build sessions
+                    3 times a week during the season.{' '}
+                    <span className='trons-bold-purple'>
+                      Working together as a team
+                    </span>{' '}
+                    is a great way to build confidence and make{' '}
                     <span className='trons-bold-purple'>new friends</span>.
                   </div>
                 </Tab.Pane>
@@ -246,7 +253,7 @@ const HomePage = () => {
       </Container>
 
       <Container fluid={true} className='trons-purple-bkgnd'>
-        <NewsletterSignUp />
+        <InlineNewsletterSignUp />
       </Container>
 
       <Parallax img={flickr_33682936464_fed8e392c8_b} />

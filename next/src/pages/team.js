@@ -6,7 +6,7 @@ import Container from 'react-bootstrap/Container'
 import Jumbotron from 'react-bootstrap/Jumbotron'
 import Row from 'react-bootstrap/Row'
 
-import { InlineContactForm } from '../components/contact-form.js'
+import { InlineContactForm } from '../components/inline-contact-form.js'
 import { Page } from '../components/page.js'
 import { Parallax } from '../components/parallax.js'
 import { TeamGrid } from '../components/team-grid.js'
@@ -22,24 +22,27 @@ import flickr_37996293252_3f5fcab7d4_h from '../images/flickr/37996293252_3f5fca
 const TeamPage = () => {
   return (
     <Page activePage='team' title='Meet the Team'>
-      <Jumbotron fluid={true} className='remove-padding'>
-        <Container fluid={true} className='remove-padding'>
-          <Row>
-            <Col className='remove-padding'>
-              <div
-                className='hero-team'
-                style={{ backgroundImage: `url(${huggingRobot})` }}
-              />
-            </Col>
-          </Row>
-        </Container>
+      <Jumbotron fluid={true} className='py-0'>
+        <div
+          style={{
+            backgroundImage: `url(${huggingRobot})`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center top',
+            backgroundRepeat: 'no-repeat',
+            height: '500px',
+          }}
+        />
       </Jumbotron>
 
       <Container fluid={true} className='mt-5'>
         <Row className='p-xl-5 p-lg-5 p-md-5 p-sm-1 p-xs-1'>
           <Col xs={12} sm={12} md={6} lg={4} xl={4} className='pb-5'>
             <div className='text-box trons-purple-bkgnd p-3'>
-              <img src={alienLogo} width='60%' className='center-block mb-2' />
+              <img
+                src={alienLogo}
+                width='60%'
+                className='d-block mx-auto mb-2'
+              />
               <h6>Team number:</h6>
               <h5>4604</h5>
               <div className='text-box-separator' />
@@ -89,12 +92,7 @@ const TeamPage = () => {
             xl={3}
             className='pl-xl-5 pl-lg-5 pb-5'
           >
-            <ButtonGroup
-              id='trons-vert-team-menu'
-              vertical={true}
-              size='lg'
-              aria-label='Meet the Team'
-            >
+            <ButtonGroup vertical={true} size='lg' className='w-100'>
               <Button
                 variant='secondary'
                 onClick={() => {

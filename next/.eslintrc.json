@@ -29,11 +29,12 @@
   },
   "overrides": [
     {
+      // Match main project files and those in local plugins
       "files": [
-        "./gatsby-browser.js",
-        "./gatsby-config.js",
-        "./gatsby-node.js",
-        "./gatsby-ssr.js"
+        "**/gatsby-browser.js",
+        "**/gatsby-config.js",
+        "**/gatsby-node.js",
+        "**/gatsby-ssr.js"
       ],
       "env": {
         "browser": false,

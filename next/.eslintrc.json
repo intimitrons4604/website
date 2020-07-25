@@ -52,6 +52,7 @@
       }
     }
   ],
+  "reportUnusedDisableDirectives": true,
   "rules": {
     "import/default": "error",
     "import/export": "error",

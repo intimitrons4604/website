@@ -37,16 +37,20 @@
     "lint:style:fix": "stylelint --fix **/*.js **/*.scss",
     "lint:format:check": "prettier --check .",
     "lint:format:fix": "prettier --write .",
-    "deploy:next": "gatsby-plugin-s3 deploy"
+    "deploy": "node deploy/bin.js"
   },
   "devDependencies": {
+    "aws-sdk": "^2.706.0",
+    "chalk": "^4.1.0",
+    "cosmiconfig": "^6.0.0",
     "eslint": "^7.1.0",
     "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-import": "^2.20.2",
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-react": "^7.20.0",
     "eslint-plugin-react-hooks": "^4.0.2",
-    "gatsby-plugin-s3": "^0.3.3",
+    "is-ci": "^2.0.0",
+    "mime-types": "^2.1.27",
     "npm-run-all": "^4.1.5",
     "prettier": "2.0.5",
     "stylelint": "^13.5.0",
@@ -55,6 +59,7 @@
     "stylelint-config-standard": "^20.0.0",
     "stylelint-config-styled-components": "^0.1.1",
     "stylelint-processor-styled-components": "^1.10.0",
-    "stylelint-scss": "^3.17.2"
+    "stylelint-scss": "^3.17.2",
+    "yargs": "^15.4.0"
   }
 }

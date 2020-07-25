@@ -31,4 +31,4 @@ jobs:
           aws-secret-access-key: ${{ secrets.NEXT_DEV_AWS_SECRET_ACCESS_KEY }}
           aws-region: us-west-2
       - name: Deploy
-        run: npm run deploy:next
+        run: npm run deploy -- --env next

@@ -30,6 +30,8 @@ Pushing to `master` automatically triggers a deployment to a development environ
 
 The site is currently available at https://next.intimitrons.ca.
 
+See the deploy [README](./deploy/README.md) for more information on deploying the site.
+
 ### Limitations
 
 There is currently no way to tell which version is deployed.

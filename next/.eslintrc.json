@@ -40,6 +40,16 @@
         "browser": false,
         "node": true
       }
+    },
+    {
+      "files": ["deploy/**"],
+      "env": {
+        "browser": false,
+        "node": true
+      },
+      "rules": {
+        "no-console": "off"
+      }
     }
   ],
   "rules": {

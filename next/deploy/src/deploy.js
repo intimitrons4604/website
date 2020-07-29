@@ -41,18 +41,41 @@ function isDeployableFilePath(filePath) {
   return true
 }
 
+function isObjectKeyForVersionJSON(key) {
+  return key === filePathToS3ObjectKey(local.versionJSONPath)
+}
+
 function isObjectKeyForStaticAsset(key) {
-  const p = path.posix.parse(key)
-  if (p.ext === '.html') {
+  if (path.posix.extname(key) === '.html') {
     return false
   }
-  if (p.dir.startsWith(`page-data${path.posix.sep}`)) {
+  if (key.startsWith(`page-data${path.posix.sep}`)) {
     return false
   }
 
   return true
 }
 
+/**
+ * Perform pre-deployment tasks
+ *
+ * @param {object} options Deployment options
+ */
+async function prepareToDeploy(options) {
+  if (options.verbose) {
+    console.log('Writing version.json...')
+  }
+
+  const sha1 = await local.getGitHeadSHA1()
+  await local.writeVersionJSON({ sha1 })
+}
+
+/**
+ * Plan a deployment
+ *
+ * @param {object} options Deployment options
+ * @returns {Promise<object>} Deployment plan
+ */
 async function planDeploy(options) {
   const s3ObjectKeys = await s3.listObjects(options.bucketName)
 
@@ -67,7 +90,10 @@ async function planDeploy(options) {
     type: DeployActionType.Upload,
     description: 'Upload static assets',
     data: {
-      keys: buildObjectKeys.filter((key) => isObjectKeyForStaticAsset(key)),
+      keys: buildObjectKeys.filter(
+        (key) =>
+          !isObjectKeyForVersionJSON(key) && isObjectKeyForStaticAsset(key)
+      ),
       cachePolicy: s3.CachingPolicy.CacheForever,
     },
   }
@@ -76,7 +102,19 @@ async function planDeploy(options) {
     type: DeployActionType.Upload,
     description: 'Upload HTML and data files',
     data: {
-      keys: buildObjectKeys.filter((key) => !isObjectKeyForStaticAsset(key)),
+      keys: buildObjectKeys.filter(
+        (key) =>
+          !(isObjectKeyForVersionJSON(key) || isObjectKeyForStaticAsset(key))
+      ),
+      cachePolicy: s3.CachingPolicy.CacheAndRequireValidation,
+    },
+  }
+
+  const uploadVersionJSONAction = {
+    type: DeployActionType.Upload,
+    description: 'Upload version.json',
+    data: {
+      keys: buildObjectKeys.filter((key) => isObjectKeyForVersionJSON(key)),
       cachePolicy: s3.CachingPolicy.CacheAndRequireValidation,
     },
   }
@@ -94,11 +132,17 @@ async function planDeploy(options) {
     actions: [
       uploadStaticAssetsAction,
       uploadPagesAndDataAction,
+      uploadVersionJSONAction,
       deleteAction,
     ].filter((action) => action.data.keys.length !== 0),
   }
 }
 
+/**
+ * Show a deployment plan
+ *
+ * @param {object} plan Deployment plan
+ */
 function showPlan(plan) {
   const verbose = plan.options.verbose
 
@@ -183,8 +227,7 @@ async function executeAction(options, action, idx) {
 /**
  * Execute a deployment
  *
- * @param {Object} plan The deploy plan
- * @returns {Promise<void>}
+ * @param {object} plan Deployment plan
  */
 async function executeDeploy(plan) {
   await plan.actions.reduce((prevAction, action, idx) => {
@@ -195,5 +238,6 @@ async function executeDeploy(plan) {
 module.exports = {
   executeDeploy,
   planDeploy,
+  prepareToDeploy,
   showPlan,
 }

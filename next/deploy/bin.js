@@ -4,7 +4,12 @@ const readline = require('readline')
 const yargs = require('yargs')
 
 const { loadConfig } = require('./src/config.js')
-const { executeDeploy, planDeploy, showPlan } = require('./src/deploy.js')
+const {
+  executeDeploy,
+  planDeploy,
+  prepareToDeploy,
+  showPlan,
+} = require('./src/deploy.js')
 
 const args = yargs
   .strict()
@@ -26,13 +31,21 @@ const args = yargs
 
 Promise.resolve()
   .then(async () => {
-    console.log('Loading configuration...')
+    console.log(chalk.bold('Loading configuration...'))
     const config = await loadConfig(args.environment)
     return { ...config, verbose: args.verbose }
   })
-  .then((config) => {
-    console.log('Planning deployment...')
-    return planDeploy(config)
+  .then(async (options) => {
+    console.log()
+    console.log(chalk.bold('Preparing to deploy...'))
+    await prepareToDeploy(options)
+
+    return options
+  })
+  .then((options) => {
+    console.log()
+    console.log(chalk.bold('Planning deployment...'))
+    return planDeploy(options)
   })
   .then((plan) => {
     console.log()
@@ -67,7 +80,8 @@ Promise.resolve()
       })
   )
   .then((plan) => {
-    console.log('Executing deployment...')
+    console.log()
+    console.log(chalk.bold('Executing deployment...'))
     return executeDeploy(plan)
   })
   .then(() => {

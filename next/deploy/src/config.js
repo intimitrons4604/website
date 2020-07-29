@@ -6,7 +6,7 @@ const path = require('path')
  *
  * @param {string} envName Name of the environment. Should match the name of a configuration file.
  * For example when called with `env`, the file `deploy/config/env.json` is loaded.
- * @returns {Promise<Object>} Deploy configuration
+ * @returns {Promise<object>} Deploy configuration
  */
 async function loadConfig(envName) {
   const explorer = cosmiconfig('')

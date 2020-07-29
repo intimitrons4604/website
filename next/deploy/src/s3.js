@@ -56,7 +56,6 @@ async function listObjects(bucketName) {
  *
  * @param {string} bucketName Name of the bucket to delete objects from
  * @param {string[]} keys Keys of objects to delete from the bucket
- * @returns {Promise<void>}
  */
 async function deleteObjects(bucketName, keys) {
   // This is an AWS documented limit on the number of keys in a request
@@ -88,7 +87,6 @@ async function deleteObjects(bucketName, keys) {
  * @param {string} objectKey Key of the uploaded object
  * @param {CachingPolicy} cachingPolicy Caching policy for the uploaded object when requested by web clients
  * @param {ReadableStream} stream Object data
- * @returns {Promise<void>}
  */
 async function uploadObject(bucketName, objectKey, cachingPolicy, stream) {
   await s3

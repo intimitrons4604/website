@@ -1,7 +1,42 @@
+const child_process = require('child_process')
 const fs = require('fs')
 const path = require('path')
 
+/**
+ * The path of the version.json file relative to the build output directory
+ */
+const versionJSONPath = 'version.json'
+
 const buildOutputDirPath = path.resolve('public')
+
+/**
+ * Get the SHA1 of the HEAD.
+ *
+ * Requires Git to be installed and available in the path.
+ *
+ * @returns {Promise<string>} The SHA1 of the HEAD
+ */
+function getGitHeadSHA1() {
+  return new Promise((resolve, reject) => {
+    child_process.exec('git rev-parse HEAD', (error, stdout) => {
+      if (error !== null) {
+        reject(error)
+      }
+      resolve(stdout.trim())
+    })
+  })
+}
+
+/**
+ * Write the version.json file into the build output directory
+ *
+ * @param {object} obj Object to serialize into JSON and write into the file
+ */
+async function writeVersionJSON(obj) {
+  const outputPath = path.join(buildOutputDirPath, 'version.json')
+
+  await fs.promises.writeFile(outputPath, JSON.stringify(obj))
+}
 
 async function getAllFilePathsRelativeToDirectory(dirPath) {
   const paths = []
@@ -49,6 +84,9 @@ function readBuildOutputFile(filePath) {
 }
 
 module.exports = {
+  getGitHeadSHA1,
   listBuildOutputFilePaths,
   readBuildOutputFile,
+  versionJSONPath,
+  writeVersionJSON,
 }

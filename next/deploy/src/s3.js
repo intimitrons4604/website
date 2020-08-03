@@ -2,6 +2,8 @@ const AWS = require('aws-sdk')
 const mime = require('mime-types')
 const path = require('path')
 
+const { awsRegion } = require('./config.js')
+
 /**
  * Caching policy for objects in S3
  *
@@ -24,7 +26,7 @@ const cacheControlLUT = Object.freeze({
   [CachingPolicy.CacheForever]: 'public, max-age=31536000',
 })
 
-const s3 = new AWS.S3({ apiVersion: '2006-03-01' })
+const s3 = new AWS.S3({ apiVersion: '2006-03-01', region: awsRegion })
 
 /**
  * List objects stored in Amazon S3

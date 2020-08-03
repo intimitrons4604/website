@@ -50,6 +50,7 @@
     "eslint-plugin-react": "^7.20.3",
     "eslint-plugin-react-hooks": "^4.0.8",
     "is-ci": "^2.0.0",
+    "joi": "^17.1.1",
     "mime-types": "^2.1.27",
     "npm-run-all": "^4.1.5",
     "prettier": "2.0.5",
@@ -60,6 +61,7 @@
     "stylelint-config-styled-components": "^0.1.1",
     "stylelint-processor-styled-components": "^1.10.0",
     "stylelint-scss": "^3.18.0",
+    "uuid": "^8.3.0",
     "yargs": "^15.4.1"
   }
 }

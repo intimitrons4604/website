@@ -10,6 +10,7 @@ const {
   prepareToDeploy,
   showPlan,
 } = require('./src/deploy.js')
+const { generateLockInstanceId, lock, unlock } = require('./src/lock.js')
 
 const args = yargs
   .strict()
@@ -42,51 +43,82 @@ Promise.resolve()
 
     return options
   })
-  .then((options) => {
+  .then(async (options) => {
     console.log()
-    console.log(chalk.bold('Planning deployment...'))
-    return planDeploy(options)
-  })
-  .then((plan) => {
-    console.log()
-    console.log(chalk.bold('Deploy plan'))
-    showPlan(plan)
-    return plan
-  })
-  .then(
-    (plan) =>
-      new Promise((resolve, reject) => {
-        if (isCI) {
-          console.log(
-            'CI server detected, executing deployment without confirmation'
-          )
-          resolve(plan)
-          return
-        }
+    console.log(chalk.bold('Locking environment...'))
 
-        const rl = readline.createInterface({
-          input: process.stdin,
-          output: process.stdout,
-        })
-        rl.question(chalk`{bold Deploy?} (y/N) > `, (answer) => {
-          if (answer === 'y' || answer === 'Y') {
-            resolve(plan)
-          } else {
-            reject('Deployment was not confirmed')
-          }
+    const lockInstanceId = generateLockInstanceId()
+    if (!(await lock(options, lockInstanceId))) {
+      throw new Error('Failed to lock environment')
+    }
 
-          rl.close()
+    const unlockEnvironment = async () => {
+      try {
+        console.log()
+        console.log(chalk.bold('Unlocking environment...'))
+        await unlock(options, lockInstanceId)
+      } catch (err) {
+        console.error(chalk.red('Failed to unlock environment'))
+        console.log(err)
+        console.log()
+      }
+    }
+
+    return (
+      Promise.resolve()
+        .then(() => {
+          console.log()
+          console.log(chalk.bold('Planning deployment...'))
+          return planDeploy(options)
         })
-      })
-  )
-  .then((plan) => {
-    console.log()
-    console.log(chalk.bold('Executing deployment...'))
-    return executeDeploy(plan)
-  })
-  .then(() => {
-    console.log()
-    console.log(chalk.bold.green('Deployment finished'))
+        .then((plan) => {
+          console.log()
+          console.log(chalk.bold('Deploy plan'))
+          showPlan(plan)
+          return plan
+        })
+        .then(
+          (plan) =>
+            new Promise((resolve, reject) => {
+              if (isCI) {
+                console.log(
+                  'CI environment detected, executing deployment without confirmation'
+                )
+                resolve(plan)
+                return
+              }
+
+              const rl = readline.createInterface({
+                input: process.stdin,
+                output: process.stdout,
+              })
+              rl.question(chalk`{bold Deploy?} (y/N) > `, (answer) => {
+                if (answer === 'y' || answer === 'Y') {
+                  resolve(plan)
+                } else {
+                  reject(new Error('Deployment was not confirmed'))
+                }
+
+                rl.close()
+              })
+            })
+        )
+        .then((plan) => {
+          console.log()
+          console.log(chalk.bold('Executing deployment...'))
+          return executeDeploy(plan)
+        })
+        // Since unlockEnvironment() catches there is no risk of an unlock error triggering a second unlock in the .catch()
+        .then(unlockEnvironment)
+        .then(() => {
+          console.log()
+          console.log(chalk.bold.green('Deployment finished'))
+        })
+        .catch(async (err) => {
+          await unlockEnvironment()
+          throw err
+        })
+    )
   })
   .catch((err) => {
     console.log()

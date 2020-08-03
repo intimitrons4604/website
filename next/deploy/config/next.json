@@ -1,3 +1,4 @@
 {
-  "bucketName": "trons-website-web-next"
+  "bucketName": "trons-website-web-next",
+  "lockTableName": "trons-website-lock-next"
 }

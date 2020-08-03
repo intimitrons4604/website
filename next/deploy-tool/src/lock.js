@@ -3,7 +3,7 @@ const isCI = require('is-ci')
 const os = require('os')
 const { v4: uuidv4 } = require('uuid')
 
-const { deleteLock, getLock, putLock } = require('./dynamo-db.js')
+const { deleteLock, getLock, putLock } = require('./lib/dynamo-db.js')
 
 const deployLockId = 'deploy'
 
@@ -18,7 +18,7 @@ function generateLockInstanceId() {
   return uuidv4()
 }
 
-function generateLockInfo() {
+function generateLockInfo(message) {
   const hostname = os.hostname()
   const hostTime = new Date().toISOString()
 
@@ -45,6 +45,7 @@ function generateLockInfo() {
     username,
     hostname,
     hostTime,
+    message: message || 'Locked by deploy tool',
     ...gitHubInfo,
   }
 }
@@ -52,12 +53,14 @@ function generateLockInfo() {
 /**
  * Lock an environment for deployment
  *
- * @param {object} options Deployment options
+ * @param {object} config Environment configuration
  * @param {string} instanceId ID unique to this lock acquisition. The same ID must be used to release the lock if it is acquired.
+ * @param {boolean} verbose True to enable verbose logging, false otherwise
+ * @param {string} [message] Message to include with lock info
  * @returns {Promise<boolean>} True if the lock was acquired, false if the lock is already held
  */
-function lock(options, instanceId) {
-  if (options.verbose) {
+function lock(config, instanceId, verbose, message) {
+  if (verbose) {
     console.log(
       chalk.dim(
         `Acquiring lock... id: '${deployLockId}' instanceId: '${instanceId}'`
@@ -66,22 +69,23 @@ function lock(options, instanceId) {
   }
 
   return putLock(
-    options.lockTableName,
+    config.lockTableName,
     deployLockId,
     instanceId,
-    generateLockInfo()
+    generateLockInfo(message)
   )
 }
 
 /**
  * Unlock an environment after deployment
  *
- * @param {object} options Deployment options
+ * @param {object} config Environment configuration
  * @param {string} instanceId Unique ID used when acquiring the lock
- * @returns {Promise<void>}
+ * @param {boolean} verbose True to enable verbose logging, false otherwise
+ * @returns {Promise<boolean>} True if the lock was released, false otherwise
  */
-function unlock(options, instanceId) {
-  if (options.verbose) {
+function unlock(config, instanceId, verbose) {
+  if (verbose) {
     console.log(
       chalk.dim(
         `Releasing lock... id: '${deployLockId}' instanceId: '${instanceId}'`
@@ -89,17 +93,17 @@ function unlock(options, instanceId) {
     )
   }
 
-  return deleteLock(options.lockTableName, deployLockId, instanceId)
+  return deleteLock(config.lockTableName, deployLockId, instanceId)
 }
 
 /**
  * Get information on the state of an environment's deploy lock
  *
- * @param {object} options Deployment options
+ * @param {object} config Environment configuration
  * @returns {Promise<object | null>} Lock information or null if the lock is not currently held
  */
-function inspectLock(options) {
-  return getLock(options.lockTableName, deployLockId)
+function inspectLock(config) {
+  return getLock(config.lockTableName, deployLockId)
 }
 
 module.exports = {

@@ -42,7 +42,7 @@
       }
     },
     {
-      "files": ["deploy/**"],
+      "files": ["deploy-tool/**"],
       "env": {
         "browser": false,
         "node": true

@@ -1,8 +1,8 @@
 const chalk = require('chalk')
 const path = require('path')
 
-const local = require('./local.js')
-const s3 = require('./s3.js')
+const local = require('./lib/local.js')
+const s3 = require('./lib/s3.js')
 
 const DeployActionType = Object.freeze({
   Delete: 'delete',
@@ -73,11 +73,12 @@ async function prepareToDeploy(options) {
 /**
  * Plan a deployment
  *
+ * @param {object} config Environment configuration
  * @param {object} options Deployment options
  * @returns {Promise<object>} Deployment plan
  */
-async function planDeploy(options) {
-  const s3ObjectKeys = await s3.listObjects(options.bucketName)
+async function planDeploy(config, options) {
+  const s3ObjectKeys = await s3.listObjects(config.bucketName)
 
   const buildFilePaths = await local.listBuildOutputFilePaths()
   const deployableFilePaths = buildFilePaths.filter(isDeployableFilePath)
@@ -128,6 +129,7 @@ async function planDeploy(options) {
   }
 
   return {
+    config,
     options,
     actions: [
       uploadStaticAssetsAction,
@@ -147,12 +149,17 @@ function showPlan(plan) {
   const verbose = plan.options.verbose
 
   if (verbose) {
-    console.group(chalk.bold('Options'))
-    for (const [k, v] of Object.entries(plan.options)) {
-      console.log(`${k}: ${v}`)
+    const logObject = (title, obj) => {
+      console.group(chalk.bold(title))
+      for (const [k, v] of Object.entries(obj)) {
+        console.log(`${k}: ${v}`)
+      }
+      console.groupEnd()
+      console.log()
     }
-    console.groupEnd()
-    console.log()
+
+    logObject('Environment Configuration', plan.config)
+    logObject('Options', plan.options)
   }
 
   console.log(chalk.bold('Actions'))
@@ -174,19 +181,19 @@ function showPlan(plan) {
   })
 }
 
-async function executeDeleteAction(options, action) {
-  await s3.deleteObjects(options.bucketName, action.data.keys)
+async function executeDeleteAction(config, options, action) {
+  await s3.deleteObjects(config.bucketName, action.data.keys)
 
   if (options.verbose) {
     action.data.keys.forEach((key) => console.log(chalk.dim(`Deleted ${key}`)))
   }
 }
 
-async function executeUploadAction(options, action) {
+async function executeUploadAction(config, options, action) {
   await Promise.all(
     action.data.keys.map(async (key) => {
       await s3.uploadObject(
-        options.bucketName,
+        config.bucketName,
         key,
         action.data.cachePolicy,
         local.readBuildOutputFile(s3ObjectKeyToFilePath(key))
@@ -199,7 +206,7 @@ async function executeUploadAction(options, action) {
   )
 }
 
-async function executeAction(options, action, idx) {
+async function executeAction(config, options, action, idx) {
   let fn
   switch (action.type) {
     case DeployActionType.Delete:
@@ -215,7 +222,7 @@ async function executeAction(options, action, idx) {
   console.log()
   console.log(chalk.bold(`${idx + 1}. ${action.description}`))
 
-  await fn(options, action)
+  await fn(config, options, action)
 
   if (options.verbose) {
     console.log(`Finished action - ${action.description}`)
@@ -231,7 +238,9 @@ async function executeAction(options, action, idx) {
  */
 async function executeDeploy(plan) {
   await plan.actions.reduce((prevAction, action, idx) => {
-    return prevAction.then(() => executeAction(plan.options, action, idx))
+    return prevAction.then(() =>
+      executeAction(plan.config, plan.options, action, idx)
+    )
   }, Promise.resolve())
 }
 

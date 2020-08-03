@@ -25,7 +25,7 @@ async function loadConfig(envName) {
   const explorer = cosmiconfig('')
 
   const result = await explorer.load(
-    path.join('deploy', 'config', `${envName}.json`)
+    path.join('deploy-tool', 'config', `${envName}.json`)
   )
 
   return schema.validateAsync(result.config)

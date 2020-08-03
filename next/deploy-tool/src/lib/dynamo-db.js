@@ -62,18 +62,29 @@ async function putLock(tableName, id, instanceId, info) {
  * @param {string} tableName Name of the table to remove the lock record from
  * @param {string} id Lock ID. The Lock ID represents a lockable resource.
  * @param {string} instanceId Unique ID used when acquiring the lock
+ * @returns {Promise<boolean>} True if the lock was released, false otherwise
  */
 async function deleteLock(tableName, id, instanceId) {
-  await client
-    .delete({
-      TableName: tableName,
-      Key: { id },
-      ConditionExpression: `attribute_exists(${lockIdAttribute}) AND instanceId = :instanceId`,
-      ExpressionAttributeValues: {
-        ':instanceId': instanceId,
-      },
-    })
-    .promise()
+  try {
+    await client
+      .delete({
+        TableName: tableName,
+        Key: { id },
+        ConditionExpression: `attribute_exists(${lockIdAttribute}) AND instanceId = :instanceId`,
+        ExpressionAttributeValues: {
+          ':instanceId': instanceId,
+        },
+      })
+      .promise()
+
+    return true
+  } catch (error) {
+    if (error.code === DynamoDBConditionalCheckFailedCode) {
+      return false
+    }
+
+    throw error
+  }
 }
 
 /**

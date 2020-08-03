@@ -37,7 +37,7 @@
     "lint:style:fix": "stylelint --fix **/*.js **/*.scss",
     "lint:format:check": "prettier --check .",
     "lint:format:fix": "prettier --write .",
-    "deploy": "node deploy/bin.js"
+    "deploy-tool": "node deploy-tool/bin.js"
   },
   "devDependencies": {
     "aws-sdk": "^2.720.0",

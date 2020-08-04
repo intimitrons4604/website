@@ -36,7 +36,7 @@ yargs
   .version(false)
   .option('environment', {
     description:
-      "Should match the name of a configuration file. For example the environment 'env' loads the configuration file 'deploy/config/env.json'.",
+      "Should match the name of a configuration file. For example the environment 'env' loads the configuration file 'deploy-tool/config/env.json'.",
     alias: 'env',
     type: 'string',
     demandOption: true,

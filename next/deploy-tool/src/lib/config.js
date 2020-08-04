@@ -18,7 +18,7 @@ const schema = Joi.object({
  * Load the deploy configuration for an environment
  *
  * @param {string} envName Name of the environment. Should match the name of a configuration file.
- * For example when called with `env`, the file `deploy/config/env.json` is loaded.
+ * For example when called with `env`, the file `deploy-tool/config/env.json` is loaded.
  * @returns {Promise<object>} Deploy configuration
  */
 async function loadConfig(envName) {

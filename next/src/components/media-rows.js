@@ -22,11 +22,7 @@ export const MediaRows = ({ media }) => {
           />
           <Row className='my-5'>
             <Col xs={12} sm={12} md={4} lg={4} xl={4} className='pb-5'>
-              <img
-                src={item.thumbnail}
-                width='90%'
-                className='animate__animated animate__fadeIn wow'
-              />
+              <img src={item.thumbnail} width='90%' />
             </Col>
             <Col xs={12} sm={12} md={8} lg={8} xl={8}>
               <h3>{item.title}</h3>

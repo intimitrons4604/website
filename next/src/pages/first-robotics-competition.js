@@ -69,12 +69,7 @@ const FirstRoboticsPage = () => {
       <Container className='mt-5'>
         <Row>
           <Col xs={12} sm={12} md={3} lg={3} xl={3} className='my-auto'>
-            <h3
-              className='animate__animated animate__slideInLeft wow'
-              data-wow-delay='0.1s'
-            >
-              Impact
-            </h3>
+            <h3>Impact</h3>
           </Col>
           <Col xs={12} sm={12} md={9} lg={9} xl={9}>
             <p className='trons-intro'>
@@ -87,12 +82,7 @@ const FirstRoboticsPage = () => {
         </Row>
         <Row>
           <Col xs={12} sm={12} md={3} lg={3} xl={3} className='my-auto'>
-            <h3
-              className='animate__animated animate__slideInLeft wow'
-              data-wow-delay='0.2s'
-            >
-              Teamwork
-            </h3>
+            <h3>Teamwork</h3>
           </Col>
           <Col xs={12} sm={12} md={9} lg={9} xl={9}>
             <p className='trons-intro'>
@@ -105,12 +95,7 @@ const FirstRoboticsPage = () => {
         </Row>
         <Row>
           <Col xs={12} sm={12} md={3} lg={3} xl={3} className='my-auto'>
-            <h3
-              className='animate__animated animate__slideInLeft wow'
-              data-wow-delay='0.3s'
-            >
-              Competition
-            </h3>
+            <h3>Competition</h3>
           </Col>
           <Col xs={12} sm={12} md={9} lg={9} xl={9}>
             <p className='trons-intro'>
@@ -122,12 +107,7 @@ const FirstRoboticsPage = () => {
         </Row>
         <Row>
           <Col xs={12} sm={12} md={3} lg={3} xl={3} className='my-auto'>
-            <h3
-              className='animate__animated animate__slideInLeft wow'
-              data-wow-delay='0.4s'
-            >
-              Scholarships
-            </h3>
+            <h3>Scholarships</h3>
           </Col>
           <Col xs={12} sm={12} md={9} lg={9} xl={9}>
             <p className='trons-intro'>

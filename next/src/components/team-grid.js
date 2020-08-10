@@ -1,9 +1,20 @@
+import PropTypes from 'prop-types'
 import Col from 'react-bootstrap/Col'
 import React from 'react'
-import PropTypes from 'prop-types'
+import styled from 'styled-components'
+
 import { sortBy, isInt } from '../util/legacy-util.js'
 
 import alienLogo from '../images/Logo-Alien-Only.svg'
+
+const CircularImage = styled.img`
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: #40276b;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.46);
+  margin: 2em auto;
+`
 
 export const TeamGrid = ({ members }) => {
   return members.sort(sortBy('name')).map((person, index) => {
@@ -18,13 +29,7 @@ export const TeamGrid = ({ members }) => {
         xl={3}
         className='d-block mx-auto text-center'
       >
-        <div
-          className='circle-img animate__animated animate__fadeInUp wow'
-          data-wow-delay={`${0.1 * (index % 4)}s`}
-          style={{
-            backgroundImage: `url(${person.photo || alienLogo})`,
-          }}
-        />
+        <CircularImage src={person.photo || alienLogo} />
         <h4>{person.name}</h4>
         <h5 className='heading-separator'>
           {isInt(person.year) ? `Since ${person.year}` : person.year}

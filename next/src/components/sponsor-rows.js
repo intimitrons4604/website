@@ -34,11 +34,7 @@ export const SponsorRows = ({ sponsors, sponsorType }) => {
           xl={6}
           className='px-xl-5 px-lg-5 px-md-5 px-sm-1 px-xs-1 pb-5'
         >
-          <img
-            src={sponsor.logo}
-            width='50%'
-            className='animate__animated animate__fadeInUp wow'
-          />
+          <img src={sponsor.logo} width='50%' />
           <h2 className='pt-4'>{sponsor.name}</h2>
           <p>{sponsor.description}</p>
           <h4 className='pb-4'>Sponsorship Years: {sponsor.years}</h4>
@@ -54,8 +50,7 @@ export const SponsorRows = ({ sponsors, sponsorType }) => {
             style={{
               backgroundImage: `url(${sponsor.photo})`,
             }}
-            className='trons-img-card animate__animated animate__fadeIn wow'
-            data-wow-delay='0.5s'
+            className='trons-img-card'
           />
         </Col>
       </Row>

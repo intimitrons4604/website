@@ -1,9 +1,15 @@
-import Button from 'react-bootstrap/Button'
-import Col from 'react-bootstrap/Col'
 import PropTypes from 'prop-types'
 import React from 'react'
+import Button from 'react-bootstrap/Button'
+import Col from 'react-bootstrap/Col'
+import styled from 'styled-components'
 
 import { sortBy } from '../util/legacy-util.js'
+
+const SponsorPhoto = styled.img`
+  width: 100%;
+  margin-bottom: 1em;
+`
 
 /* usually for Megabyte, Kilobyte and In-Kind sponsors with different # slices */
 export const SponsorGrid = ({ sponsors, sponsorType, slices }) => {
@@ -31,18 +37,13 @@ export const SponsorGrid = ({ sponsors, sponsorType, slices }) => {
         className='px-xl-5 px-lg-5 px-md-5 px-sm-1 px-xs-1 pb-5'
       >
         <div
-          className='trons-sponsor-logo animate__animated animate__fadeIn wow'
+          className='trons-sponsor-logo'
           style={{
             backgroundImage: `url(${sponsor.logo})`,
           }}
         />
         <h4 className='pt-4'>{sponsor.name}</h4>
-        {sponsor.photo ? (
-          <img
-            className='trons-sponsor-photo animate__animated animate__fadeIn wow'
-            src={sponsor.photo}
-          />
-        ) : null}
+        {sponsor.photo ? <SponsorPhoto src={sponsor.photo} /> : null}
         <p>{sponsor.description}</p>
         <h6 className='pb-4'>Sponsorship Years: {sponsor.years}</h6>
         <Button

@@ -3,7 +3,7 @@ import Col from 'react-bootstrap/Col'
 import React from 'react'
 import styled from 'styled-components'
 
-import { sortBy, isInt } from '../util/legacy-util.js'
+import { sortBy } from '../util/legacy-util.js'
 
 import alienLogo from '../images/Logo-Alien-Only.svg'
 
@@ -31,9 +31,7 @@ export const TeamGrid = ({ members }) => {
       >
         <CircularImage src={person.photo || alienLogo} />
         <h4>{person.name}</h4>
-        <h5 className='heading-separator'>
-          {isInt(person.year) ? `Since ${person.year}` : person.year}
-        </h5>
+        <h5 className='heading-separator'>{person.years}</h5>
         <p>{person.tagline}</p>
       </Col>
     )
@@ -44,8 +42,7 @@ TeamGrid.propTypes = {
   members: PropTypes.arrayOf(
     PropTypes.shape({
       name: PropTypes.string.isRequired,
-      year: PropTypes.oneOfType([PropTypes.number, PropTypes.string])
-        .isRequired,
+      years: PropTypes.string.isRequired,
       tagline: PropTypes.string.isRequired,
       photo: PropTypes.string,
     })

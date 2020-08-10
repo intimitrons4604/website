@@ -19,7 +19,7 @@ export const gigabyte = [
   {
     name: 'Trilogy Software',
     nickname: 'Trilogy',
-    years: [2018, 2019],
+    years: '2018-2019',
     url: 'https://www.taxcycle.com/',
     logo: logo_taxcycle,
     description:
@@ -42,7 +42,7 @@ export const megabyte = [
   {
     name: 'Microsoft',
     nickname: 'Microsoft',
-    years: [2019],
+    years: '2019',
     url: 'http://www.microsoft.com/',
     logo: logo_microsoft,
     description:
@@ -78,7 +78,7 @@ export const inkind = [
   {
     name: 'Basecamp',
     nickname: 'Basecamp',
-    years: [2019],
+    years: '2019',
     url: 'https://basecamp.com',
     logo: logo_basecamp,
     description:
@@ -91,7 +91,7 @@ export const kilobyte = [
   {
     name: 'The Schulz Family Fund at the Calgary Foundation',
     nickname: 'Schulz Family Fund',
-    years: [2018, 2019],
+    years: '2018-2019',
     url: 'https://calgaryfoundation.org/',
     logo: logo_calgary_foundation,
     description:
@@ -104,7 +104,7 @@ export const byte = [
   {
     name: 'Provision Business Advisors',
     nickname: 'Provision',
-    years: [2019],
+    years: '2019',
     url: 'https://provisioncoaching.ca',
     logo: logo_provision,
     description:

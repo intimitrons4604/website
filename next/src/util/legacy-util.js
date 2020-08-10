@@ -11,15 +11,6 @@ export function sortBy(prop) {
   }
 }
 
-export function isInt(value) {
-  return (
-    !isNaN(value) &&
-    (function (x) {
-      return (x | 0) === x
-    })(parseFloat(value))
-  )
-}
-
 export function getMenuDivId(title) {
   var id = title.toLowerCase()
   id.replace(/\s/g, '-')

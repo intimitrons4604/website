@@ -63,10 +63,7 @@ SponsorRows.propTypes = {
     PropTypes.shape({
       name: PropTypes.string.isRequired,
       nickname: PropTypes.string.isRequired,
-      years: PropTypes.oneOfType([
-        PropTypes.arrayOf(PropTypes.number),
-        PropTypes.string,
-      ]).isRequired,
+      years: PropTypes.string.isRequired,
       description: PropTypes.string.isRequired,
       url: PropTypes.string.isRequired,
       logo: PropTypes.string.isRequired,

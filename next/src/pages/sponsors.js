@@ -86,7 +86,7 @@ const SponsorsPage = () => {
               <Button
                 variant='secondary'
                 onClick={() => {
-                  window.location.href = '#Terabyte'
+                  window.location.href = '#terabyte'
                 }}
                 className='trons-green-button'
               >
@@ -95,7 +95,7 @@ const SponsorsPage = () => {
               <Button
                 variant='secondary'
                 onClick={() => {
-                  window.location.href = '#Gigabyte'
+                  window.location.href = '#gigabyte'
                 }}
                 className='trons-green-button'
               >
@@ -104,7 +104,7 @@ const SponsorsPage = () => {
               <Button
                 variant='secondary'
                 onClick={() => {
-                  window.location.href = '#Megabyte'
+                  window.location.href = '#megabyte'
                 }}
                 className='trons-green-button'
               >
@@ -113,7 +113,7 @@ const SponsorsPage = () => {
               <Button
                 variant='secondary'
                 onClick={() => {
-                  window.location.href = '#Kilobyte'
+                  window.location.href = '#kilobyte'
                 }}
                 className='trons-green-button'
               >
@@ -122,16 +122,16 @@ const SponsorsPage = () => {
               <Button
                 variant='secondary'
                 onClick={() => {
-                  window.location.href = '#Byte'
+                  window.location.href = '#byte'
                 }}
                 className='trons-green-button'
               >
-                Bytes
+                Byte
               </Button>
               <Button
                 variant='secondary'
                 onClick={() => {
-                  window.location.href = '#inkind'
+                  window.location.href = '#in-kind'
                 }}
                 className='trons-green-button'
               >
@@ -140,11 +140,11 @@ const SponsorsPage = () => {
               <Button
                 variant='secondary'
                 onClick={() => {
-                  window.location.href = '#Bit'
+                  window.location.href = '#bit'
                 }}
                 className='trons-green-button'
               >
-                Bits
+                Bit
               </Button>
             </ButtonGroup>
           </Col>
@@ -361,91 +361,85 @@ const SponsorsPage = () => {
 
       <Parallax img={flickr_26251669169_532a2e461b_h} />
 
-      <Container fluid={true} className='my-5 px-5' id='Terabyte'>
+      <Container fluid={true} className='my-5 px-5' id='terabyte'>
         <Row>
           <Col>
             <h1 className='text-center'>Terabyte Sponsors</h1>
           </Col>
         </Row>
-        <div>
-          <SponsorRows sponsors={terabyte} sponsorType='terabyte' />
-        </div>
+        <SponsorRows sponsors={terabyte} sponsorType='Terabyte' />
       </Container>
 
       <Parallax img={flickr_26251669169_532a2e461b_h} />
 
-      <Container fluid={true} className='my-5 px-5' id='Gigabyte'>
+      <Container fluid={true} className='my-5 px-5' id='gigabyte'>
         <Row>
           <Col>
             <h1 className='text-center'>Gigabyte Sponsors</h1>
           </Col>
         </Row>
-        <div>
-          <SponsorRows sponsors={gigabyte} sponsorType='gigabyte' />
-        </div>
+        <SponsorRows sponsors={gigabyte} sponsorType='Gigabyte' />
       </Container>
 
       <Parallax img={flickr_37252186395_e2a8f6c242_h} />
 
-      <Container fluid={true} className='my-5 px-5' id='Megabyte'>
+      <Container fluid={true} className='my-5 px-5' id='megabyte'>
         <Row className='mt-5'>
           <Col>
             <h1 className='text-center'>Megabyte Sponsors</h1>
           </Col>
         </Row>
         <Row className='mt-5'>
-          <SponsorGrid sponsors={megabyte} sponsorType='megabyte' slices={6} />
+          <SponsorGrid sponsors={megabyte} sponsorType='Megabyte' slices={6} />
         </Row>
       </Container>
 
       <Parallax img={flickr_33329082910_ae4f890331_h} />
 
-      <Container fluid={true} className='mt-5 mb-5 px-5' id='inkind'>
+      <Container fluid={true} className='mt-5 mb-5 px-5' id='in-kind'>
         <Row className='mt-5'>
           <Col>
             <h1 className='text-center'>In-Kind Sponsors</h1>
           </Col>
         </Row>
-        <Row className='py-5'>
-          <SponsorRows sponsors={inkindop} sponsorType='inkindop' />
-        </Row>
+        <SponsorRows sponsors={inkindop} sponsorType='In-Kind' />
         <Row className='pt-5'>
-          <SponsorGrid sponsors={inkind} sponsorType='inkind' slices={4} />
+          <SponsorGrid sponsors={inkind} sponsorType='In-Kind' slices={4} />
         </Row>
       </Container>
 
       <Parallax img={flickr_33329082910_ae4f890331_h} />
 
-      <Container fluid={true} className='my-5 px-5' id='Kilobyte'>
+      <Container fluid={true} className='my-5 px-5' id='kilobyte'>
         <Row className='mt-5'>
           <Col>
             <h1 className='text-center'>Kilobyte Sponsors</h1>
           </Col>
         </Row>
         <Row className='mt-5'>
-          <SponsorGrid sponsors={kilobyte} sponsorType='kilobyte' slices={4} />
+          <SponsorGrid sponsors={kilobyte} sponsorType='Kilobyte' slices={4} />
         </Row>
       </Container>
 
       <Parallax img={flickr_46815681822_1ed0845e9b_k} />
 
-      <Container fluid={true} className='my-5 px-5' id='Byte'>
+      <Container fluid={true} className='my-5 px-5' id='byte'>
         <Row className='mt-5'>
           <Col>
-            <h1 className='text-center'>Bytes Sponsors</h1>
+            <h1 className='text-center'>Byte Sponsors</h1>
           </Col>
         </Row>
         <Row className='mt-5'>
-          <SponsorGrid sponsors={byte} sponsorType='byte' slices={4} />
+          <SponsorGrid sponsors={byte} sponsorType='Byte' slices={4} />
         </Row>
       </Container>
 
       <Parallax img={flickr_46815682412_71179fc4a8_k} />
 
-      <Container fluid={true} className='my-5 px-5' id='Bit'>
+      <Container fluid={true} className='my-5 px-5' id='bit'>
         <Row className='mt-5'>
           <Col>
-            <h1 className='text-center'>Bits Sponsors</h1>
+            <h1 className='text-center'>Bit Sponsors</h1>
           </Col>
         </Row>
         <Row className='my-5'>

@@ -4,6 +4,7 @@ import PropTypes from 'prop-types'
 import React from 'react'
 import Row from 'react-bootstrap/Row'
 
+import { SponsorEmptyState } from './sponsor-empty-state.js'
 import { sortBy } from '../util/legacy-util.js'
 
 /* usually for Terabyte and/or Gigabyte Level */
@@ -11,13 +12,7 @@ export const SponsorRows = ({ sponsors, sponsorType }) => {
   if (sponsors.length === 0) {
     return (
       <Row className='mt-5'>
-        <Col>
-          <h3 className='text-center'>The Trons need your support!</h3>
-          <h4 className='text-center'>
-            Be the first {sponsorType} sponsor to pledge your support this
-            season.
-          </h4>
-        </Col>
+        <SponsorEmptyState sponsorType={sponsorType} />
       </Row>
     )
   }
@@ -70,5 +65,5 @@ SponsorRows.propTypes = {
       photo: PropTypes.string.isRequired,
     })
   ).isRequired,
-  sponsorType: PropTypes.string,
+  sponsorType: PropTypes.string.isRequired,
 }

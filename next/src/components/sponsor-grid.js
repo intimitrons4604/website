@@ -4,6 +4,7 @@ import Button from 'react-bootstrap/Button'
 import Col from 'react-bootstrap/Col'
 import styled from 'styled-components'
 
+import { SponsorEmptyState } from './sponsor-empty-state.js'
 import { sortBy } from '../util/legacy-util.js'
 
 const SponsorPhoto = styled.img`
@@ -14,14 +15,7 @@ const SponsorPhoto = styled.img`
 /* usually for Megabyte, Kilobyte and In-Kind sponsors with different # slices */
 export const SponsorGrid = ({ sponsors, sponsorType, slices }) => {
   if (sponsors.length === 0) {
-    return (
-      <Col>
-        <h3 className='text-center'>The Trons need your support!</h3>
-        <h4 className='text-center'>
-          Be the first {sponsorType} sponsor to pledge your support this season.
-        </h4>
-      </Col>
-    )
+    return <SponsorEmptyState sponsorType={sponsorType} />
   }
 
   return sponsors.sort(sortBy('name')).map((sponsor, index) => {
@@ -69,5 +63,5 @@ SponsorGrid.propTypes = {
       photo: PropTypes.string,
     })
   ).isRequired,
-  sponsorType: PropTypes.string,
+  sponsorType: PropTypes.string.isRequired,
 }

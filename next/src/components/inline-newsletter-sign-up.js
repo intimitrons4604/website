@@ -24,9 +24,10 @@ export const InlineNewsletterSignUp = () => {
         >
           <Form.Row>
             <Col sm={3}>
-              <Form.Group controlId='mce-FNAME'>
+              <Form.Group>
                 <Form.Label srOnly={true}>First Name</Form.Label>
                 <Form.Control
+                  name='FNAME'
                   type='text'
                   className='mb-2 mb-sm-0'
                   placeholder='First name'
@@ -34,9 +35,10 @@ export const InlineNewsletterSignUp = () => {
               </Form.Group>
             </Col>
             <Col sm={3}>
-              <Form.Group controlId='mce-LNAME'>
+              <Form.Group>
                 <Form.Label srOnly={true}>Last Name</Form.Label>
                 <Form.Control
+                  name='LNAME'
                   type='text'
                   className='mb-2 mb-sm-0'
                   placeholder='Last name'
@@ -44,7 +46,7 @@ export const InlineNewsletterSignUp = () => {
               </Form.Group>
             </Col>
             <Col sm={3}>
-              <Form.Group controlId='mce-EMAIL'>
+              <Form.Group>
                 <Form.Label srOnly={true}>Email</Form.Label>
                 <InputGroup className='mb-2 mb-sm-0'>
                   <InputGroup.Prepend>
@@ -52,7 +54,7 @@ export const InlineNewsletterSignUp = () => {
                       <FontAwesomeIcon icon={faEnvelope} />
                     </InputGroup.Text>
                   </InputGroup.Prepend>
-                  <Form.Control type='email' placeholder='Email' />
+                  <Form.Control name='EMAIL' type='email' placeholder='Email' />
                 </InputGroup>
               </Form.Group>
             </Col>

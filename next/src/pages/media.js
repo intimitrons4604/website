@@ -37,13 +37,19 @@ const MediaPage = () => {
         </Row>
         <Row>
           <Col xs={12} sm={12} md={9} lg={9} xl={9}>
-            {/* See https://github.com/intimitrons4604/website/issues/23
-            <script
-              language='javascript'
-              src='https://intimitrons.us3.list-manage.com/generate-js/?u=d479728f08b6043f1d957d5b1&fid=23401&show=10'
-              type='text/javascript'
-            />
-            */}
+            <h3>In Case you Missed It</h3>
+            <p className='trons-intro'>
+              Throughout the competition season we send out a newsletter to keep
+              our supporters informed. If you&apos;re a new subscriber and
+              missed something, or just want to check them out, take a look at
+              our past newsletters.
+            </p>
+            <Button
+              href='https://us3.campaign-archive.com/home/?u=d479728f08b6043f1d957d5b1&id=cc9ef4518a'
+              className='trons-medium-button trons-purple-button'
+            >
+              View Past Newsletters
+            </Button>
           </Col>
           <Col
             xs={12}

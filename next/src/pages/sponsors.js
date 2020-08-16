@@ -56,8 +56,8 @@ const SponsorsPage = () => {
           >
             <FontAwesomeIcon
               icon={faHandSpock}
+              size={'10x'}
               className='animate__animated animate__rotateInUpRight text-center'
-              style={{ fontSize: '10em' }}
             />
           </Col>
           <Col xs={12} sm={12} md={6} lg={6} xl={6} className='px-3'>

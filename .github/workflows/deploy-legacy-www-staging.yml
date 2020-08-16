@@ -16,5 +16,5 @@ jobs:
         uses: ./.github/actions/deploy-stablehost
         with:
           service: www
-          environment: legacy-api-staging
+          environment: staging
           private_key: ${{ secrets.STABLEHOST_DEPLOY_SSH_KEY }}

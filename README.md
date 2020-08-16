@@ -43,16 +43,11 @@ Access the `version.json` file at the root. See the [Environments](#environments
 Pushing to `master` automatically triggers a deployment to the `staging` environment.
 
 #### Production
-Pushing to `production` automatically triggers a deployment to the `production` environment. **You should never commit or merge to the `production` branch**. Instead, perform the following steps to deploy to production.
-
-1. Checkout `master` and pull
-    1. `git checkout master`
-    1. `git pull`
 1. Identify the commit from the `master` branch that you wish to deploy, for example using `git log` or browsing commits on GitHub
-1. Update the `production` branch on GitHub to trigger the deployment
-    1. `git push -f origin <sha1>:refs/heads/production` (e.g. `git push -f origin abcd123:refs/heads/production`)
+2. Execute the [Deploy to Production](https://github.com/intimitrons4604/website/actions?query=workflow%3A%22Deploy+to+Production%22) workflow by clicking "Run workflow" on the "This workflow has a `workflow_dispatch` event trigger." banner
+3. Enter the commit SHA1 as the input for the "Ref to Deploy" and click "Run Workflow"
 
-Note that the `production` branch is simply being used as a marker for the current commit which is deployed to production. It should always point to a commit on `master`. The `-f` option is used to allow you to both deploy newer versions and rollback to older versions of the website. The branch name is qualified with `refs/heads` so that the command works even if the `production` branch does not exist on the remote.
+The workflow does not currently restrict the provided ref. As a result it is possible to specify a tag or branch name, or deploy a commit which is not on `master`. You should always use a commit SHA1 when deploying because someone else may modify a tag or branch before the deployment executes, resulting in an undesired commit being deployed. Only commits on `master` should be deployed, because the `master` branch is where you will find production-ready code.
 
 ### Limitations
 Only one deployment can execute at once, per environment. **You are protected against concurrent deployments interfering with each other, but there is no ordering guarantee for which deployment wins when multiple deployments to an environment execute concurrently**. As a result, try to abide by the following guidelines:

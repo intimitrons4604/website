@@ -1,0 +1,24 @@
+name: Deploy Legacy API to Production
+on:
+  workflow_dispatch:
+    inputs:
+      ref:
+        description: "Ref to Deploy"
+        required: true
+
+jobs:
+  deploy:
+    name: Deploy
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          ref: ${{ github.event.inputs.ref }}
+      - name: Deploy to StableHost
+        uses: ./.github/actions/deploy-stablehost
+        with:
+          service: api
+          environment: production
+          private_key: ${{ secrets.STABLEHOST_DEPLOY_SSH_KEY }}

@@ -1,10 +1,8 @@
-name: Deploy to Production
+name: Deploy Legacy Website to Staging
 on:
-  workflow_dispatch:
-    inputs:
-      ref:
-        description: "Ref to Deploy"
-        required: true
+  push:
+    branches:
+      - master
 
 jobs:
   deploy:
@@ -14,10 +12,9 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-        with:
-          ref: ${{ github.event.inputs.ref }}
       - name: Deploy to StableHost
         uses: ./.github/actions/deploy-stablehost
         with:
-          environment: production
+          service: www
+          environment: legacy-api-staging
           private_key: ${{ secrets.STABLEHOST_DEPLOY_SSH_KEY }}

@@ -1,7 +1,20 @@
 ---
 version: '3.7'
 services:
-  web:
+  api:
+    build:
+      context: '.'
+    ports:
+      - target: 80
+        published: 8081
+        protocol: 'tcp'
+        mode: 'host'
+    volumes:
+      - type: 'bind'
+        source: '../api'
+        target: '/var/www/html'
+        read_only: true
+  www:
     build:
       context: '.'
     ports:

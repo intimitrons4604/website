@@ -22,10 +22,10 @@ export const Footer = () => {
     <Container fluid={true} className='trons-purple-bkgnd pt-0 px-0 pb-5'>
       <Row className='px-5 pt-4'>
         <Row className='pt-4 pb-2'>
-          <Col xs={12} sm={12} md={4} lg={4} xl={4} className='m-auto'>
+          <Col xs={12} sm={12} md={3} lg={3} xl={3} className='m-auto'>
             <img src={footerLogo} width='90%' />
           </Col>
-          <Col xs={12} sm={12} md={8} lg={8} xl={8} className='pt-4'>
+          <Col xs={12} sm={12} md={9} lg={9} xl={9} className='pt-4'>
             <h3>The Intimitrons from Area 51</h3>
             <p className='pb-0 pr-4'>
               The team Intimitrons from Area 51, was founded in hopes to inspire

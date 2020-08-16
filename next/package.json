@@ -11,6 +11,7 @@
     "animate.css": "^4.1.0",
     "babel-plugin-styled-components": "^1.10.7",
     "bootstrap": "^4.5.0",
+    "formik": "^2.1.5",
     "gatsby": "^2.24.11",
     "gatsby-plugin-react-helmet": "^3.3.10",
     "gatsby-plugin-sass": "^2.3.12",

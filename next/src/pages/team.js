@@ -6,10 +6,10 @@ import Container from 'react-bootstrap/Container'
 import Jumbotron from 'react-bootstrap/Jumbotron'
 import Row from 'react-bootstrap/Row'
 
-import { InlineContactForm } from '../components/inline-contact-form.js'
 import { Page } from '../components/page.js'
 import { Parallax } from '../components/parallax.js'
 import { TeamGrid } from '../components/team-grid.js'
+import { InlineContactForm } from '../components/contact/inline-contact-form.js'
 
 import { team, mentors, alumni } from '../data/team.js'
 

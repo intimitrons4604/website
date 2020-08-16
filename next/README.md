@@ -24,6 +24,10 @@ You can also access GraphiQL to aid in working with the Gatsby data layer at htt
 - `npm run serve` will serve the (previously built) production build of the site at http://localhost:9000/ ([Gatsby CLI - serve](https://www.gatsbyjs.org/docs/gatsby-cli/#serve))
 - `npm run lint` will check formatting and perform linting. There are other scripts named `lint:*:check` and `lint:*:fix` to allow execution of everything that makes up the `lint` script separately, as well as applying automatic fixes for any issues.
 
+## Dependencies
+
+The next site uses the Legacy API (https://legacy-api.intimitrons.ca/) in all environments (even locally) to back the contact forms.
+
 ## Environments and Deployment
 
 Pushing to `master` automatically triggers a deployment to a development environment.

@@ -11,12 +11,12 @@ import Row from 'react-bootstrap/Row'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHandSpock } from '@fortawesome/free-regular-svg-icons'
 
-import { InlineContactForm } from '../components/inline-contact-form.js'
 import { Page } from '../components/page.js'
 import { Parallax } from '../components/parallax.js'
 import { SponsorGrid } from '../components/sponsor-grid.js'
 import { SponsorList } from '../components/sponsor-list.js'
 import { SponsorRows } from '../components/sponsor-rows.js'
+import { InlineContactForm } from '../components/contact/inline-contact-form.js'
 
 import {
   terabyte,

@@ -1,0 +1,5 @@
+# Allow next site to use legacy contact API
+<Files "sendmail.php">
+  Header set Access-Control-Allow-Origin "*"
+  Header set Access-Control-Allow-Methods "POST"
+</Files>

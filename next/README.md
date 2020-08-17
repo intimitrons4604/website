@@ -32,7 +32,7 @@ The next site uses the Legacy API (https://legacy-api.intimitrons.ca/) in all en
 
 Pushing to `master` automatically triggers a deployment to a development environment.
 
-The site is currently available at https://next.intimitrons.ca. You can check which commit is deployed at https://next.intimitrons.ca/version.json.
+The site is currently available at https://www.next.intimitrons.ca. You can check which commit is deployed at https://www.next.intimitrons.ca/version.json.
 
 See the deploy [README](./deploy-tool/README.md) for more information on using the deploy tool.
 

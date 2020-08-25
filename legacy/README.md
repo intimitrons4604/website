@@ -1,5 +1,5 @@
 # Website - Legacy
-The website root is in the `www` directory. All files required by the website must be in the `www` directory. Any files outside the `www` directory will not be available on the server.
+The legacy website root is in the `www` directory. **The legacy website is no longer used.** All files required by the website must be in the `www` directory. Any files outside the `www` directory will not be available on the server.
 
 The API root is in the `api` directory. All files required by the API must be in the `api` directory. Any files outside the `api` directory will not be available on the server. This contains only the contact API from the legacy site, so that the next site can use it during migration.
 
@@ -19,12 +19,6 @@ Instructions on other usage of Docker is outside the scope of this README.
 * The contact form does not work locally
 
 ## Environments
-The website is continuously available in two different environments: `staging` and `production`. Both are currently hosted on StableHost.
-
-| Environment  | Primary URL                   | Secondary URL                     | Version                                    |
-| ------------ | ----------------------------- | --------------------------------- | ------------------------------------------ |
-| `staging`    | http://staging.intimitrons.ca | http://www.staging.intimitrons.ca | http://staging.intimitrons.ca/version.json |
-| `production` | http://intimitrons.ca         | http://www.intimitrons.ca         | http://intimitrons.ca/version.json         |
 
 The API is continuously available in two different environments: `staging` and `production`. Both are currently hosted on StableHost. While you can access the API using HTTP, HTTPS should be used.
 
@@ -44,21 +38,17 @@ Every deployment has a Build ID which is a combination of the deployed SHA1 and 
 ### How can I tell which version is deployed?
 Access the `version.json` file at the root. See the [Environments](#environments) section for a direct link.
 
-### How do I deploy the website or API?
+### How do I deploy the API?
 #### Staging
-Pushing to `master` automatically triggers a deployment to the `staging` environment for both the website and API.
+Pushing to `master` automatically triggers a deployment to the `staging` environment.
 
 #### Production
 1. Identify the commit from the `master` branch that you wish to deploy, for example using `git log` or browsing commits on GitHub
-2. Execute the production deployment workflow by clicking "Run workflow" on the "This workflow has a `workflow_dispatch` event trigger." banner. See below for links to the workflows.
-3. Enter the commit SHA1 as the input for the "Ref to Deploy" and click "Run Workflow"
+2. Navigate to the [Deploy Legacy API to Production](https://github.com/intimitrons4604/website/actions?query=workflow%3A%22Deploy+Legacy+API+to+Production%22) workflow
+3. Execute the production deployment workflow by clicking "Run workflow" on the "This workflow has a `workflow_dispatch` event trigger." banner. See below for links to the workflows.
+4. Enter the commit SHA1 as the input for the "Ref to Deploy" and click "Run Workflow"
 
 The workflow does not currently restrict the provided ref. As a result it is possible to specify a tag or branch name, or deploy a commit which is not on `master`. You should always use a commit SHA1 when deploying because someone else may modify a tag or branch before the deployment executes, resulting in an undesired commit being deployed. Only commits on `master` should be deployed, because the `master` branch is where you will find production-ready code.
-
-| Moniker          | Workflow                                                                                                                                             |
-| ---------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `api-production` | [Deploy Legacy API to Production](https://github.com/intimitrons4604/website/actions?query=workflow%3A%22Deploy+Legacy+API+to+Production%22)         |
-| `www-production` | [Deploy Legacy Website to Production](https://github.com/intimitrons4604/website/actions?query=workflow%3A%22Deploy+Legacy+Website+to+Production%22) |
 
 ### Limitations
 Only one deployment can execute at once, per moniker. **You are protected against concurrent deployments interfering with each other, but there is no ordering guarantee for which deployment wins when multiple deployments for a moniker execute concurrently**. As a result, try to abide by the following guidelines:

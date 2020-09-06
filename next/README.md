@@ -26,25 +26,20 @@ You can access GraphiQL to aid in working with the Gatsby data layer at http://l
 
 ## Dependencies
 
-The next site uses the production Legacy API (https://legacy-api.intimitrons.ca/) in all environments (even locally) to back the contact forms.
+The website uses the production Legacy API (https://legacy-api.intimitrons.ca/) in all environments (even locally) to back the contact forms.
 
 ## Environments
 
-The website is continuously available in three different environments: `next`, `staging`, and `production`. All environments are deployed to AWS (see https://github.com/intimitrons4604/terraform-website). The Canonical URL is an alias to a CloudFront distribution. The Redirect URL is an alias to an S3 bucket (no HTTPS for S3 static web hosting) which redirects to the canonical URL. The Version file provides information on the currently deployed version of the website.
+The website is continuously available in two different environments: `staging` and `production`. All environments are deployed to AWS (see https://github.com/intimitrons4604/terraform-website). The Canonical URL is an alias to a CloudFront distribution. The Redirect URL is an alias to an S3 bucket (no HTTPS for S3 static web hosting) which redirects to the canonical URL. The Version file provides information on the currently deployed version of the website.
 
 | Environment  | Canonical URL                      | Redirect URL                  | Version                                         |
 | ------------ | ---------------------------------- | ----------------------------- | ----------------------------------------------- |
-| `next`       | https://www.next.intimitrons.ca    | http://next.intimitrons.ca    | https://www.next.intimitrons.ca/version.json    |
 | `staging`    | https://www.staging.intimitrons.ca | http://staging.intimitrons.ca | https://www.staging.intimitrons.ca/version.json |
 | `production` | https://www.intimitrons.ca         | http://intimitrons.ca         | https://www.intimitrons.ca/version.json         |
 
 ## Deployment
 
 Deployments are performed using the deploy tool. The deploy tool can be executed locally, but it is primarily used by various deploy workflows in GitHub Actions. See the [deploy tool README](./deploy-tool/README.md) for more information on using the deploy tool.
-
-### Next
-
-Pushing to `master` automatically triggers a deployment to the `next` environment.
 
 ### Staging
 

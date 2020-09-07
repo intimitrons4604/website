@@ -15,7 +15,7 @@ Although not required, Visual Studio Code is the recommended editor. See the [se
 
 Run `npm run develop` in this directory. Once Gatsby is ready (watch the terminal output), navigate to http://localhost:8000/ in a web browser. Press `Ctrl + C` in the terminal to stop the development server. Any changes you make to the site will automatically be picked up and reflected in the browser through Hot Module Replacement. You do however need to remember to save the file.
 
-You can access GraphiQL to aid in working with the Gatsby data layer at http://localhost:8000/___graphql.
+You can access GraphiQL to aid in working with the Gatsby data layer at http://localhost:8000/\_\_\_graphql.
 
 ### Other Scripts
 

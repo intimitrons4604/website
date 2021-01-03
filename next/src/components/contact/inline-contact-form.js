@@ -10,6 +10,7 @@ import Form from 'react-bootstrap/Form'
 import InputGroup from 'react-bootstrap/InputGroup'
 import Row from 'react-bootstrap/Row'
 
+import { Feature, useFeatureFlag } from '../../hooks/use-feature-flag.js'
 import { ErrorAlert, SuccessAlert } from './alert.js'
 import { submitForm, FormSubmissionStatus } from './lib.js'
 
@@ -18,10 +19,31 @@ function generateMessage(headline) {
 }
 
 export const InlineContactForm = ({ headline }) => {
+  const isStatic = useFeatureFlag(Feature.StaticContactForm)
+
   const [submissionStatus, setSubmissionStatus] = useState(
     FormSubmissionStatus.Editing
   )
   const [errorMessage, setErrorMessage] = useState()
+
+  if (isStatic) {
+    return (
+      <Container fluid={true} className='trons-purple-bkgnd mt-5'>
+        <Row className='px-5 pt-5'>
+          <Col>
+            <h5>{headline}</h5>
+          </Col>
+        </Row>
+        <Row className='pt-3 px-5 pb-5'>
+          <Col>
+            <Button className='trons-green-button' href='contact'>
+              Contact Us
+            </Button>
+          </Col>
+        </Row>
+      </Container>
+    )
+  }
 
   return (
     <Formik

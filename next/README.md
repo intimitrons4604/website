@@ -26,7 +26,9 @@ You can access GraphiQL to aid in working with the Gatsby data layer at http://l
 
 ## Dependencies
 
-The website uses the production Legacy API (https://legacy-api.intimitrons.ca/) in all environments (even locally) to back the contact forms.
+The website has no dependencies on other services.
+
+The website will use the production Legacy API (https://legacy-api.intimitrons.ca/) in all environments (even locally) for the contact forms _when the static contact form feature flag is disabled_. The flag is currently enabled so the API is not used.
 
 ## Environments
 

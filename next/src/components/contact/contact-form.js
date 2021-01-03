@@ -9,14 +9,32 @@ import Form from 'react-bootstrap/Form'
 import InputGroup from 'react-bootstrap/InputGroup'
 import Row from 'react-bootstrap/Row'
 
+import { Feature, useFeatureFlag } from '../../hooks/use-feature-flag.js'
 import { ErrorAlert, SuccessAlert } from './alert.js'
 import { submitForm, FormSubmissionStatus } from './lib.js'
 
 export const ContactForm = () => {
+  const isStatic = useFeatureFlag(Feature.StaticContactForm)
+
   const [submissionStatus, setSubmissionStatus] = useState(
     FormSubmissionStatus.Editing
   )
   const [errorMessage, setErrorMessage] = useState()
+
+  if (isStatic) {
+    return (
+      <Container className='p-0'>
+        <Row>
+          <Col>
+            <p className='trons-intro'>
+              If you&apos;d like to contact us, please send a message to{' '}
+              <a href='mailto:info@intimitrons.ca'>info@intimitrons.ca</a>.
+            </p>
+          </Col>
+        </Row>
+      </Container>
+    )
+  }
 
   return (
     <Formik

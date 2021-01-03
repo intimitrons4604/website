@@ -80,7 +80,7 @@ const HomePage = () => {
           </Col>
           <Col xs={12} sm={6} md={6} lg={3} xl={3} className='text-center'>
             <Button
-              href='contact'
+              href='/contact'
               className='trons-medium-button trons-purple-button'
             >
               BECOME A TRON

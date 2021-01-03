@@ -36,7 +36,7 @@ export const InlineContactForm = ({ headline }) => {
         </Row>
         <Row className='pt-3 px-5 pb-5'>
           <Col>
-            <Button className='trons-green-button' href='contact'>
+            <Button className='trons-green-button' href='/contact'>
               Contact Us
             </Button>
           </Col>

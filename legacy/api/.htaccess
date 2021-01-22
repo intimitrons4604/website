@@ -1,7 +1,0 @@
-Options -Indexes
-
-# Allow next site to use the API
-<Files "sendmail.php">
-  Header set Access-Control-Allow-Origin "*"
-  Header set Access-Control-Allow-Methods "POST"
-</Files>

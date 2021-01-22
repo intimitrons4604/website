@@ -6,12 +6,8 @@ on:
   workflow_dispatch:
     inputs:
       ref:
-        description: "Ref to Deploy"
+        description: Ref to Deploy
         required: true
-
-defaults:
-  run:
-    working-directory: next
 
 jobs:
   deploy:

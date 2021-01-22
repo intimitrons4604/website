@@ -9,7 +9,7 @@ The website is built using [Gatsby](https://www.gatsbyjs.org/) - a framework bas
 - Install [Node.js 12 LTS](https://nodejs.org/en/download/)
 - Install dependencies (Run `npm install` in this directory)
 
-Although not required, Visual Studio Code is the recommended editor. See the [setup instructions](#visual-studio-code-setup) below.
+Although not required, Visual Studio Code is the recommended editor.
 
 ### Running Locally
 
@@ -66,12 +66,3 @@ Only one deployment can execute at once, per environment. You are protected agai
 - Do not push commits directly to `master`. Work on a branch and merge all the changes at once so they only result in a single deploy.
 - Do not make multiple merges to `master` in quick succession. If there are multiple changes to merge, coordinate and wait until the previous change is deployed before merging the next one.
 - Do not trigger multiple manual deployments in quick succession. Wait until the previous deployment is finished before triggering the next one.
-
-## Visual Studio Code Setup
-
-The following Visual Studio code extensions are recommended
-
-- ESLint (`dbaeumer.vscode-eslint`)
-- Prettier - Code formatter (`esbenp.prettier-vscode`)
-- stylelint (`stylelint.vscode-stylelint`)
-- vscode-styled-components (`jpoissonnier.vscode-styled-components`)

@@ -92,7 +92,7 @@ const HomePage = () => {
       <Container fluid={true} className='pt-3'>
         <Row className='mx-auto pl-xl-5 pl-lg-5 pl-md-3 pl-sm-3 pl-xs-3 pr-xl-5 pr-lg-5 pr-md-3 pr-sm-0 pr-xs-0 pt-5 pb-5'>
           <Col xs={12} sm={12} md={12} lg={8} xl={4} className='pb-5'>
-            <h1>5 Years of STEM</h1>
+            <h1>7 Years of STEM</h1>
             <p className='trons-intro'>
               The Intimitrons From Area 51 is one of the few all girls FIRST
               Robotics teams in Canada. We are the first all-female team in
@@ -100,7 +100,7 @@ const HomePage = () => {
               in technical vocations- fields that are currently male dominated.
               By creating robots to compete in FIRST competitions, we are able
               to accomplish this. The Intimitrons team was established in 2012,
-              and this 2017 season was our fifth!
+              and this 2019 season was our seventh!
             </p>
             <img src={firstLikeAGirl} width='80%' />
           </Col>
